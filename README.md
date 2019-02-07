@@ -1,0 +1,23 @@
+**TODO**
+
+- [ ] addTeam // Add to season
+- [ ] addPlayer // Add to team
+- [ ] addMatch // Add to season
+- [ ] updateMatch // Modify existing score sheet
+- [ ] calculateMatchesPlayed 
+- [ ] calculateTeamScores
+- [ ] generateFixtures
+- [ ] generateStats
+- [ ] displayTeamStats
+- [ ] displayLeaderBoard //view team ranking
+- [ ] displayAMatch
+- [ ] displayFixtures
+- [ ] autoUpdate
+- [ ] calculateMatchScores
+- [ ] calculateSetScores
+- [ ] calculateGameScores
+- [ ] Edit the use case diagram
+- [ ] Produce 3 x sequence diagrams
+- [ ] Outline how we agile developed
+- [ ] Create test for each method!
+- [ ] GUI!
