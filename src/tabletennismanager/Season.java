@@ -8,13 +8,14 @@ public class Season {
     private ArrayList<Team> teams;
     
     public Season(){
-        fixtures = new ArrayList<Match>();
-        teams = new ArrayList<Team>();
+        teams = new ArrayList<>(2);
+        fixtures = new ArrayList<>(2);
     }
 
-    public void addTeam(Team team) {
-
-        teams.add(team);
+    public void addTeam(Team teamPassed) {
+        System.out.println("In Add team" + teamPassed.getTeamName());
+        teams.add(teamPassed);
+        System.out.println(teams.size());
     }
 
     public void addMatch(Match match) {
@@ -23,9 +24,41 @@ public class Season {
     }
 
     public void generateFixtures() {
-       
+        for(int x = 0; x < teams.size(); x++)
+        {
+            for(int y = x + 1; y < teams.size(); y++)
+            {
+                System.out.println("Generating fixtures for the added teams");
+                fixtures.add(new Match(teams.get(x),teams.get(y)));
+            }
+        }
+
+        for(int x = 0; x < teams.size(); x++)
+        {
+            for(int y = x + 1; y < teams.size(); y++)
+            {
+                System.out.println("Generating fixtures for the added teams");
+                fixtures.add(new Match(teams.get(y),teams.get(x)));
+            }
+        }
     }
     public void generateStats() {
+        String teamName;
+        int gamesPlayed;
+        int gamesWon;
+        int gamesLost;
+
+        for(int x = 0; x < teams.size(); x++)
+        {
+            teamName = teams.get(x).getTeamName();
+            gamesPlayed = teams.get(x).getGamesPlayed();
+            gamesWon = teams.get(x).getGamesWon();
+            gamesLost = gamesPlayed - gamesWon;
+            System.out.println("__________________________________________________________________\n" +
+                    teamName + " Team Stats\nMatches Played: " + gamesPlayed + " Matches Won: " + gamesWon + " Matches Lost: " + gamesLost);
+
+        }
+
         // for all fixtures
         // calculate total sets won
         // calculate total matches won
@@ -47,10 +80,11 @@ public class Season {
         // Display Sets scores
         // Display match score
     }
-    public void displayFixtures() {
-        // For each fixture
-        // Display the teams
-        // Display the scores
+    public void displayFixtures() { //Probably doesnt need to display teams and scores like initialy thought
+        for(int x = 0; x < fixtures.size(); x++)
+        {
+            System.out.println(fixtures.get(x).getTeamHome().getTeamName() + " VS " + fixtures.get(x).getTeamAway().getTeamName());
+        }
     }
     public void autoUpdateThread() {
         // Call generate fixtures every 100 seconds

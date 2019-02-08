@@ -1,13 +1,13 @@
 **TODO**
 
-- [ ] addTeam // Add to season
-- [ ] addPlayer // Add to team
-- [ ] addMatch // Add to season
+- [x] addTeam // Add to season
+- [x] addPlayer // Add to team
+- [x] addMatch // Add to season
 - [ ] updateMatch // Modify existing score sheet
 - [ ] calculateMatchesPlayed 
 - [ ] calculateTeamScores
-- [ ] generateFixtures
-- [ ] generateStats
+- [x] generateFixtures
+- [x] generateStats
 - [ ] displayTeamStats
 - [ ] displayLeaderBoard //view team ranking
 - [ ] displayAMatch
