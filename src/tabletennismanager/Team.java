@@ -1,19 +1,17 @@
-    
-
-    package tabletennismanager;
+package tabletennismanager;
 
 import java.util.ArrayList;
 
     public class Team {
 
     private String teamName;
-    private int gamesPlayed;
-    private int gamesWon;
+    private int matchesPlayed;
     private int matchesWon;
     private int setsWon;
+    private int gamesWon;
     private ArrayList<Player> players; // Should be ArrayList
 
-    public void Team() {
+    public Team() {
         players = new ArrayList<Player>(2);
     }
 
@@ -29,12 +27,12 @@ import java.util.ArrayList;
         this.teamName = teamName;
     }
 
-    public int getGamesPlayed() {
-        return gamesPlayed;
+    public int getMatchesPlayed() {
+        return matchesPlayed;
     }
 
-    public void setGamesPlayed(int gamesPlayed) {
-        this.gamesPlayed = gamesPlayed;
+    public void setMatchesPlayed(int matchesPlayed) {
+        this.matchesPlayed = matchesPlayed;
     }
 
     public int getGamesWon() {

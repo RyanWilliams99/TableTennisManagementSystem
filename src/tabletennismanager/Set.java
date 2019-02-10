@@ -10,11 +10,27 @@ public class Set {
     private int scoreAway;
     private ArrayList<Game> games;
 
-    public void Set() {
-        // generate 3 games
+    public Set() {
+
+       games = new ArrayList<>(2);
+
+        for(int x  = 0; x < 3; x++) //Generate 3 Game objects
+        {
+            games.add(new Game());
+        }
     }
 
     public void calculateSetScores() {
+        //Should check to see if 3 game objects contain score yet or not
+        for (int x = 0; x < 3; x++)
+        {
+            if(games.get(x).getHomeScore() > games.get(x).getAwayScore())
+                this.setScoreHome(this.getScoreHome() + 1);
+            else
+                this.setScoreAway(this.getScoreAway() + 1);
+
+        }
+
         // if teamHome.calculateGames > teamAway.calculateGames()
         // return teamHome
         // else team away

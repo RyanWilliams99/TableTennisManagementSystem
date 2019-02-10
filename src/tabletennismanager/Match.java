@@ -9,17 +9,31 @@ import java.util.ArrayList;
     private Team teamAway;
     private int scoreHome;
     private int scoreAway;
-    private ArrayList<Set> sets;
+    public ArrayList<Set> sets;
+
 
         public Match(Team teamHome, Team teamAway) {
             this.teamHome = teamHome;
             this.teamAway = teamAway;
+
+            sets = new ArrayList<>(2);
+            System.out.println("Creating five new set objects");
+            for(int x  = 0;x < 5; x++) //Generate 5 set objects
+            {
+                sets.add(new Set());
+            }
         }
 
         public void calculateMatchScores() {
-            // if teamHome.calculate sets > teamAway.calculateSets()
-            // return teamHome
-            // else team away
+            for (int x  = 0; x < 5; x++) //For every Set see who had most games
+            {
+                sets.get(x).calculateSetScores();
+                if (sets.get(x).getScoreHome() > sets.get(x).getScoreAway())
+                    this.setScoreHome(this.getScoreHome() + 1);
+                else
+                    this.setScoreAway(this.getScoreAway() + 1);
+
+            }
         }
 
         public boolean isMatchPlayed() {
@@ -62,4 +76,3 @@ import java.util.ArrayList;
             this.scoreAway = scoreAway;
         }
     }
-
