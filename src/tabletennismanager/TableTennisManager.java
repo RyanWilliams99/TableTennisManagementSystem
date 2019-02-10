@@ -28,6 +28,7 @@ public class TableTennisManager extends Application {
         testSeason.displayFixtures();
         testSeason.generateStats();
         testSeason.displayTeamStats();
+        testSeason.displayAMatch(testSeason.fixtures.get(0));
         //launch(args);
     }
 

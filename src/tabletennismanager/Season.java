@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Season {
 
-    private ArrayList<Match> fixtures;
+    public ArrayList<Match> fixtures;
     private ArrayList<Team> teams;
     
     public Season(){
@@ -81,7 +81,7 @@ public class Season {
         // Display team stats in order of matches won
     }
     public void displayAMatch(Match passedMatch) {
-        System.out.println(passedMatch.getTeamHome().getTeamName() + "VS" + passedMatch.getTeamAway().getTeamName());
+        System.out.println(passedMatch.getTeamHome().getTeamName() + " VS " + passedMatch.getTeamAway().getTeamName());
         for (int x = 0; x < passedMatch.getTeamHome().getPlayers().size(); x++)
         {
             System.out.println("Home player " + x + passedMatch.getTeamHome().getPlayers().get(x));
@@ -90,10 +90,7 @@ public class Season {
         {
             System.out.println("Away Player" + x + passedMatch.getTeamAway().getPlayers().get(x));
         }
-
-        // Display Teams
-        // Display players
-        // Display Sets scores
+        System.out.println("Home: " + passedMatch.getTeamHome().getSetsWon() + " Away: " + passedMatch.getTeamAway().getSetsWon());
         // Display match score
     }
     public void displayFixtures() { //Probably doesnt need to display teams and scores like initially thought

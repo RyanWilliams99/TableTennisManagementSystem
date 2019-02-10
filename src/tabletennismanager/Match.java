@@ -12,7 +12,7 @@ import java.util.ArrayList;
     public ArrayList<Set> sets;
 
 
-        public Match(Team teamHome, Team teamAway) {
+        public Match(Team teamHome, Team teamAway) { //When creating new match 2 Must pass two Team objects
             this.teamHome = teamHome;
             this.teamAway = teamAway;
 
