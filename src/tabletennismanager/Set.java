@@ -8,7 +8,7 @@ public class Set {
     private int playerAway;
     private int scoreHome;
     private int scoreAway;
-    private ArrayList<Game> games;
+    public ArrayList<Game> games;
 
     public Set() {
 
