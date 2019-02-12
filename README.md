@@ -7,7 +7,7 @@
 - [ ] calculateMatchesPlayed 
 - [ ] calculateTeamScores
 - [x] generateFixtures
-- [ ] generateStats
+- [x] generateStats
 - [x] displayTeamStats
 - [ ] displayLeaderBoard //view team ranking
 - [ ] displayAMatch

@@ -37,6 +37,7 @@ import java.util.ArrayList;
         }
 
         public boolean isMatchPlayed() {
+
             return matchPlayed;
         }
 

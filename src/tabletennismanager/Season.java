@@ -62,13 +62,11 @@ public class Season {
                     {
                         fixtures.get(x).getTeamHome().setGamesWon(fixtures.get(x).sets.get(y).games.get(z).getHomeScore());
                         fixtures.get(x).getTeamAway().setGamesWon(fixtures.get(x).sets.get(y).games.get(z).getAwayScore());
-
                     }
-
                 }
             }
             else
-                System.out.println("is match played bool not true");
+                System.out.println("Is match played bool not true");
         }
     }
 
@@ -119,7 +117,7 @@ public class Season {
         ArrayList<Integer> ints = new ArrayList<Integer>();
         System.out.println("test");
         try {
-            File file = new File("C:\\Projects\\OneDrive - UWE Bristol (Students)\\Work\\2\\OOSD\\Group Assignment\\UFCFB6-30-2-TableTennisManagementSystem\\TableTennisManager\\testScores.txt");
+            File file = new File("testScores.txt");
             Scanner sc = new Scanner(file);
 
             while(sc.hasNext())
@@ -135,5 +133,10 @@ public class Season {
 
        // System.out.println(ints);
     }
-
+    public void testData()
+    {
+        Team UWE = new Team();
+        this.teams.add(UWE);
+        //UWE.setPlayers("Jim");
+    }
 }

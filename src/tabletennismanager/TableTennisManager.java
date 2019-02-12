@@ -12,6 +12,7 @@ public class TableTennisManager extends Application {
     public static void main(String[] args) throws IOException {
         Season testSeason = new Season();
         //testSeason.loadTestData();
+        testSeason.testData();
 
         Team A = new Team();
         Team B = new Team();
@@ -30,7 +31,7 @@ public class TableTennisManager extends Application {
         testSeason.generateStats();
         testSeason.displayTeamStats();
         testSeason.displayAMatch(testSeason.fixtures.get(0));
-        //launch(args);
+        launch(args);
     }
 
     @Override
