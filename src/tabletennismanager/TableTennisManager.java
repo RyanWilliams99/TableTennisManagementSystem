@@ -11,27 +11,14 @@ public class TableTennisManager extends Application {
 
     public static void main(String[] args) throws IOException {
         Season testSeason = new Season();
-        //testSeason.loadTestData();
-        testSeason.testData();
+        testSeason.addTestData();
 
-        Team A = new Team();
-        Team B = new Team();
-        Team C = new Team();
 
-        A.setTeamName("A");
-        B.setTeamName("B");
-        C.setTeamName("C");
-
-        testSeason.addTeam(A);
-        testSeason.addTeam(B);
-        testSeason.addTeam(C);
-
-        testSeason.generateFixtures();
         testSeason.displayFixtures();
+        testSeason.calculateScores();
         testSeason.generateStats();
         testSeason.displayTeamStats();
-        testSeason.displayAMatch(testSeason.fixtures.get(0));
-        launch(args);
+//        launch(args);
     }
 
     @Override

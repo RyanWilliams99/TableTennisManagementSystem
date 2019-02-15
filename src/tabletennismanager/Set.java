@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Set {
 
-    private int playerHome;
-    private int playerAway;
+    private Team playerHome;
+    private Team playerAway;
     private int scoreHome;
     private int scoreAway;
     public ArrayList<Game> games;
@@ -25,9 +25,14 @@ public class Set {
         for (int x = 0; x < 3; x++)
         {
             if(games.get(x).getHomeScore() > games.get(x).getAwayScore())
+            {
                 this.setScoreHome(this.getScoreHome() + 1);
+
+            }
             else
+            {
                 this.setScoreAway(this.getScoreAway() + 1);
+            }
 
         }
 
@@ -36,20 +41,19 @@ public class Set {
         // else team away
     }
 
-    public int getPlayerHome()
-    {
+    public Team getPlayerHome() {
         return playerHome;
     }
 
-    public void setPlayerHome(int playerHome) {
+    public void setPlayerHome(Team playerHome) {
         this.playerHome = playerHome;
     }
 
-    public int getPlayerAway() {
+    public Team getPlayerAway() {
         return playerAway;
     }
 
-    public void setPlayerAway(int playerAway) {
+    public void setPlayerAway(Team playerAway) {
         this.playerAway = playerAway;
     }
 

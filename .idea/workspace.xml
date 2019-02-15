@@ -2,36 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7e22c1a-254a-40ed-98f9-7d1c5b516251" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nbproject/jfx-impl_backup.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/tabletennismanager/FXMLDocumentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/tabletennismanager/FXMLDocumentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/tabletennismanager/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/tabletennismanager/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/tabletennismanager/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/tabletennismanager/Match.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/tabletennismanager/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/tabletennismanager/Player.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/tabletennismanager/Season.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/tabletennismanager/Season.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/tabletennismanager/Set.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/tabletennismanager/Set.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/tabletennismanager/TableTennisManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/tabletennismanager/TableTennisManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/tabletennismanager/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/tabletennismanager/Team.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test/classes/tabletennismanager/TeamTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test/results/TEST-tabletennismanager.TeamTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/TableTennisManager.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/TableTennisManager.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/TableTennisManager.jar" beforeDir="false" afterPath="$PROJECT_DIR$/dist/TableTennisManager.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/TableTennisManager.jnlp" beforeDir="false" afterPath="$PROJECT_DIR$/dist/TableTennisManager.jnlp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/jfx-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/jfx-impl.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocument.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Match.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Match.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Season.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Season.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Set.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Set.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/TableTennisManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/TableTennisManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Team.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Team.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Match.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Season.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Set.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Team.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+            <state>
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="116">
+              <caret line="163" column="45" selection-start-line="163" selection-start-column="45" selection-end-line="163" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -88,12 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Team.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-              <folding>
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="220">
+              <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -102,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Game.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="154">
-              <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+              <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -110,28 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Match.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-              <folding>
-                <element signature="e#1269#1270#0" expanded="true" />
-                <element signature="e#1323#1324#0" expanded="true" />
-                <element signature="e#1360#1361#0" expanded="true" />
-                <element signature="e#1399#1400#0" expanded="true" />
-                <element signature="e#1449#1450#0" expanded="true" />
-                <element signature="e#1497#1498#0" expanded="true" />
-                <element signature="e#1534#1535#0" expanded="true" />
-                <element signature="e#1573#1574#0" expanded="true" />
-                <element signature="e#1623#1624#0" expanded="true" />
-                <element signature="e#1671#1672#0" expanded="true" />
-                <element signature="e#1708#1709#0" expanded="true" />
-                <element signature="e#1748#1749#0" expanded="true" />
-                <element signature="e#1799#1800#0" expanded="true" />
-                <element signature="e#1849#1850#0" expanded="true" />
-                <element signature="e#1886#1887#0" expanded="true" />
-                <element signature="e#1926#1927#0" expanded="true" />
-                <element signature="e#1977#1978#0" expanded="true" />
-                <element signature="e#2027#2028#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="616">
+              <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -151,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Set.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+            <state relative-caret-position="88">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -160,8 +117,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+            <state relative-caret-position="154">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <folding>
+                <element signature="e#141#142#0" expanded="true" />
+                <element signature="e#174#175#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -175,14 +136,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/tabletennismanager/Player.java" />
-        <option value="$PROJECT_DIR$/src/tabletennismanager/Team.java" />
-        <option value="$PROJECT_DIR$/src/tabletennismanager/Set.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/testScores" />
-        <option value="$PROJECT_DIR$/src/tabletennismanager/Match.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/Game.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/Team.java" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/Set.java" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/Match.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/Season.java" />
       </list>
     </option>
@@ -228,14 +189,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549969024544" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550065585659" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -298,18 +259,20 @@
       <workItem from="1549898521290" duration="241000" />
       <workItem from="1549898866802" duration="90000" />
       <workItem from="1549899226317" duration="29000" />
-      <workItem from="1549963100385" duration="5652000" />
+      <workItem from="1549963100385" duration="5799000" />
+      <workItem from="1549983281043" duration="6072000" />
+      <workItem from="1550063944704" duration="1643000" />
+      <workItem from="1550233272344" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27011000" />
+    <option name="totallyTimeSpent" value="34882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1590604" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16442953" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -317,8 +280,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" x="469" y="351" width="597" height="121" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.43336946" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" x="469" y="352" width="597" height="121" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.43336946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.032502707" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -328,7 +291,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32719547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -384,17 +347,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Set.java">
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Player.java">
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+        <state relative-caret-position="396">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Team.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Match.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="28" column="37" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -408,80 +403,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Team.java">
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Set.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-          <folding>
-            <element signature="e#1103#1104#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-          </folding>
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Match.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
           <folding>
-            <element signature="e#1269#1270#0" expanded="true" />
-            <element signature="e#1323#1324#0" expanded="true" />
-            <element signature="e#1360#1361#0" expanded="true" />
-            <element signature="e#1399#1400#0" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1534#1535#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1623#1624#0" expanded="true" />
-            <element signature="e#1671#1672#0" expanded="true" />
-            <element signature="e#1708#1709#0" expanded="true" />
-            <element signature="e#1748#1749#0" expanded="true" />
-            <element signature="e#1799#1800#0" expanded="true" />
-            <element signature="e#1849#1850#0" expanded="true" />
-            <element signature="e#1886#1887#0" expanded="true" />
-            <element signature="e#1926#1927#0" expanded="true" />
-            <element signature="e#1977#1978#0" expanded="true" />
-            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="37" lean-forward="true" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="116">
+          <caret line="163" column="45" selection-start-line="163" selection-start-column="45" selection-end-line="163" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

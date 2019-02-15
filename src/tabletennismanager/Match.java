@@ -17,11 +17,21 @@ import java.util.ArrayList;
             this.teamAway = teamAway;
 
             sets = new ArrayList<>(2);
-            System.out.println("Creating five new set objects");
+            //System.out.println("Creating five new set objects");
             for(int x  = 0;x < 5; x++) //Generate 5 set objects
             {
                 sets.add(new Set());
             }
+        }
+
+        public Match(Team teamHome, Team teamAway, Set set1, Set set2, Set set3, Set set4, Set set5){
+            this.teamHome = teamHome;
+            this.teamAway = teamAway;
+            sets.add(set1);
+            sets.add(set2);
+            sets.add(set3);
+            sets.add(set4);
+            sets.add(set5);
         }
 
         public void calculateMatchScores() {
@@ -29,9 +39,16 @@ import java.util.ArrayList;
             {
                 sets.get(x).calculateSetScores();
                 if (sets.get(x).getScoreHome() > sets.get(x).getScoreAway())
+                {
+                    System.out.println("HOME TEAM WON A GAME SET");
                     this.setScoreHome(this.getScoreHome() + 1);
+                }
                 else
+                    {
+                    System.out.println("AWAY TEAM WON A GAME SET");
                     this.setScoreAway(this.getScoreAway() + 1);
+                }
+
 
             }
         }
