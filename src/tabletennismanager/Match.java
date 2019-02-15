@@ -24,33 +24,26 @@ import java.util.ArrayList;
             }
         }
 
-        public Match(Team teamHome, Team teamAway, Set set1, Set set2, Set set3, Set set4, Set set5){
-            this.teamHome = teamHome;
-            this.teamAway = teamAway;
-            sets.add(set1);
-            sets.add(set2);
-            sets.add(set3);
-            sets.add(set4);
-            sets.add(set5);
-        }
 
         public void calculateMatchScores() {
+            System.out.println("Calculating match scores for " + this.getTeamHome().getTeamName() + " VS " + this.getTeamAway().getTeamName());
             for (int x  = 0; x < 5; x++) //For every Set see who had most games
             {
+
                 sets.get(x).calculateSetScores();
+                System.out.println("About to compare home team SETS vs away team SETS " + sets.get(x).getScoreHome()  + " : " +  sets.get(x).getScoreAway());
                 if (sets.get(x).getScoreHome() > sets.get(x).getScoreAway())
                 {
-                    System.out.println("HOME TEAM WON A GAME SET");
+
                     this.setScoreHome(this.getScoreHome() + 1);
                 }
                 else
-                    {
-                    System.out.println("AWAY TEAM WON A GAME SET");
+                {
                     this.setScoreAway(this.getScoreAway() + 1);
                 }
 
-
             }
+            System.out.println("SO HOME SETS WON " + this.getScoreHome() + " AWAY SETS WON " + this.getScoreAway());
         }
 
         public boolean isMatchPlayed() {

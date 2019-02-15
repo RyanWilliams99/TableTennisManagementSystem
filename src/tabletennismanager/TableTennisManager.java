@@ -18,7 +18,7 @@ public class TableTennisManager extends Application {
         testSeason.calculateScores();
         testSeason.generateStats();
         testSeason.displayTeamStats();
-//        launch(args);
+        //launch(args);
     }
 
     @Override

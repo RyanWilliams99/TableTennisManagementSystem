@@ -53,20 +53,29 @@ public class Season {
         {
             if (fixtures.get(x).isMatchPlayed()) //If Match is played
             {
-                fixtures.get(x).calculateMatchScores();
+                System.out.println("Generate Stats");
+                //fixtures.get(x).calculateMatchScores();
                 fixtures.get(x).getTeamHome().setSetsWon(fixtures.get(x).getScoreHome());
                 fixtures.get(x).getTeamAway().setSetsWon(fixtures.get(x).getScoreAway());
                 for(int y = 0; y < 5; y ++)
                 {
                     for(int z = 0; z < 3; z++)
                     {
-                        fixtures.get(x).getTeamHome().setGamesWon(fixtures.get(x).sets.get(y).games.get(z).getHomeScore());
-                        fixtures.get(x).getTeamAway().setGamesWon(fixtures.get(x).sets.get(y).games.get(z).getAwayScore());
+                        if (fixtures.get(x).sets.get(y).games.get(z).getHomeScore() > fixtures.get(x).sets.get(y).games.get(z).getAwayScore())
+                        {
+                            fixtures.get(x).getTeamHome().setGamesWon(fixtures.get(x).getTeamHome().getGamesWon() + 1);
+                        }
+                        else
+                            fixtures.get(x).getTeamAway().setGamesWon(fixtures.get(x).getTeamAway().getGamesWon() + 1);
+
                     }
                 }
             }
             else
-                System.out.println("Is match played bool not true");
+            {
+                //System.out.println("Is match played bool not true");
+            }
+
         }
     }
 
@@ -94,7 +103,7 @@ public class Season {
         }
         for (int x = 0; x < passedMatch.getTeamAway().getPlayers().size(); x++)
         {
-            System.out.println("Away Player" + x + passedMatch.getTeamAway().getPlayers().get(x));
+            System.out.println("Away Player " + x + passedMatch.getTeamAway().getPlayers().get(x));
         }
         System.out.println("Home: " + passedMatch.getTeamHome().getSetsWon() + " Away: " + passedMatch.getTeamAway().getSetsWon());
         // Display match score
@@ -106,6 +115,7 @@ public class Season {
         {
             System.out.println(fixtures.get(x).getTeamHome().getTeamName() + " VS " + fixtures.get(x).getTeamAway().getTeamName());
         }
+        System.out.println("\n");
     }
 
     public void autoUpdateThread() {
@@ -136,9 +146,10 @@ public class Season {
 
     public void calculateScores()
     {
-        for (int x  = 0;x < fixtures.size(); x++)
+        for (int x  = 0; x < fixtures.size(); x++)
         {
-            fixtures.get(x).calculateMatchScores();
+            if(fixtures.get(x).isMatchPlayed())
+                fixtures.get(x).calculateMatchScores();
         }
     }
 
@@ -168,21 +179,29 @@ public class Season {
 
         this.generateFixtures();
 
-        fixtures.add(new Match(filton, uwe, new ))
-        fixtures.get(7).sets.get(0).games.get(0).setHomeScore(11);
-        fixtures.get(7).sets.get(0).games.get(0).setAwayScore(2);
-        fixtures.get(7).sets.get(0).games.get(1).setHomeScore(3);
-        fixtures.get(7).sets.get(0).games.get(1).setAwayScore(11);
-        fixtures.get(7).sets.get(0).games.get(2).setHomeScore(11);
-        fixtures.get(7).sets.get(0).games.get(2).setAwayScore(5);
-        fixtures.get(7).setMatchPlayed(true);
+        for(int x = 0; x < fixtures.size(); x++)
+        {
+            if (fixtures.get(x).getTeamHome() == filton && fixtures.get(x).getTeamAway() == uwe)
+            {
+                System.out.println("Filton vs uwe setting scores manually");
+                fixtures.get(x).sets.get(0).addSetScoresAndPlayers(11,2,3,11,11,5);
+                fixtures.get(x).sets.get(1).addSetScoresAndPlayers(1,11,5,11,11,6);
+                fixtures.get(x).sets.get(2).addSetScoresAndPlayers(11,9,11,1,11,1);
+                fixtures.get(x).sets.get(3).addSetScoresAndPlayers(11,2,3,11,11,5);
+                fixtures.get(x).sets.get(4).addSetScoresAndPlayers(0,11,1,11,2,11);
+                fixtures.get(x).setMatchPlayed(true);
+            }
 
-//        for(int x = 0; x < fixtures.size(); x++)
-//        {
-//            if (fixtures.get(x).getTeamHome() == filton && fixtures.get(x).getTeamAway() == uwe)
-//            {
-//                System.out.println("Filton vs uwe setting scores manually");
-//            }
-//        }
+            if (fixtures.get(x).getTeamHome() == uwe && fixtures.get(x).getTeamAway() == page)
+            {
+                System.out.println("Filton vs uwe setting scores manually");
+                fixtures.get(x).sets.get(0).addSetScoresAndPlayers(11,2,3,11,11,5);
+                fixtures.get(x).sets.get(1).addSetScoresAndPlayers(11,1,5,11,11,6);
+                fixtures.get(x).sets.get(2).addSetScoresAndPlayers(11,9,11,1,11,1);
+                fixtures.get(x).sets.get(3).addSetScoresAndPlayers(11,2,3,11,11,5);
+                fixtures.get(x).sets.get(4).addSetScoresAndPlayers(0,11,1,11,2,11);
+                fixtures.get(x).setMatchPlayed(true);
+            }
+        }
     }
 }
