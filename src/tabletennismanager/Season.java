@@ -1,8 +1,6 @@
 package tabletennismanager;
 
 import java.io.*;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -54,28 +52,33 @@ public class Season {
             if (fixtures.get(x).isMatchPlayed()) //If Match is played
             {
                 System.out.println("Generate Stats");
-                //fixtures.get(x).calculateMatchScores();
+                fixtures.get(x).getTeamHome().setMatchesPlayed(fixtures.get(x).getTeamHome().getMatchesPlayed() + 1);
+                fixtures.get(x).getTeamAway().setMatchesPlayed(fixtures.get(x).getTeamAway().getMatchesPlayed() + 1);
+                if (fixtures.get(x).getScoreHome() > fixtures.get(x).getScoreAway())
+                    fixtures.get(x).getTeamHome().setMatchesWon(fixtures.get(x).getTeamHome().getMatchesWon() + 1);
+                else
+                    fixtures.get(x).getTeamAway().setMatchesWon(fixtures.get(x).getTeamAway().getMatchesWon() + 1);
+
+                fixtures.get(x).getTeamHome().setSetsPlayed(fixtures.get(x).getTeamHome().getMatchesPlayed() * 5);
+                fixtures.get(x).getTeamAway().setSetsPlayed(fixtures.get(x).getTeamAway().getMatchesPlayed() * 5);
                 fixtures.get(x).getTeamHome().setSetsWon(fixtures.get(x).getScoreHome());
                 fixtures.get(x).getTeamAway().setSetsWon(fixtures.get(x).getScoreAway());
-                for(int y = 0; y < 5; y ++)
-                {
-                    for(int z = 0; z < 3; z++)
-                    {
-                        if (fixtures.get(x).sets.get(y).games.get(z).getHomeScore() > fixtures.get(x).sets.get(y).games.get(z).getAwayScore())
-                        {
+
+                fixtures.get(x).getTeamHome().setGamesPlayed(fixtures.get(x).getTeamHome().getSetsPlayed() * 3);
+                fixtures.get(x).getTeamAway().setGamesPlayed(fixtures.get(x).getTeamAway().getSetsPlayed() * 3);
+                for (int y = 0; y < 5; y++) {
+                    for (int z = 0; z < 3; z++) {
+                        if (fixtures.get(x).sets.get(y).games.get(z).getHomeScore() > fixtures.get(x).sets.get(y).games.get(z).getAwayScore()) {
                             fixtures.get(x).getTeamHome().setGamesWon(fixtures.get(x).getTeamHome().getGamesWon() + 1);
-                        }
-                        else
+                        } else
                             fixtures.get(x).getTeamAway().setGamesWon(fixtures.get(x).getTeamAway().getGamesWon() + 1);
 
                     }
                 }
-            }
-            else
-            {
-                //System.out.println("Is match played bool not true");
-            }
+                fixtures.get(x).getTeamHome().setLostValues();
+                fixtures.get(x).getTeamAway().setLostValues();
 
+            }
         }
     }
 
@@ -122,27 +125,6 @@ public class Season {
         // Call generate fixtures every 100 seconds
     }
 
-    public void loadTestData() throws IOException {
-        // pass the path to the file as a parameter
-        ArrayList<Integer> ints = new ArrayList<Integer>();
-        System.out.println("test");
-        try {
-            File file = new File("testScores.txt");
-            Scanner sc = new Scanner(file);
-
-            while(sc.hasNext())
-            {
-                sc.useDelimiter(":");
-                System.out.println(sc.next());
-
-                //ints.add(Integer.parseInt(sc.next()));
-            }
-        } catch(IOException sc) {
-            sc.printStackTrace();
-        }
-
-       // System.out.println(ints);
-    }
 
     public void calculateScores()
     {

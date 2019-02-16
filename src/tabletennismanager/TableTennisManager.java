@@ -5,11 +5,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import java.io.*;
 
 public class TableTennisManager extends Application {
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args){
         Season testSeason = new Season();
         testSeason.addTestData();
 

@@ -42,22 +42,19 @@ public class Set {
             System.out.println("About to compare home team vs away team score GAMES " + games.get(x).getHomeScore() + " : " + games.get(x).getAwayScore());
             if(games.get(x).getHomeScore() > games.get(x).getAwayScore())
             {
-                System.out.println("Before Home Score " + this.getScoreHome());
+                //System.out.println("Before Home Score " + this.getScoreHome());
                 this.setScoreHome(this.getScoreHome() + 1);
-                System.out.println("After Home Score " + this.getScoreHome());
+                //System.out.println("After Home Score " + this.getScoreHome());
             }
             else
             {
-                System.out.println("Before Away Score " + this.getScoreAway());
+                //System.out.println("Before Away Score " + this.getScoreAway());
                 this.setScoreAway(this.getScoreAway() + 1);
-                System.out.println("After Away Score " + this.getScoreAway());
+                //System.out.println("After Away Score " + this.getScoreAway());
             }
 
         }
 
-        // if teamHome.calculateGames > teamAway.calculateGames()
-        // return teamHome
-        // else team away
     }
 
     public Player getPlayerHome() {

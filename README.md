@@ -4,18 +4,18 @@
 - [x] addPlayer // Add to team
 - [x] addMatch // Add to season
 - [ ] updateMatch // Modify existing score sheet
-- [ ] calculateMatchesPlayed 
-- [ ] calculateTeamScores
+- [x] calculateMatchesPlayed 
+- [x] calculateTeamScores
 - [x] generateFixtures
 - [x] generateStats
 - [x] displayTeamStats
 - [ ] displayLeaderBoard //view team ranking
-- [ ] displayAMatch
-- [ ] displayFixtures
+- [x] displayAMatch
+- [x] displayFixtures
 - [ ] autoUpdate
-- [ ] calculateMatchScores
-- [ ] calculateSetScores
-- [ ] calculateGameScores
+- [x] calculateMatchScores
+- [x] calculateSetScores
+- [x] calculateGameScores
 - [ ] Edit the use case diagram
 - [ ] Produce 3 x sequence diagrams
 - [ ] Outline how we agile developed

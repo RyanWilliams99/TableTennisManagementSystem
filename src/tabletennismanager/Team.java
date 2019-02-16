@@ -26,6 +26,13 @@ import java.util.ArrayList;
             players.add(player);
         }
 
+        public void setLostValues()
+        {
+            this.setMatchesLost(this.getMatchesPlayed() - this.getMatchesWon());
+            this.setSetsLost(this.getSetsPlayed() - this.getSetsWon());
+            this.setGamesLost(this.getGamesPlayed() - this.getGamesWon());
+        }
+
         public String getTeamName() {
             return teamName;
         }
