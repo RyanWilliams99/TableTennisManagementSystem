@@ -3,6 +3,7 @@ package tabletennismanager;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Season {
 
@@ -94,6 +95,14 @@ public class Season {
         }
     }
     public void displayLeaderBoard() {
+        int tempHighest = 0;
+        for (int x = 0; x < teams.size(); x++)
+        {
+            if(teams.get(x).getMatchesWon() > tempHighest)
+
+        }
+
+
         // Generate stats
         // Display team stats in order of matches won
     }

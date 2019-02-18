@@ -17,6 +17,7 @@ public class TableTennisManager extends Application {
         testSeason.calculateScores();
         testSeason.generateStats();
         testSeason.displayTeamStats();
+        testSeason.displayLeaderBoard();
         //launch(args);
     }
 
