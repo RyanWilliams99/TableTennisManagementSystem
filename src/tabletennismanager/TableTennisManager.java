@@ -9,16 +9,16 @@ import javafx.stage.Stage;
 public class TableTennisManager extends Application {
 
     public static void main(String[] args){
-        Season testSeason = new Season();
-        testSeason.addTestData();
 
-
-        testSeason.displayFixtures();
-        testSeason.calculateScores();
-        testSeason.generateStats();
-        testSeason.displayTeamStats();
-        testSeason.displayLeaderBoard();
-        //launch(args);
+//        testSeason.addTestData();
+//
+//
+//        testSeason.displayFixtures();
+//        testSeason.calculateScores();
+//        testSeason.generateStats();
+//        testSeason.displayTeamStats();
+//        testSeason.displayLeaderBoard();
+        launch(args);
     }
 
     @Override

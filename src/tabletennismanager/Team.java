@@ -17,7 +17,8 @@ import java.util.ArrayList;
 
         private ArrayList<Player> players; // Should be ArrayList
 
-        public Team() {
+        public Team(String teamName) {
+            this.setTeamName(teamName);
             players = new ArrayList<Player>(2);
         }
 

@@ -98,7 +98,7 @@ public class Season {
         int tempHighest = 0;
         for (int x = 0; x < teams.size(); x++)
         {
-            if(teams.get(x).getMatchesWon() > tempHighest)
+            //if(teams.get(x).getMatchesWon() > tempHighest)
 
         }
 
@@ -146,14 +146,10 @@ public class Season {
 
     public void addTestData()
     {
-        Team uwe = new Team();
-        Team page = new Team();
-        Team filton = new Team();
-        Team kcc = new Team();
-        uwe.setTeamName("uwe");
-        page.setTeamName("page");
-        filton.setTeamName("filton");
-        kcc.setTeamName("kcc");
+        Team uwe = new Team("uwe");
+        Team page = new Team("page");
+        Team filton = new Team("filton");
+        Team kcc = new Team("kcc");
         this.addTeam(uwe);
         this.addTeam(page);
         this.addTeam(filton);

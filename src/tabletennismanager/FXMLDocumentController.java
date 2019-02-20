@@ -1,36 +1,109 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package tabletennismanager;
 
-import java.net.URL;
-import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
-import javafx.scene.control.Label;
+import javafx.scene.control.Button;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
+import javafx.scene.control.TextField;
 
-/**
- *
- * @author d3-worgan
- */
-public class FXMLDocumentController implements Initializable {
-    
+public class FXMLDocumentController {
+
+    Season Season = new Season();
+
+
+
     @FXML
-    private Label label;
-    
+    private TextField addTeamTextField;
+
     @FXML
-    private void handleButtonAction(ActionEvent event) {
-        System.out.println("You clicked me!");
-        label.setText("Hello World!");
+    private Button addTeam;
+
+    @FXML
+    private TextField playerNameTextField;
+
+    @FXML
+    private MenuButton selectTeam;
+
+    @FXML
+    private Button registerPlayer;
+
+    @FXML
+    private Button generateFixtures;
+
+    @FXML
+    private Button generateTeamStats;
+
+    @FXML
+    private Button viewFixturesResults;
+
+    @FXML
+    private Button showStats;
+
+    @FXML
+    private Button showRankingTable;
+
+    @FXML
+    private Button viewMatchScores;
+
+    @FXML
+    private Button modifyScoresheet;
+
+    @FXML
+    private MenuButton homeTeam;
+
+    @FXML
+    void addTeamHandle(ActionEvent event) {
+        System.out.println("AddTeamPressed");
+        String temp = addTeamTextField.getText();
+        new Team(temp);
     }
-    
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-        // TODO
-    }    
-    
+
+    @FXML
+    void selectTeamHandle(ActionEvent event) {
+        new MenuItem();
+    }
+
+    @FXML
+    void generateFixturesHandle(ActionEvent event) {
+        Season.generateFixtures();
+
+    }
+
+    @FXML
+    void generateTeamStatsHandle(ActionEvent event) {
+        Season.generateStats();
+
+    }
+
+    @FXML
+    void modifyScoresheetHandle(ActionEvent event) {
+
+    }
+
+    @FXML
+    void registerPlayerHandle(ActionEvent event) {
+
+    }
+
+    @FXML
+    void showRankingTableHandle(ActionEvent event) {
+
+    }
+
+    @FXML
+    void showStatsHandle(ActionEvent event) {
+
+    }
+
+    @FXML
+    void viewFixturesResultsHandle(ActionEvent event) {
+
+    }
+
+    @FXML
+    void viewMatchScoresHandle(ActionEvent event) {
+
+    }
+
 }
