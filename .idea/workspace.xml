@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d7e22c1a-254a-40ed-98f9-7d1c5b516251" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocument.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TableTennisManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TableTennisManager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/TableTennisManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/TableTennisManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Season.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Team.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,18 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -46,12 +28,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+            <state relative-caret-position="484">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1131#1132#0" expanded="true" />
-                <element signature="e#1156#1157#0" expanded="true" />
+                <element signature="e#1165#1166#0" expanded="true" />
+                <element signature="e#1194#1195#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -60,8 +42,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
+            <state relative-caret-position="88">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/SeasonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-352">
+              <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#4496#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,7 +64,7 @@
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Team.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="242">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#1074#1075#0" expanded="true" />
                 <element signature="e#1113#1114#0" expanded="true" />
@@ -139,6 +133,13 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>text</find>
@@ -160,6 +161,9 @@
         <option value="$PROJECT_DIR$/src/tabletennismanager/Team.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/Season.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" />
+        <option value="$PROJECT_DIR$/test/tabletennismanager/SeasonTest.java" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/SeasonTest.java" />
+        <option value="$PROJECT_DIR$/src/test/SeasonTest.java" />
       </list>
     </option>
   </component>
@@ -196,11 +200,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tabletennismanager" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="TableTennisManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="TableTennisManager" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -209,9 +208,16 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550679335829" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550680003202" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/SceneBuilder/SceneBuilder.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -220,6 +226,18 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="test" />
+      <recent name="tabletennismanager" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\OneDrive - UWE Bristol (Students)\Work\2\OOSD\Group Assignment\UFCFB6-30-2-TableTennisManagementSystem\TableTennisManager\test\tabletennismanager" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -233,7 +251,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.TableTennisManager">
     <configuration name="TableTennisManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="1.8.0_201" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -249,9 +267,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SeasonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TableTennisManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tabletennismanager.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tabletennismanager" />
+      <option name="MAIN_CLASS_NAME" value="tabletennismanager.SeasonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TableTennisManager" />
+        <item itemvalue="JUnit.SeasonTest" />
       </list>
     </recent_temporary>
   </component>
@@ -283,18 +317,18 @@
       <workItem from="1550486198216" duration="2345000" />
       <workItem from="1550660729711" duration="554000" />
       <workItem from="1550667265541" duration="1933000" />
-      <workItem from="1550674942236" duration="3016000" />
+      <workItem from="1550674942236" duration="3718000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52615000" />
+    <option name="totallyTimeSpent" value="53317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16151386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16151386" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -303,7 +337,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" x="2276" y="286" width="597" height="121" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.43336946" />
+      <window_info anchor="bottom" x="1920" y="23" width="1600" height="837" id="Run" maximized="true" order="2" type="WINDOWED" visible="true" weight="0.43336946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.032502707" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,7 +347,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.04225352" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.27302274" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -435,17 +469,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="145" lean-forward="true" selection-start-line="145" selection-end-line="145" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Team.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="e#1074#1075#0" expanded="true" />
             <element signature="e#1113#1114#0" expanded="true" />
@@ -453,14 +480,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/tabletennismanager/SeasonTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tabletennismanager/SeasonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/SeasonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-352">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#4496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="63" column="5" lean-forward="true" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
+        <state relative-caret-position="484">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1131#1132#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1165#1166#0" expanded="true" />
+            <element signature="e#1194#1195#0" expanded="true" />
           </folding>
         </state>
       </provider>
