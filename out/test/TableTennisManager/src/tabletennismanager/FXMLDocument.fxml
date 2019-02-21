@@ -8,13 +8,14 @@
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="137.0" prefWidth="71.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabletennismanager.FXMLDocumentController">
+<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabletennismanager.FXMLDocumentController">
    <children>
       <VBox layoutX="2.0" layoutY="1.0" prefHeight="646.0" prefWidth="1068.0">
          <children>
@@ -37,12 +38,7 @@
                                        <children>
                                           <TextField fx:id="playerNameTextField" layoutX="223.0" layoutY="16.0" promptText="Player Name" AnchorPane.topAnchor="16.0" />
                                           <Text fontSmoothingType="LCD" layoutX="33.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the name of the new Player :" wrappingWidth="196.271484375" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="20.0" />
-                                          <MenuButton fx:id="selectTeam" layoutX="399.0" layoutY="16.0" mnemonicParsing="false" onAction="#selectTeamHandle" prefHeight="25.0" prefWidth="149.0" text="Select Team" textAlignment="CENTER" AnchorPane.topAnchor="16.0">
-                                            <items>
-                                              <MenuItem mnemonicParsing="false" text="Action 1" />
-                                              <MenuItem mnemonicParsing="false" text="Action 2" />
-                                            </items>
-                                          </MenuButton>
+                                          <MenuButton fx:id="selectTeam" layoutX="399.0" layoutY="16.0" mnemonicParsing="false" onAction="#selectTeamHandle" prefHeight="25.0" prefWidth="149.0" text="Select Team" textAlignment="CENTER" AnchorPane.topAnchor="16.0" />
                                           <Button fx:id="registerPlayer" layoutX="579.0" layoutY="81.0" mnemonicParsing="false" onAction="#registerPlayerHandle" prefHeight="32.0" prefWidth="147.0" text="Register Player" textAlignment="CENTER" />
                                        </children>
                                     </AnchorPane>
@@ -57,7 +53,7 @@
                                           <Button fx:id="generateFixtures" layoutX="580.0" layoutY="62.0" mnemonicParsing="false" onAction="#generateFixturesHandle" prefHeight="30.0" prefWidth="143.0" text="Generate Fixtures" />
                                        </children>
                                     </AnchorPane>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="139.0" prefWidth="280.0">
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="145.0" prefWidth="1067.0">
                                        <children>
                                           <Text layoutX="27.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The stats report will be generated automatically evey 90 seconds." wrappingWidth="354.193359375" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="15.0" />
                                           <Text layoutX="14.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can also geranate it by clicking this button." />
@@ -81,6 +77,7 @@
                               <Button fx:id="showStats" layoutX="14.0" layoutY="103.0" mnemonicParsing="false" onAction="#showStatsHandle" text="Show all team stats" />
                               <Button fx:id="showRankingTable" layoutX="21.0" layoutY="144.0" mnemonicParsing="false" onAction="#showRankingTableHandle" text="Show Ranking Table" AnchorPane.leftAnchor="14.0" />
                               <Button fx:id="viewMatchScores" layoutX="14.0" layoutY="190.0" mnemonicParsing="false" onAction="#viewMatchScoresHandle" text="View match Scores" />
+                              <TableView fx:id="viewingTable" layoutX="233.0" layoutY="44.0" prefHeight="531.0" prefWidth="792.0" />
                            </children></AnchorPane>
                   </content>
                 </Tab>
