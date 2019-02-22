@@ -43,6 +43,7 @@ public class Season {
     }
 
     public void generateFixtures() {
+        fixtures.clear();
         for(int x = 0; x < teams.size(); x++)
         {
             for(int y = x + 1; y < teams.size(); y++)

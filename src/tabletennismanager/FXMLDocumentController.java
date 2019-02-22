@@ -126,20 +126,50 @@ public class FXMLDocumentController {
     @FXML
     void showRankingTableHandle(ActionEvent event) {
 
-    }
-
-    @FXML
-    void showStatsHandle(ActionEvent event) {
-        Season.displayTeamStats();
-        Season.displayFixtures();
         viewingTable.getColumns().clear();
-
 
         TableColumn<FixtureAndResult, String> teamName = new TableColumn<>("Team Name");
         teamName.setCellValueFactory(new PropertyValueFactory<>("teamName"));
 
+        TableColumn<FixtureAndResult, String> matchesPlayed = new TableColumn<>("Played");
+        matchesPlayed.setCellValueFactory(new PropertyValueFactory<>("matchesPlayed"));
+
+        TableColumn<FixtureAndResult, String> matchesWon = new TableColumn<>("Won");
+        matchesWon.setCellValueFactory(new PropertyValueFactory<>("matchesWon"));
+        matchesWon.setSortType(TableColumn.SortType.DESCENDING);
+
+        TableColumn<FixtureAndResult, String> matchesLost = new TableColumn<>("Lost");
+        matchesLost.setCellValueFactory(new PropertyValueFactory<>("matchesLost"));
+
+
         viewingTable.setItems(getStats());
-        viewingTable.getColumns().addAll(teamName);
+        viewingTable.getColumns().addAll(teamName, matchesPlayed, matchesWon);
+        viewingTable.getSortOrder().add(matchesWon);
+    }
+
+    @FXML
+    void showStatsHandle(ActionEvent event) {
+        viewingTable.getColumns().clear();
+        Season.generateStats();
+        Season.generateStats();
+        Season.generateStats();
+        Season.generateStats();
+        Season.getTeams().get(3).setMatchesWon(15);
+
+        TableColumn<FixtureAndResult, String> teamName = new TableColumn<>("Team Name");
+        teamName.setCellValueFactory(new PropertyValueFactory<>("teamName"));
+
+        TableColumn<FixtureAndResult, String> matchesPlayed = new TableColumn<>("Matches Played");
+        matchesPlayed.setCellValueFactory(new PropertyValueFactory<>("matchesPlayed"));
+
+        TableColumn<FixtureAndResult, String> matchesWon = new TableColumn<>("Matches Won");
+        matchesWon.setCellValueFactory(new PropertyValueFactory<>("matchesWon"));
+
+        TableColumn<FixtureAndResult, String> setsWon = new TableColumn<>("Sets Won");
+        setsWon.setCellValueFactory(new PropertyValueFactory<>("setsWon"));
+
+        viewingTable.setItems(getStats());
+        viewingTable.getColumns().addAll(teamName, matchesPlayed, matchesWon, setsWon);
     }
 
     @FXML
