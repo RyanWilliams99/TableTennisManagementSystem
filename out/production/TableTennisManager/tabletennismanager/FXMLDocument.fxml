@@ -2,6 +2,7 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Separator?>
@@ -14,6 +15,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
 
 <AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabletennismanager.FXMLDocumentController">
    <children>
@@ -30,8 +32,8 @@
                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="42.0" prefWidth="797.0">
                                        <children>
                                           <Text layoutX="34.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter  a new team :" wrappingWidth="117.38671875" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="20.0" />
-                                          <TextField fx:id="addTeamTextField" layoutX="122.0" layoutY="15.0" promptText="Team name" AnchorPane.leftAnchor="122.0" AnchorPane.topAnchor="15.0" />
-                                          <Button fx:id="addTeam" layoutX="312.0" layoutY="16.0" mnemonicParsing="false" onAction="#addTeamHandle" prefHeight="23.0" prefWidth="93.0" text="Add Team" AnchorPane.topAnchor="16.0" />
+                                          <TextField fx:id="addTeamTextField" layoutX="144.0" layoutY="16.0" promptText="Team name" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="16.0" />
+                                          <Button fx:id="addTeam" layoutX="200.0" layoutY="58.0" mnemonicParsing="false" onAction="#addTeamHandle" prefHeight="23.0" prefWidth="93.0" text="Add Team" AnchorPane.topAnchor="58.0" />
                                        </children>
                                     </AnchorPane>
                                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="797.0">
@@ -46,9 +48,9 @@
                               </SplitPane>
                               <SplitPane dividerPositions="0.5" layoutY="309.0" orientation="VERTICAL" prefHeight="314.0" prefWidth="1070.0">
                                 <items>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="108.0" prefWidth="1068.0">
                                        <children>
-                                          <Text layoutX="22.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This will generate a match between all Teams." wrappingWidth="263.4765625" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="15.0" />
+                                          <Text layoutX="22.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This will generate a match between all teams." wrappingWidth="263.4765625" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="15.0" />
                                           <Text layoutX="22.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning: All pre-existing match information will be removed." AnchorPane.leftAnchor="14.0" />
                                           <Button fx:id="generateFixtures" layoutX="580.0" layoutY="62.0" mnemonicParsing="false" onAction="#generateFixturesHandle" prefHeight="30.0" prefWidth="143.0" text="Generate Fixtures" />
                                        </children>
@@ -73,11 +75,17 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Button fx:id="viewFixturesResults" layoutX="14.0" layoutY="62.0" mnemonicParsing="false" onAction="#viewFixturesResultsHandle" text=" View fixture and result chart" />
-                              <Button fx:id="showStats" layoutX="14.0" layoutY="103.0" mnemonicParsing="false" onAction="#showStatsHandle" text="Show all team stats" />
-                              <Button fx:id="showRankingTable" layoutX="21.0" layoutY="144.0" mnemonicParsing="false" onAction="#showRankingTableHandle" text="Show Ranking Table" AnchorPane.leftAnchor="14.0" />
-                              <Button fx:id="viewMatchScores" layoutX="14.0" layoutY="190.0" mnemonicParsing="false" onAction="#viewMatchScoresHandle" text="View match Scores" />
-                              <TableView fx:id="viewingTable" layoutX="233.0" layoutY="44.0" prefHeight="531.0" prefWidth="792.0" />
+                              <Button fx:id="viewFixturesResults" layoutX="20.0" layoutY="80.0" mnemonicParsing="false" onAction="#viewFixturesResultsHandle" prefWidth="200.0" text=" View fixture and result chart" textAlignment="CENTER" />
+                              <Button fx:id="showStats" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#showStatsHandle" prefWidth="200.0" text="Show all team stats" textAlignment="CENTER" />
+                              <Button fx:id="showRankingTable" layoutX="20.0" layoutY="160.0" mnemonicParsing="false" onAction="#showRankingTableHandle" prefWidth="200.0" text="Show Ranking Table" textAlignment="CENTER" AnchorPane.leftAnchor="20.0" />
+                              <Button fx:id="viewMatchScores" layoutX="20.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewMatchScoresHandle" prefHeight="25.0" prefWidth="200.0" text="View Match" textAlignment="CENTER" />
+                              <TableView fx:id="viewingTable" layoutX="242.0" layoutY="80.0" prefHeight="503.0" prefWidth="800.0" />
+                              <TextFlow layoutX="321.0" layoutY="-67.0" prefHeight="200.0" prefWidth="200.0" />
+                              <Label layoutX="20.0" layoutY="20.0" prefHeight="30.0" prefWidth="200.0" text="Viewing Page" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
                            </children></AnchorPane>
                   </content>
                 </Tab>

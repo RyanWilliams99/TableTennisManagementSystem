@@ -23,7 +23,7 @@ import java.util.ArrayList;
         }
 
         public void addPlayer(Player player) {
-            System.out.println("Adding Player " + player.getPlayerName() + " to Team " + this.getTeamName());
+            //System.out.println("Adding Player " + player.getPlayerName() + " to Team " + this.getTeamName());
             players.add(player);
         }
 
@@ -33,6 +33,20 @@ import java.util.ArrayList;
             this.setSetsLost(this.getSetsPlayed() - this.getSetsWon());
             this.setGamesLost(this.getGamesPlayed() - this.getGamesWon());
         }
+
+        public void resetStats()
+        {
+            this.setMatchesPlayed(0);
+            this.setMatchesWon(0);
+            this.setMatchesLost(0);
+            this.setSetsPlayed(0);
+            this.setSetsWon(0);
+            this.setSetsLost(0);
+            this.setGamesPlayed(0);
+            this.setGamesWon(0);
+            this.setGamesLost(0);
+        }
+
 
         public String getTeamName() {
             return teamName;

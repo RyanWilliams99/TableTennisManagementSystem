@@ -65,8 +65,14 @@ public class Season {
 
     public void generateStats() {
 
+        for (int x = 0; x < fixtures.size(); x++)
+        {
+            fixtures.get(x).getTeamHome().resetStats();
+            fixtures.get(x).getTeamAway().resetStats();
+        }
         for(int x = 0; x < fixtures.size(); x++) //For every fixture
         {
+
             if (fixtures.get(x).isMatchPlayed()) //If Match is played
             {
                 System.out.println("Generate Stats");

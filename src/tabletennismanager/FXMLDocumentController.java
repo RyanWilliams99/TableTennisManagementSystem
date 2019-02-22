@@ -1,6 +1,7 @@
 package tabletennismanager;
 
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.collections.FXCollections;
@@ -78,6 +79,15 @@ public class FXMLDocumentController {
             selectTeam.getItems().add(new MenuItem(Season.getTeams().get(x).getTeamName()));
 
         }
+        for(MenuItem item : selectTeam.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    selectTeam.setText(MenuItem.getText());
+                }
+            });
+        }
     }
 
     @FXML
@@ -85,7 +95,6 @@ public class FXMLDocumentController {
 
         if (!addTeamTextField.getText().isEmpty() && !Season.teamAlreadyExists(addTeamTextField.getText()))
         {
-
             String temp = addTeamTextField.getText();
             Season.addTeam(new Team(temp));
             updateSelectTeamDropdown();
@@ -96,8 +105,6 @@ public class FXMLDocumentController {
     @FXML
     void selectTeamHandle(ActionEvent event) {
         System.out.println("Select team pressed");
-        selectTeam.show();
-        //selectTeam.getItems().
 
     }
 
@@ -120,7 +127,19 @@ public class FXMLDocumentController {
 
     @FXML
     void registerPlayerHandle(ActionEvent event) {
-
+        System.out.println("Register player");
+        System.out.println("Adding player " + playerNameTextField.getText() + " to team:" + selectTeam.getText());
+        if(!playerNameTextField.getText().isEmpty() && !selectTeam.getText().equals("Select Team"))
+        {
+            for(int x = 0; x < Season.getTeams().size(); x++)
+            {
+                if (Season.getTeams().get(x).getTeamName().equals(selectTeam.getText()))
+                {
+                    System.out.println("Adding player");
+                    Season.getTeams().get(x).addPlayer(new Player(playerNameTextField.getText()));
+                }
+            }
+        }
     }
 
     @FXML
@@ -151,10 +170,6 @@ public class FXMLDocumentController {
     void showStatsHandle(ActionEvent event) {
         viewingTable.getColumns().clear();
         Season.generateStats();
-        Season.generateStats();
-        Season.generateStats();
-        Season.generateStats();
-        Season.getTeams().get(3).setMatchesWon(15);
 
         TableColumn<FixtureAndResult, String> teamName = new TableColumn<>("Team Name");
         teamName.setCellValueFactory(new PropertyValueFactory<>("teamName"));
