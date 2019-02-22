@@ -6,6 +6,12 @@ import javafx.scene.control.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.control.Button;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+
 
 public class FXMLDocumentController {
 
@@ -54,6 +60,9 @@ public class FXMLDocumentController {
     private TableView<FixtureAndResult> viewingTable;
 
     @FXML
+    private AnchorPane viewerPage;
+
+    @FXML
     public void initialize() {
 
         Season.addTestData();
@@ -74,15 +83,21 @@ public class FXMLDocumentController {
     @FXML
     void addTeamHandle(ActionEvent event) {
 
-        System.out.println("AddTeamPressed");
-        String temp = addTeamTextField.getText();
-        Season.addTeam(new Team(temp));
-        updateSelectTeamDropdown();
+        if (!addTeamTextField.getText().isEmpty() && !Season.teamAlreadyExists(addTeamTextField.getText()))
+        {
+
+            String temp = addTeamTextField.getText();
+            Season.addTeam(new Team(temp));
+            updateSelectTeamDropdown();
+        }
+
     }
 
     @FXML
     void selectTeamHandle(ActionEvent event) {
-
+        System.out.println("Select team pressed");
+        selectTeam.show();
+        //selectTeam.getItems().
 
     }
 
@@ -116,7 +131,15 @@ public class FXMLDocumentController {
     @FXML
     void showStatsHandle(ActionEvent event) {
         Season.displayTeamStats();
+        Season.displayFixtures();
+        viewingTable.getColumns().clear();
 
+
+        TableColumn<FixtureAndResult, String> teamName = new TableColumn<>("Team Name");
+        teamName.setCellValueFactory(new PropertyValueFactory<>("teamName"));
+
+        viewingTable.setItems(getStats());
+        viewingTable.getColumns().addAll(teamName);
     }
 
     @FXML
@@ -126,30 +149,32 @@ public class FXMLDocumentController {
 
 
         TableColumn<FixtureAndResult, String> homeTeam = new TableColumn<>("Home Team");
-        homeTeam.setMinWidth(200);
+        //homeTeam.setMinWidth(100);
         homeTeam.setCellValueFactory(new PropertyValueFactory<>("homeTeam"));
 
         TableColumn<FixtureAndResult, String> awayTeam = new TableColumn<>("Away Team");
-        awayTeam.setMinWidth(200);
+        //awayTeam.setMinWidth(100);
         awayTeam.setCellValueFactory(new PropertyValueFactory<>("awayTeam"));
 
-        //Price column
+        TableColumn<FixtureAndResult, String> vs = new TableColumn<>("VS");
+        //vs.setMinWidth(25);
+        vs.setCellValueFactory(new PropertyValueFactory<>("vs"));
+
+
         TableColumn<FixtureAndResult, Integer> homeTeamSets = new TableColumn<>("Home Team Sets");
-        homeTeamSets.setMinWidth(100);
+        //homeTeamSets.setMinWidth(100);
         homeTeamSets.setCellValueFactory(new PropertyValueFactory<>("homeTeamSets"));
 
-        //Quantity column
         TableColumn<FixtureAndResult, Integer> awayTeamSets = new TableColumn<>("Away Team Sets");
-        awayTeamSets.setMinWidth(100);
+        //awayTeamSets.setMinWidth(100);
         awayTeamSets.setCellValueFactory(new PropertyValueFactory<>("awayTeamSets"));
 
-        viewingTable.setItems(getProduct());
-        viewingTable.getColumns().addAll(homeTeam, awayTeam, homeTeamSets, awayTeamSets);
+        viewingTable.setItems(getFixtures());
+        viewingTable.getColumns().addAll(homeTeam, vs, awayTeam, homeTeamSets, awayTeamSets);
 
     }
 
-    //Get all of the products
-    public ObservableList<FixtureAndResult> getProduct(){
+    public ObservableList<FixtureAndResult> getFixtures(){
         ObservableList<FixtureAndResult> fixtureAndResults = FXCollections.observableArrayList();
         for (int x = 0; x < Season.getFixtures().size(); x++)
         {
@@ -159,9 +184,24 @@ public class FXMLDocumentController {
         return fixtureAndResults;
     }
 
+    public ObservableList<FixtureAndResult> getStats(){
+        ObservableList<FixtureAndResult> fixtureAndResults = FXCollections.observableArrayList();
+        for (int x = 0; x < Season.getTeams().size(); x++)
+        {
+            fixtureAndResults.add(new FixtureAndResult(Season.getTeams().get(x).getTeamName(), Season.getTeams().get(x).getMatchesPlayed(), Season.getTeams().get(x).getMatchesWon(),Season.getTeams().get(x).getMatchesLost(),Season.getTeams().get(x).getSetsPlayed(),Season.getTeams().get(x).getSetsWon(),Season.getTeams().get(x).getSetsLost(),Season.getTeams().get(x).getGamesPlayed(),Season.getTeams().get(x).getGamesWon(),Season.getTeams().get(x).getGamesLost()));
+        }
+
+        return fixtureAndResults;
+    }
+
+
+
     @FXML
     void viewMatchScoresHandle(ActionEvent event) {
 
     }
 
 }
+
+
+

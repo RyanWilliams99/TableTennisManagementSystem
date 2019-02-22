@@ -160,6 +160,21 @@ public class Season {
         }
     }
 
+    public boolean teamAlreadyExists(String proposedTeamName)
+    {
+        for(int x = 0; x < this.getTeams().size(); x++)
+        {
+            if (proposedTeamName.equals(teams.get(x).getTeamName()))
+            {
+                System.out.println("team already exitsts");
+                return true;
+            }
+        }
+        System.out.println("Return false team does not exuits");
+        return false;
+    }
+
+
     public void addTestData()
     {
         Team uwe = new Team("uwe");
