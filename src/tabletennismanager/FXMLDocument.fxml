@@ -89,75 +89,544 @@
                 </Tab>
                   <Tab text="Scoresheet">
                      <content>
-                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="618.0" prefWidth="552.0">
+                        <AnchorPane fx:id="scoresheet" minHeight="0.0" minWidth="0.0" prefHeight="618.0" prefWidth="552.0">
                            <children>
                               <Button fx:id="modifyScoresheet" layoutX="32.0" layoutY="26.0" mnemonicParsing="false" onAction="#modifyScoresheetHandle" text="Modify Sheet" />
-                              <Separator layoutY="81.0" prefHeight="0.0" prefWidth="1068.0" />
-                              <Text layoutX="314.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Team" />
-                              <MenuButton fx:id="homeTeam" layoutX="405.0" layoutY="94.0" mnemonicParsing="false" text="Home Team">
+                              <Button fx:id="updatePlayers" layoutX="128.0" layoutY="202.0" mnemonicParsing="false" onAction="#updatePlayersHandle" prefHeight="25.0" prefWidth="113.0" text="Update Players" />
+                              <Text layoutX="32.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Team" />
+                              <MenuButton fx:id="homeTeam" layoutX="136.0" layoutY="98.0" mnemonicParsing="false" text="Home Team">
                                 <items>
                                   <MenuItem mnemonicParsing="false" text="Action 1" />
                                   <MenuItem mnemonicParsing="false" text="Action 2" />
                                 </items>
                               </MenuButton>
-                              <Text layoutX="567.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Away Team" />
-                              <MenuButton layoutX="652.0" layoutY="94.0" mnemonicParsing="false" text="Away Team">
+                              <Text layoutX="34.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Away Team" />
+                              <MenuButton fx:id="awayTeam" layoutX="138.0" layoutY="147.0" mnemonicParsing="false" text="Away Team">
                                  <items>
                                     <MenuItem mnemonicParsing="false" text="Action 1" />
                                     <MenuItem mnemonicParsing="false" text="Action 2" />
                                  </items>
                               </MenuButton>
-                              <Text layoutX="254.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single Sets">
+                              <Text fontSmoothingType="LCD" layoutX="511.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single Sets" textAlignment="CENTER" textOrigin="CENTER">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="24.0" />
                                  </font>
                               </Text>
-                              <MenuButton layoutX="390.0" layoutY="162.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="127.0" text="Away Player 1">
+                              <MenuButton fx:id="awayPlayer0" layoutX="641.0" layoutY="119.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Away Player">
                                  <items>
                                     <MenuItem mnemonicParsing="false" text="Action 1" />
                                     <MenuItem mnemonicParsing="false" text="Action 2" />
                                  </items>
                               </MenuButton>
-                              <MenuButton layoutX="567.0" layoutY="162.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="127.0" text="Away Player 2">
+                              <MenuButton fx:id="awayPlayer1" layoutX="781.0" layoutY="119.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Away Player">
                                  <items>
                                     <MenuItem mnemonicParsing="false" text="Action 1" />
                                     <MenuItem mnemonicParsing="false" text="Action 2" />
                                  </items>
                               </MenuButton>
-                              <MenuButton layoutX="234.0" layoutY="330.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="127.0" text="Home Player 2">
+                              <MenuButton fx:id="homePlayer1" layoutX="511.0" layoutY="284.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="120.0" text="Home Player">
                                  <items>
                                     <MenuItem mnemonicParsing="false" text="Action 1" />
                                     <MenuItem mnemonicParsing="false" text="Action 2" />
                                  </items>
                               </MenuButton>
-                              <MenuButton layoutX="234.0" layoutY="235.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="127.0" text="Home Player 1">
+                              <MenuButton fx:id="homePlayer0" layoutX="511.0" layoutY="179.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="120.0" text="Home Player">
                                  <items>
                                     <MenuItem mnemonicParsing="false" text="Action 1" />
                                     <MenuItem mnemonicParsing="false" text="Action 2" />
                                  </items>
                               </MenuButton>
-                              <TextField layoutX="379.0" layoutY="235.0" />
-                              <TextField layoutX="379.0" layoutY="265.0" />
-                              <TextField layoutX="567.0" layoutY="297.0" />
-                              <TextField layoutX="567.0" layoutY="235.0" />
-                              <TextField layoutX="567.0" layoutY="263.0" />
-                              <TextField layoutX="379.0" layoutY="297.0" />
-                              <TextField layoutX="379.0" layoutY="330.0" />
-                              <TextField layoutX="379.0" layoutY="358.0" />
-                              <TextField layoutX="379.0" layoutY="385.0" />
-                              <TextField layoutX="567.0" layoutY="385.0" />
-                              <TextField layoutX="567.0" layoutY="330.0" />
-                              <TextField layoutX="567.0" layoutY="358.0" />
-                              <Text layoutX="249.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double Sets">
+                              <Button fx:id="calculateAndSubmitScores" layoutX="501.0" layoutY="563.0" mnemonicParsing="false" onAction="#calculateAndSubmitScoresHandle" prefHeight="25.0" prefWidth="542.0" text="Calculate and Submit Scores" />
+                              <MenuButton fx:id="set0game0h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="179.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set0game0a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="179.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set0game1h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="214.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set0game1a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set0game2h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="249.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set0game2a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set1game0h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="179.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set1game0a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="179.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set1game1h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="214.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set1game1a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set1game2h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="249.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set1game2a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <Separator layoutX="511.0" layoutY="279.0" prefWidth="390.0" />
+                              <Separator layoutX="511.0" layoutY="174.0" prefWidth="390.0" />
+                              <Separator layoutX="511.0" layoutY="384.0" prefWidth="390.0" />
+                              <MenuButton fx:id="set2game0h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set2game0a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set2game1h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="319.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set2game1a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="319.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set2game2h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="354.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set2game2a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set3game0h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set3game0a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set3game1h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="319.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set3game1a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="319.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set3game2h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="354.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set3game2a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set4game0h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="395.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set4game0a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="395.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set4game1h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="430.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set4game1a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="430.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set4game2h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="465.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="set4game2a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="465.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                    <MenuItem mnemonicParsing="false" text="6" />
+                                    <MenuItem mnemonicParsing="false" text="7" />
+                                    <MenuItem mnemonicParsing="false" text="8" />
+                                    <MenuItem mnemonicParsing="false" text="9" />
+                                    <MenuItem mnemonicParsing="false" text="10" />
+                                    <MenuItem mnemonicParsing="false" text="11" />
+                                 </items>
+                              </MenuButton>
+                              <Separator layoutX="769.0" layoutY="119.0" orientation="VERTICAL" prefHeight="370.0" />
+                              <Separator layoutX="634.0" layoutY="119.0" orientation="VERTICAL" prefHeight="370.0" />
+                              <Text fontSmoothingType="LCD" layoutX="510.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Double Set" textAlignment="CENTER" textOrigin="CENTER">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="24.0" />
                                  </font>
                               </Text>
-                              <TextField layoutX="379.0" layoutY="502.0" />
-                              <TextField layoutX="379.0" layoutY="470.0" />
-                              <TextField layoutX="379.0" layoutY="439.0" />
-                              <TextField layoutX="567.0" layoutY="439.0" prefHeight="90.0" prefWidth="156.0" promptText="Final Team Scores" />
-                              <Button layoutX="271.0" layoutY="559.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="542.0" text="Calculate and Submit Scores" />
                            </children></AnchorPane>
                      </content>
                   </Tab>

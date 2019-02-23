@@ -13,6 +13,8 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
+import java.util.ArrayList;
+
 
 public class FXMLDocumentController {
 
@@ -55,20 +57,135 @@ public class FXMLDocumentController {
     private Button modifyScoresheet;
 
     @FXML
-    private MenuButton homeTeam;
-
-    @FXML
     private TableView<FixtureAndResult> viewingTable;
 
     @FXML
     private AnchorPane viewerPage;
 
     @FXML
+    private AnchorPane scoresheet;
+
+    @FXML
+    private MenuButton homeTeam;
+
+    @FXML
+    private MenuButton awayTeam;
+
+    @FXML
+    private MenuButton awayPlayer0;
+
+    @FXML
+    private MenuButton awayPlayer1;
+
+    @FXML
+    private MenuButton homePlayer1;
+
+    @FXML
+    private MenuButton homePlayer0;
+
+    @FXML
+    private Button calculateAndSubmitScores;
+
+    @FXML
+    private MenuButton set0game0h;
+
+    @FXML
+    private MenuButton set0game0a;
+
+    @FXML
+    private MenuButton set0game1h;
+
+    @FXML
+    private MenuButton set0game1a;
+
+    @FXML
+    private MenuButton set0game2h;
+
+    @FXML
+    private MenuButton set0game2a;
+
+    @FXML
+    private MenuButton set1game0h;
+
+    @FXML
+    private MenuButton set1game0a;
+
+    @FXML
+    private MenuButton set1game1h;
+
+    @FXML
+    private MenuButton set1game1a;
+
+    @FXML
+    private MenuButton set1game2h;
+
+    @FXML
+    private MenuButton set1game2a;
+
+    @FXML
+    private MenuButton set2game0h;
+
+    @FXML
+    private MenuButton set2game0a;
+
+    @FXML
+    private MenuButton set2game1h;
+
+    @FXML
+    private MenuButton set2game1a;
+
+    @FXML
+    private MenuButton set2game2h;
+
+    @FXML
+    private MenuButton set2game2a;
+
+    @FXML
+    private MenuButton set3game0h;
+
+    @FXML
+    private MenuButton set3game0a;
+
+    @FXML
+    private MenuButton set3game1h;
+
+    @FXML
+    private MenuButton set3game1a;
+
+    @FXML
+    private MenuButton set3game2h;
+
+    @FXML
+    private MenuButton set3game2a;
+
+    @FXML
+    private MenuButton set4game0h;
+
+    @FXML
+    private MenuButton set4game0a;
+
+    @FXML
+    private MenuButton set4game1h;
+
+    @FXML
+    private MenuButton set4game1a;
+
+    @FXML
+    private MenuButton set4game2h;
+
+    @FXML
+    private MenuButton set4game2a;
+
+    @FXML
+    private Button updatePlayers;
+
+    @FXML
     public void initialize() {
 
         Season.addTestData();
-
+        updateHomeTeamAwayTeamDropdown();
         updateSelectTeamDropdown();
+        setSelectedScore();
     }
 
     public void updateSelectTeamDropdown()
@@ -246,7 +363,354 @@ public class FXMLDocumentController {
 
     }
 
+
+
+    public void updateHomeTeamAwayTeamDropdown()
+    {
+        homeTeam.getItems().clear();
+        awayTeam.getItems().clear();
+        for (int x = 0; x < Season.getTeams().size(); x++)
+        {
+            homeTeam.getItems().add(new MenuItem(Season.getTeams().get(x).getTeamName()));
+            awayTeam.getItems().add(new MenuItem(Season.getTeams().get(x).getTeamName()));
+
+        }
+        for(MenuItem item : homeTeam.getItems())
+        {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>()
+            {
+                @Override
+                public void handle(ActionEvent event) {
+                    homeTeam.setText(MenuItem.getText());
+                }
+            });
+        }
+        for(MenuItem item : awayTeam.getItems())
+        {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>()
+            {
+                @Override
+                public void handle(ActionEvent event) {
+                    awayTeam.setText(MenuItem.getText());
+                }
+            });
+        }
+    }
+
+
+    @FXML
+    void updatePlayersHandle(ActionEvent event) {
+        homePlayer0.getItems().clear();
+        homePlayer1.getItems().clear();
+        awayPlayer0.getItems().clear();
+        awayPlayer1.getItems().clear();
+
+        for (int x = 0; x < Season.getTeams().size(); x++)
+        {
+            if (homeTeam.getText().equals(Season.getTeams().get(x).getTeamName()))
+            {
+                for (int y = 0; y < Season.getTeams().get(x).getPlayers().size(); y++)
+                {
+                    homePlayer0.getItems().add(new MenuItem(Season.getTeams().get(x).getPlayers().get(y).getPlayerName()));
+                    homePlayer1.getItems().add(new MenuItem(Season.getTeams().get(x).getPlayers().get(y).getPlayerName()));
+                }
+            }
+            if (awayTeam.getText().equals(Season.getTeams().get(x).getTeamName()))
+            {
+                for (int y = 0; y < Season.getTeams().get(x).getPlayers().size(); y++)
+                {
+                    awayPlayer0.getItems().add(new MenuItem(Season.getTeams().get(x).getPlayers().get(y).getPlayerName()));
+                    awayPlayer1.getItems().add(new MenuItem(Season.getTeams().get(x).getPlayers().get(y).getPlayerName()));
+                }
+            }
+        }
+        for(MenuItem item : homePlayer0.getItems())
+        {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>()
+            {
+                @Override
+                public void handle(ActionEvent event) {
+                    homePlayer0.setText(MenuItem.getText());
+                }
+            });
+        }
+        for(MenuItem item : homePlayer1.getItems())
+        {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>()
+            {
+                @Override
+                public void handle(ActionEvent event) {
+                    homePlayer1.setText(MenuItem.getText());
+                }
+            });
+        }
+        for(MenuItem item : awayPlayer0.getItems())
+        {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>()
+            {
+                @Override
+                public void handle(ActionEvent event) {
+                    awayPlayer0.setText(MenuItem.getText());
+                }
+            });
+        }
+        for(MenuItem item : awayPlayer1.getItems())
+        {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>()
+            {
+                @Override
+                public void handle(ActionEvent event) {
+                    awayPlayer1.setText(MenuItem.getText());
+                }
+            });
+        }
+    }
+
+    void setSelectedScore()
+    {
+        for (MenuItem item : set0game0h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set0game0h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set0game0a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set0game0a.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set0game1h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set0game1h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set0game1a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set0game1a.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set0game2h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set0game2h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set0game2a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set0game2a.setText(MenuItem.getText());
+                }}); }
+
+
+
+
+
+
+        for (MenuItem item : set1game0h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set1game0h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set1game0a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set1game0a.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set1game1h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set1game1h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set1game1a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set1game1a.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set1game2h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set1game2h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set1game2a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set1game2a.setText(MenuItem.getText());
+                }}); }
+
+
+
+
+        for (MenuItem item : set2game0h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set2game0h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set2game0a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set2game0a.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set2game1h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set2game1h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set2game1a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set2game1a.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set2game2h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set2game2h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set2game2a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set2game2a.setText(MenuItem.getText());
+                }}); }
+
+
+
+        for (MenuItem item : set3game0h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set3game0h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set3game0a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set3game0a.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set3game1h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set3game1h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set3game1a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set3game1a.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set3game2h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set3game2h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set3game2a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set3game2a.setText(MenuItem.getText());
+                }}); }
+
+
+
+
+        for (MenuItem item : set4game0h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set4game0h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set4game0a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set4game0a.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set4game1h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set4game1h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set4game1a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set4game1a.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set4game2h.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set4game2h.setText(MenuItem.getText());
+                }}); }
+        for (MenuItem item : set4game2a.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    set4game2a.setText(MenuItem.getText());
+                }}); }
+
+    }
+
+    @FXML
+    void calculateAndSubmitScoresHandle(ActionEvent event) {
+
+        for (int x = 0; x < Season.getTeams().size(); x++)
+        {
+            homeTeam.getText().equals()
+            Season.getFixtures().get(x).sets.get(0).addSetScoresAndPlayers(Integer.parseInt(set0game0h.getText()));
+        }
+    }
 }
-
-
-
