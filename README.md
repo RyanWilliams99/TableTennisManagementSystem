@@ -3,7 +3,7 @@
 - [x] addTeam // Add to season
 - [x] addPlayer // Add to team
 - [x] addMatch // Add to season
-- [ ] updateMatch // Modify existing score sheet
+- [x] updateMatch // Modify existing score sheet
 - [x] calculateMatchesPlayed 
 - [x] calculateTeamScores
 - [x] generateFixtures
@@ -21,3 +21,7 @@
 - [ ] Outline how we agile developed
 - [ ] Create test for each method!
 - [ ] GUI!
+    - [x] View Match
+    - [x] Generate stats 
+    - [x] View Leaderboard
+    

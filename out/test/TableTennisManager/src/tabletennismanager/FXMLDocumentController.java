@@ -188,6 +188,12 @@ public class FXMLDocumentController {
         setSelectedScore();
     }
 
+    public void updateUI()
+    {
+        updateHomeTeamAwayTeamDropdown();
+        updateSelectTeamDropdown();
+    }
+
     public void updateSelectTeamDropdown()
     {
         selectTeam.getItems().clear();
@@ -210,13 +216,20 @@ public class FXMLDocumentController {
     @FXML
     void addTeamHandle(ActionEvent event) {
 
-        if (!addTeamTextField.getText().isEmpty() && !Season.teamAlreadyExists(addTeamTextField.getText()))
+        if (addTeamTextField.getText().isEmpty())
         {
-            String temp = addTeamTextField.getText();
-            Season.addTeam(new Team(temp));
-            updateSelectTeamDropdown();
+            Alert noNameAlert = new Alert(Alert.AlertType.ERROR, "Must enter Team name",  ButtonType.OK);
+            noNameAlert.showAndWait();
         }
-
+        else
+        {
+            if (!addTeamTextField.getText().isEmpty() && !Season.teamAlreadyExists(addTeamTextField.getText()))
+            {
+                String temp = addTeamTextField.getText();
+                Season.addTeam(new Team(temp));
+                updateSelectTeamDropdown();
+            }
+        }
     }
 
     @FXML
@@ -257,6 +270,7 @@ public class FXMLDocumentController {
                 }
             }
         }
+        updateUI();
     }
 
     @FXML
@@ -407,6 +421,12 @@ public class FXMLDocumentController {
         awayPlayer0.getItems().clear();
         awayPlayer1.getItems().clear();
 
+        if (homeTeam.getText().equals(awayTeam.getText()))
+        {
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Please select two different teams",  ButtonType.OK);
+            alert.showAndWait();
+        }
+
         for (int x = 0; x < Season.getTeams().size(); x++)
         {
             if (homeTeam.getText().equals(Season.getTeams().get(x).getTeamName()))
@@ -470,6 +490,7 @@ public class FXMLDocumentController {
                 }
             });
         }
+
     }
 
     void setSelectedScore()
@@ -707,5 +728,18 @@ public class FXMLDocumentController {
     @FXML
     void calculateAndSubmitScoresHandle(ActionEvent event) {
 
+        for (int x = 0; x < Season.getTeams().size(); x++)
+        {
+            if (homeTeam.getText().equals(Season.getTeams().get(x).getTeamName()))
+            {
+                Season.getFixtures().get(x).sets.get(0).addSetScoresAndPlayers(Integer.parseInt(set0game0h.getText()),Integer.parseInt(set0game0a.getText()), Integer.parseInt(set0game1h.getText()), Integer.parseInt(set0game1a.getText()), Integer.parseInt(set0game2h.getText()), Integer.parseInt(set0game2a.getText()));
+                Season.getFixtures().get(x).sets.get(1).addSetScoresAndPlayers(Integer.parseInt(set1game0h.getText()),Integer.parseInt(set1game0a.getText()), Integer.parseInt(set1game1h.getText()), Integer.parseInt(set1game1a.getText()), Integer.parseInt(set1game2h.getText()), Integer.parseInt(set1game2a.getText()));
+                Season.getFixtures().get(x).sets.get(2).addSetScoresAndPlayers(Integer.parseInt(set2game0h.getText()),Integer.parseInt(set2game0a.getText()), Integer.parseInt(set2game1h.getText()), Integer.parseInt(set2game1a.getText()), Integer.parseInt(set2game2h.getText()), Integer.parseInt(set2game2a.getText()));
+                Season.getFixtures().get(x).sets.get(3).addSetScoresAndPlayers(Integer.parseInt(set3game0h.getText()),Integer.parseInt(set3game0a.getText()), Integer.parseInt(set3game1h.getText()), Integer.parseInt(set3game1a.getText()), Integer.parseInt(set3game2h.getText()), Integer.parseInt(set3game2a.getText()));
+                Season.getFixtures().get(x).sets.get(4).addSetScoresAndPlayers(Integer.parseInt(set4game0h.getText()),Integer.parseInt(set4game0a.getText()), Integer.parseInt(set4game1h.getText()), Integer.parseInt(set4game1a.getText()), Integer.parseInt(set4game2h.getText()), Integer.parseInt(set4game2a.getText()));
+                Season.getFixtures().get(x).setMatchPlayed(true);
+
+            }
+        }
     }
 }

@@ -112,30 +112,10 @@
                                     <Font size="24.0" />
                                  </font>
                               </Text>
-                              <MenuButton fx:id="awayPlayer0" layoutX="641.0" layoutY="119.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Away Player">
-                                 <items>
-                                    <MenuItem mnemonicParsing="false" text="Action 1" />
-                                    <MenuItem mnemonicParsing="false" text="Action 2" />
-                                 </items>
-                              </MenuButton>
-                              <MenuButton fx:id="awayPlayer1" layoutX="781.0" layoutY="119.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Away Player">
-                                 <items>
-                                    <MenuItem mnemonicParsing="false" text="Action 1" />
-                                    <MenuItem mnemonicParsing="false" text="Action 2" />
-                                 </items>
-                              </MenuButton>
-                              <MenuButton fx:id="homePlayer1" layoutX="511.0" layoutY="284.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="120.0" text="Home Player">
-                                 <items>
-                                    <MenuItem mnemonicParsing="false" text="Action 1" />
-                                    <MenuItem mnemonicParsing="false" text="Action 2" />
-                                 </items>
-                              </MenuButton>
-                              <MenuButton fx:id="homePlayer0" layoutX="511.0" layoutY="179.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="120.0" text="Home Player">
-                                 <items>
-                                    <MenuItem mnemonicParsing="false" text="Action 1" />
-                                    <MenuItem mnemonicParsing="false" text="Action 2" />
-                                 </items>
-                              </MenuButton>
+                              <MenuButton fx:id="awayPlayer0" layoutX="641.0" layoutY="119.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Away Player" />
+                              <MenuButton fx:id="awayPlayer1" layoutX="781.0" layoutY="119.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Away Player" />
+                              <MenuButton fx:id="homePlayer1" layoutX="511.0" layoutY="284.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="120.0" text="Home Player" />
+                              <MenuButton fx:id="homePlayer0" layoutX="511.0" layoutY="179.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="120.0" text="Home Player" />
                               <Button fx:id="calculateAndSubmitScores" layoutX="501.0" layoutY="563.0" mnemonicParsing="false" onAction="#calculateAndSubmitScoresHandle" prefHeight="25.0" prefWidth="542.0" text="Calculate and Submit Scores" />
                               <MenuButton fx:id="set0game0h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="179.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
