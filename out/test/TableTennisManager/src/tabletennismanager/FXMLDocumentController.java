@@ -180,12 +180,19 @@ public class FXMLDocumentController {
     private Button updatePlayers;
 
     @FXML
+    private MenuButton selectTeamViewMatch0;
+
+    @FXML
+    private MenuButton selectTeamViewMatch1;
+
+    @FXML
     public void initialize() {
 
         Season.addTestData();
         updateHomeTeamAwayTeamDropdown();
         updateSelectTeamDropdown();
         setSelectedScore();
+
     }
 
     public void updateUI()
@@ -208,6 +215,37 @@ public class FXMLDocumentController {
                 @Override
                 public void handle(ActionEvent event) {
                     selectTeam.setText(MenuItem.getText());
+                }
+            });
+        }
+        selectTeamViewMatch0.getItems().clear();
+        for (int x = 0; x < Season.getTeams().size(); x++)
+        {
+            selectTeamViewMatch0.getItems().add(new MenuItem(Season.getTeams().get(x).getTeamName()));
+
+        }
+        for(MenuItem item : selectTeamViewMatch0.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    selectTeamViewMatch0.setText(MenuItem.getText());
+                }
+            });
+        }
+
+        selectTeamViewMatch1.getItems().clear();
+        for (int x = 0; x < Season.getTeams().size(); x++)
+        {
+            selectTeamViewMatch1.getItems().add(new MenuItem(Season.getTeams().get(x).getTeamName()));
+
+        }
+        for(MenuItem item : selectTeamViewMatch1.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    selectTeamViewMatch1.setText(MenuItem.getText());
                 }
             });
         }
@@ -240,12 +278,19 @@ public class FXMLDocumentController {
 
     @FXML
     void generateFixturesHandle(ActionEvent event) {
-        Season.generateFixtures();
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to generate new fixtures, all past match data will be removed", ButtonType.YES, ButtonType.NO);
+        alert.showAndWait();
+
+        if (alert.getResult() == ButtonType.YES) {
+            Season.generateFixtures();
+        }
+
 
     }
 
     @FXML
     void generateTeamStatsHandle(ActionEvent event) {
+
         Season.generateStats();
 
     }
@@ -370,11 +415,82 @@ public class FXMLDocumentController {
         return fixtureAndResults;
     }
 
+    public ObservableList<FixtureAndResult> getAMatch(){
+        ObservableList<FixtureAndResult> fixtureAndResults = FXCollections.observableArrayList();
+        //home team | away team | home player | away player | Game 1 | Game 2 | Game 3
+        fixtureAndResults.clear();
+        for (int x = 0; x < Season.getFixtures().size(); x++)
+        {
+            if (Season.getFixtures().get(x).getTeamHome().getTeamName().equals(selectTeamViewMatch0.getText()) && Season.getFixtures().get(x).getTeamAway().getTeamName().equals(selectTeamViewMatch1.getText()))
+            {
+                System.out.println("about to go into for loop for sets");
+                System.out.println(Season.getFixtures().get(x).getTeamHome().getPlayers().get(0).getPlayerName());
+                for(int y = 0; x < 5; x++)
+                {
+                    String homeTeam = Season.getFixtures().get(x).getTeamHome().getTeamName();
+                    String awayTeam = Season.getFixtures().get(x).getTeamAway().getTeamName();
+                    String player0 = Season.getFixtures().get(x).getTeamHome().getPlayers().get(0).getPlayerName();
+                    String player1 = Season.getFixtures().get(x).getTeamAway().getPlayers().get(0).getPlayerName();
+                    String game0 = Season.getFixtures().get(x).sets.get(y).getGames().get(0).getHomeScore() + ":" + Season.getFixtures().get(x).sets.get(y).getGames().get(0).getAwayScore();
+                    String game1 = Season.getFixtures().get(x).sets.get(y).getGames().get(1).getHomeScore() + ":" + Season.getFixtures().get(x).sets.get(y).getGames().get(1).getAwayScore();
+                    String game2 = Season.getFixtures().get(x).sets.get(y).getGames().get(2).getHomeScore() + ":" + Season.getFixtures().get(x).sets.get(y).getGames().get(2).getAwayScore();
+                    System.out.println("About to make a new fixresult with " + homeTeam + " " + awayTeam + " " +  player0  + " " +  player1  + " " + game0 + " " +  game1  + " " +  game2);
+                    fixtureAndResults.add(new FixtureAndResult(homeTeam, awayTeam, player0, player1, game0, game1, game2));
+                }
+
+            }
+        }
+
+        return fixtureAndResults;
+    }
+
+
+
 
 
     @FXML
     void viewMatchScoresHandle(ActionEvent event) {
+        if (selectTeamViewMatch0.getText().equals(selectTeamViewMatch1.getText()))
+        {
+            Alert alert = new Alert(Alert.AlertType.WARNING, "Please select two different teams",  ButtonType.OK);
+            alert.showAndWait();
+        }
+        else
+        {
+            Season.calculateScores();
+            String game1 = Season.getFixtures().get(0).sets.get(0).getGames().get(0).getHomeScore() + ":" + Season.getFixtures().get(0).sets.get(0).getGames().get(0).getAwayScore();
+            System.out.println(game1);
+            //ystem.out.println(getAMatch());
+            viewingTable.getColumns().clear();
 
+
+            TableColumn<FixtureAndResult, String> homeTeam = new TableColumn<>("Home Team");
+            homeTeam.setCellValueFactory(new PropertyValueFactory<>("homeTeam"));
+
+            TableColumn<FixtureAndResult, String> awayTeam = new TableColumn<>("Away Team");
+            awayTeam.setCellValueFactory(new PropertyValueFactory<>("awayTeam"));
+
+            TableColumn<FixtureAndResult, String> player0 = new TableColumn<>("Home Player");
+            player0.setCellValueFactory(new PropertyValueFactory<>("homePlayer"));
+
+            TableColumn<FixtureAndResult, String> player1 = new TableColumn<>("Away Player");
+            player1.setCellValueFactory(new PropertyValueFactory<>("awayPlayer"));
+
+            TableColumn<FixtureAndResult, String> Game1 = new TableColumn<>("Game1");
+            Game1.setCellValueFactory(new PropertyValueFactory<>("Game1"));
+
+            TableColumn<FixtureAndResult, String> Game2 = new TableColumn<>("Game2");
+            Game2.setCellValueFactory(new PropertyValueFactory<>("Game2"));
+
+            TableColumn<FixtureAndResult, String> Game3 = new TableColumn<>("Game3");
+            Game3.setCellValueFactory(new PropertyValueFactory<>("Game3"));
+
+
+
+            viewingTable.setItems(getAMatch());
+            viewingTable.getColumns().addAll(homeTeam, awayTeam, player0, player1, Game1, Game2, Game3);
+
+        }
     }
 
 

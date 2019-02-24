@@ -2,9 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7e22c1a-254a-40ed-98f9-7d1c5b516251" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocument.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$10.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$11.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$12.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$13.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$14.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$14.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$15.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$15.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$16.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$16.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$17.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$17.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$18.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$18.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$19.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$19.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$20.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$20.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$21.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$21.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$22.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$22.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$23.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$23.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$24.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$24.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$25.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$25.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$26.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$26.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$27.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$27.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$28.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$29.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$29.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$30.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$30.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$31.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$31.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$32.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$32.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$33.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$33.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$34.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$34.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$35.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$35.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$36.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$36.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$37.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$37.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$7.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$8.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$9.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FixtureAndResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FixtureAndResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FXMLDocument.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FXMLDocumentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FixtureAndResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FixtureAndResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
+            <state relative-caret-position="462">
               <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -33,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="968">
-              <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+            <state relative-caret-position="-2337">
+              <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
               <folding>
                 <element signature="e#370#371#0" expanded="true" />
                 <element signature="e#401#402#0" expanded="true" />
@@ -52,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Team.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="484">
               <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
               <folding>
                 <element signature="e#1498#1499#0" expanded="true" />
@@ -107,86 +151,42 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="218" column="49" lean-forward="true" selection-start-line="218" selection-start-column="49" selection-end-line="218" selection-end-column="49" />
+            <state relative-caret-position="39">
+              <caret line="457" column="12" lean-forward="true" selection-start-line="457" selection-start-column="12" selection-end-line="457" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3884#3885#0" expanded="true" />
-                <element signature="e#3962#3963#0" expanded="true" />
-                <element signature="e#10920#10921#0" expanded="true" />
-                <element signature="e#10996#10997#0" expanded="true" />
-                <element signature="e#11291#11292#0" expanded="true" />
-                <element signature="e#11367#11368#0" expanded="true" />
-                <element signature="e#13165#13166#0" expanded="true" />
-                <element signature="e#13244#13245#0" expanded="true" />
-                <element signature="e#13542#13543#0" expanded="true" />
-                <element signature="e#13621#13622#0" expanded="true" />
-                <element signature="e#13919#13920#0" expanded="true" />
-                <element signature="e#13998#13999#0" expanded="true" />
-                <element signature="e#14296#14297#0" expanded="true" />
-                <element signature="e#14375#14376#0" expanded="true" />
-                <element signature="e#13945#16995#0" />
-                <element signature="e#14695#14696#0" expanded="true" />
-                <element signature="e#14773#14774#0" expanded="true" />
-                <element signature="e#15030#15031#0" expanded="true" />
-                <element signature="e#15108#15109#0" expanded="true" />
-                <element signature="e#15365#15366#0" expanded="true" />
-                <element signature="e#15443#15444#0" expanded="true" />
-                <element signature="e#15700#15701#0" expanded="true" />
-                <element signature="e#15778#15779#0" expanded="true" />
-                <element signature="e#16035#16036#0" expanded="true" />
-                <element signature="e#16113#16114#0" expanded="true" />
-                <element signature="e#16370#16371#0" expanded="true" />
-                <element signature="e#16448#16449#0" expanded="true" />
-                <element signature="e#16711#16712#0" expanded="true" />
-                <element signature="e#16789#16790#0" expanded="true" />
-                <element signature="e#17046#17047#0" expanded="true" />
-                <element signature="e#17124#17125#0" expanded="true" />
-                <element signature="e#17381#17382#0" expanded="true" />
-                <element signature="e#17459#17460#0" expanded="true" />
-                <element signature="e#17716#17717#0" expanded="true" />
-                <element signature="e#17794#17795#0" expanded="true" />
-                <element signature="e#18051#18052#0" expanded="true" />
-                <element signature="e#18129#18130#0" expanded="true" />
-                <element signature="e#18386#18387#0" expanded="true" />
-                <element signature="e#18464#18465#0" expanded="true" />
-                <element signature="e#18725#18726#0" expanded="true" />
-                <element signature="e#18803#18804#0" expanded="true" />
-                <element signature="e#19060#19061#0" expanded="true" />
-                <element signature="e#19138#19139#0" expanded="true" />
-                <element signature="e#19395#19396#0" expanded="true" />
-                <element signature="e#19473#19474#0" expanded="true" />
-                <element signature="e#19730#19731#0" expanded="true" />
-                <element signature="e#19808#19809#0" expanded="true" />
-                <element signature="e#20065#20066#0" expanded="true" />
-                <element signature="e#20143#20144#0" expanded="true" />
-                <element signature="e#20400#20401#0" expanded="true" />
-                <element signature="e#20478#20479#0" expanded="true" />
-                <element signature="e#20738#20739#0" expanded="true" />
-                <element signature="e#20816#20817#0" expanded="true" />
-                <element signature="e#21073#21074#0" expanded="true" />
-                <element signature="e#21151#21152#0" expanded="true" />
-                <element signature="e#21408#21409#0" expanded="true" />
-                <element signature="e#21486#21487#0" expanded="true" />
-                <element signature="e#21743#21744#0" expanded="true" />
-                <element signature="e#21821#21822#0" expanded="true" />
-                <element signature="e#22078#22079#0" expanded="true" />
-                <element signature="e#22156#22157#0" expanded="true" />
-                <element signature="e#22413#22414#0" expanded="true" />
-                <element signature="e#22491#22492#0" expanded="true" />
-                <element signature="e#22752#22753#0" expanded="true" />
-                <element signature="e#22830#22831#0" expanded="true" />
-                <element signature="e#23087#23088#0" expanded="true" />
-                <element signature="e#23165#23166#0" expanded="true" />
-                <element signature="e#23422#23423#0" expanded="true" />
-                <element signature="e#23500#23501#0" expanded="true" />
-                <element signature="e#23757#23758#0" expanded="true" />
-                <element signature="e#23835#23836#0" expanded="true" />
-                <element signature="e#24092#24093#0" expanded="true" />
-                <element signature="e#24170#24171#0" expanded="true" />
-                <element signature="e#24427#24428#0" expanded="true" />
-                <element signature="e#24505#24506#0" expanded="true" />
+                <element signature="e#3997#3998#0" expanded="true" />
+                <element signature="e#4075#4076#0" expanded="true" />
+                <element signature="e#4594#4595#0" expanded="true" />
+                <element signature="e#4682#4683#0" expanded="true" />
+                <element signature="e#5202#5203#0" expanded="true" />
+                <element signature="e#5290#5291#0" expanded="true" />
+                <element signature="e#18499#28602#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Match.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+              <folding>
+                <element signature="e#1946#1947#0" expanded="true" />
+                <element signature="e#1994#1995#0" expanded="true" />
+                <element signature="e#2120#2121#0" expanded="true" />
+                <element signature="e#2168#2169#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1100">
+              <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -196,7 +196,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="594">
-                <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+                <caret line="27" selection-start-line="27" selection-end-line="27" />
               </first_editor>
               <second_editor />
             </state>
@@ -218,6 +218,8 @@
       <find>text</find>
       <find>update</find>
       <find>addteam</find>
+      <find>generate</find>
+      <find>alert</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -236,19 +238,19 @@
         <option value="$PROJECT_DIR$/src/tabletennismanager/SeasonTest.java" />
         <option value="$PROJECT_DIR$/src/test/SeasonTest.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/ShowTeamStats.java" />
-        <option value="$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/Season.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/Team.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="135" />
-    <option name="y" value="-10" />
-    <option name="width" value="1615" />
+    <option name="x" value="25" />
+    <option name="y" value="-12" />
+    <option name="width" value="1560" />
     <option name="height" value="880" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -259,6 +261,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -287,8 +291,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -298,7 +300,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550940004179" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551006463980" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -408,7 +410,9 @@
       <workItem from="1550758133874" duration="387000" />
       <workItem from="1550758544316" duration="10486000" />
       <workItem from="1550828577303" duration="14786000" />
-      <workItem from="1550920929939" duration="11214000" />
+      <workItem from="1550920929939" duration="11921000" />
+      <workItem from="1551001624309" duration="4324000" />
+      <workItem from="1551006509720" duration="2304000" />
     </task>
     <servers />
   </component>
@@ -421,13 +425,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91023000" />
+    <option name="totallyTimeSpent" value="98358000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.16791044" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.015991472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -436,7 +440,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5005417" side_tool="true" weight="0.16791044" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" x="1920" y="23" width="1600" height="837" id="Run" maximized="true" order="2" type="WINDOWED" visible="true" weight="0.43336946" />
+      <window_info active="true" anchor="bottom" x="1920" y="23" width="1920" height="1017" id="Run" maximized="true" order="2" type="WINDOWED" visible="true" weight="0.43336946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.032502707" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -471,19 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Match.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
-          <folding>
-            <element signature="e#1946#1947#0" expanded="true" />
-            <element signature="e#1994#1995#0" expanded="true" />
-            <element signature="e#2120#2121#0" expanded="true" />
-            <element signature="e#2168#2169#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Set.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
@@ -511,59 +502,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/tabletennismanager/SeasonTest.java" />
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/ShowTeamStats.java" />
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="30" column="33" lean-forward="true" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
-          <folding>
-            <element signature="e#1147#1148#0" expanded="true" />
-            <element signature="e#1172#1173#0" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1224#1225#0" expanded="true" />
-            <element signature="e#1560#1561#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1639#1640#0" expanded="true" />
-            <element signature="e#1679#1680#0" expanded="true" />
-            <element signature="e#1716#1717#0" expanded="true" />
-            <element signature="e#1752#1753#0" expanded="true" />
-            <element signature="e#1807#1808#0" expanded="true" />
-            <element signature="e#1857#1858#0" expanded="true" />
-            <element signature="e#1891#1892#0" expanded="true" />
-            <element signature="e#1924#1925#0" expanded="true" />
-            <element signature="e#1973#1974#0" expanded="true" />
-            <element signature="e#2017#2018#0" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
-            <element signature="e#2086#2087#0" expanded="true" />
-            <element signature="e#2137#2138#0" expanded="true" />
-            <element signature="e#2183#2184#0" expanded="true" />
-            <element signature="e#2217#2218#0" expanded="true" />
-            <element signature="e#2250#2251#0" expanded="true" />
-            <element signature="e#2299#2300#0" expanded="true" />
-            <element signature="e#2343#2344#0" expanded="true" />
-            <element signature="e#2374#2375#0" expanded="true" />
-            <element signature="e#2404#2405#0" expanded="true" />
-            <element signature="e#2447#2448#0" expanded="true" />
-            <element signature="e#2485#2486#0" expanded="true" />
-            <element signature="e#2517#2518#0" expanded="true" />
-            <element signature="e#2548#2549#0" expanded="true" />
-            <element signature="e#2593#2594#0" expanded="true" />
-            <element signature="e#2633#2634#0" expanded="true" />
-            <element signature="e#2668#2669#0" expanded="true" />
-            <element signature="e#2702#2703#0" expanded="true" />
-            <element signature="e#2753#2754#0" expanded="true" />
-            <element signature="e#2799#2800#0" expanded="true" />
-            <element signature="e#2831#2832#0" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2907#2908#0" expanded="true" />
-            <element signature="e#2947#2948#0" expanded="true" />
-            <element signature="e#2980#2981#0" expanded="true" />
-            <element signature="e#3012#3013#0" expanded="true" />
-            <element signature="e#3059#3060#0" expanded="true" />
-            <element signature="e#3101#3102#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/SeasonTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="854">
@@ -574,9 +512,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_201/javafx-src.zip!/javafx/event/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1339">
+          <caret line="139" column="161" selection-start-line="139" selection-start-column="161" selection-end-line="139" selection-end-column="161" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="484">
           <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
           <folding>
             <element signature="e#1498#1499#0" expanded="true" />
@@ -627,45 +590,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_201/javafx-src.zip!/javafx/event/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1339">
-          <caret line="139" column="161" selection-start-line="139" selection-start-column="161" selection-end-line="139" selection-end-column="161" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="594">
-            <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <caret line="27" selection-start-line="27" selection-end-line="27" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Match.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="e#1946#1947#0" expanded="true" />
+            <element signature="e#1994#1995#0" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2168#2169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="71" column="9" lean-forward="true" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
+        <state relative-caret-position="-2337">
+          <caret line="71" column="9" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="9" />
           <folding>
             <element signature="e#370#371#0" expanded="true" />
             <element signature="e#401#402#0" expanded="true" />
@@ -681,85 +639,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="218" column="49" lean-forward="true" selection-start-line="218" selection-start-column="49" selection-end-line="218" selection-end-column="49" />
+        <state relative-caret-position="39">
+          <caret line="457" column="12" lean-forward="true" selection-start-line="457" selection-start-column="12" selection-end-line="457" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3884#3885#0" expanded="true" />
-            <element signature="e#3962#3963#0" expanded="true" />
-            <element signature="e#10920#10921#0" expanded="true" />
-            <element signature="e#10996#10997#0" expanded="true" />
-            <element signature="e#11291#11292#0" expanded="true" />
-            <element signature="e#11367#11368#0" expanded="true" />
-            <element signature="e#13165#13166#0" expanded="true" />
-            <element signature="e#13244#13245#0" expanded="true" />
-            <element signature="e#13542#13543#0" expanded="true" />
-            <element signature="e#13621#13622#0" expanded="true" />
-            <element signature="e#13919#13920#0" expanded="true" />
-            <element signature="e#13998#13999#0" expanded="true" />
-            <element signature="e#14296#14297#0" expanded="true" />
-            <element signature="e#14375#14376#0" expanded="true" />
-            <element signature="e#13945#16995#0" />
-            <element signature="e#14695#14696#0" expanded="true" />
-            <element signature="e#14773#14774#0" expanded="true" />
-            <element signature="e#15030#15031#0" expanded="true" />
-            <element signature="e#15108#15109#0" expanded="true" />
-            <element signature="e#15365#15366#0" expanded="true" />
-            <element signature="e#15443#15444#0" expanded="true" />
-            <element signature="e#15700#15701#0" expanded="true" />
-            <element signature="e#15778#15779#0" expanded="true" />
-            <element signature="e#16035#16036#0" expanded="true" />
-            <element signature="e#16113#16114#0" expanded="true" />
-            <element signature="e#16370#16371#0" expanded="true" />
-            <element signature="e#16448#16449#0" expanded="true" />
-            <element signature="e#16711#16712#0" expanded="true" />
-            <element signature="e#16789#16790#0" expanded="true" />
-            <element signature="e#17046#17047#0" expanded="true" />
-            <element signature="e#17124#17125#0" expanded="true" />
-            <element signature="e#17381#17382#0" expanded="true" />
-            <element signature="e#17459#17460#0" expanded="true" />
-            <element signature="e#17716#17717#0" expanded="true" />
-            <element signature="e#17794#17795#0" expanded="true" />
-            <element signature="e#18051#18052#0" expanded="true" />
-            <element signature="e#18129#18130#0" expanded="true" />
-            <element signature="e#18386#18387#0" expanded="true" />
-            <element signature="e#18464#18465#0" expanded="true" />
-            <element signature="e#18725#18726#0" expanded="true" />
-            <element signature="e#18803#18804#0" expanded="true" />
-            <element signature="e#19060#19061#0" expanded="true" />
-            <element signature="e#19138#19139#0" expanded="true" />
-            <element signature="e#19395#19396#0" expanded="true" />
-            <element signature="e#19473#19474#0" expanded="true" />
-            <element signature="e#19730#19731#0" expanded="true" />
-            <element signature="e#19808#19809#0" expanded="true" />
-            <element signature="e#20065#20066#0" expanded="true" />
-            <element signature="e#20143#20144#0" expanded="true" />
-            <element signature="e#20400#20401#0" expanded="true" />
-            <element signature="e#20478#20479#0" expanded="true" />
-            <element signature="e#20738#20739#0" expanded="true" />
-            <element signature="e#20816#20817#0" expanded="true" />
-            <element signature="e#21073#21074#0" expanded="true" />
-            <element signature="e#21151#21152#0" expanded="true" />
-            <element signature="e#21408#21409#0" expanded="true" />
-            <element signature="e#21486#21487#0" expanded="true" />
-            <element signature="e#21743#21744#0" expanded="true" />
-            <element signature="e#21821#21822#0" expanded="true" />
-            <element signature="e#22078#22079#0" expanded="true" />
-            <element signature="e#22156#22157#0" expanded="true" />
-            <element signature="e#22413#22414#0" expanded="true" />
-            <element signature="e#22491#22492#0" expanded="true" />
-            <element signature="e#22752#22753#0" expanded="true" />
-            <element signature="e#22830#22831#0" expanded="true" />
-            <element signature="e#23087#23088#0" expanded="true" />
-            <element signature="e#23165#23166#0" expanded="true" />
-            <element signature="e#23422#23423#0" expanded="true" />
-            <element signature="e#23500#23501#0" expanded="true" />
-            <element signature="e#23757#23758#0" expanded="true" />
-            <element signature="e#23835#23836#0" expanded="true" />
-            <element signature="e#24092#24093#0" expanded="true" />
-            <element signature="e#24170#24171#0" expanded="true" />
-            <element signature="e#24427#24428#0" expanded="true" />
-            <element signature="e#24505#24506#0" expanded="true" />
+            <element signature="e#3997#3998#0" expanded="true" />
+            <element signature="e#4075#4076#0" expanded="true" />
+            <element signature="e#4594#4595#0" expanded="true" />
+            <element signature="e#4682#4683#0" expanded="true" />
+            <element signature="e#5202#5203#0" expanded="true" />
+            <element signature="e#5290#5291#0" expanded="true" />
+            <element signature="e#18499#28602#0" />
           </folding>
         </state>
       </provider>

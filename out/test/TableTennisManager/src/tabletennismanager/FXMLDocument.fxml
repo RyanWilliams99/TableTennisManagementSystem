@@ -77,13 +77,15 @@
                               <Button fx:id="viewFixturesResults" layoutX="20.0" layoutY="80.0" mnemonicParsing="false" onAction="#viewFixturesResultsHandle" prefWidth="200.0" text=" View fixture and result chart" textAlignment="CENTER" />
                               <Button fx:id="showStats" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#showStatsHandle" prefWidth="200.0" text="Show all team stats" textAlignment="CENTER" />
                               <Button fx:id="showRankingTable" layoutX="20.0" layoutY="160.0" mnemonicParsing="false" onAction="#showRankingTableHandle" prefWidth="200.0" text="Show Ranking Table" textAlignment="CENTER" AnchorPane.leftAnchor="20.0" />
-                              <Button fx:id="viewMatchScores" layoutX="20.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewMatchScoresHandle" prefHeight="25.0" prefWidth="200.0" text="View Match" textAlignment="CENTER" />
+                              <Button fx:id="viewMatchScores" layoutX="20.0" layoutY="249.0" mnemonicParsing="false" onAction="#viewMatchScoresHandle" prefHeight="25.0" prefWidth="200.0" text="View Match" textAlignment="CENTER" />
                               <TableView fx:id="viewingTable" layoutX="242.0" layoutY="80.0" prefHeight="503.0" prefWidth="800.0" />
                               <Label alignment="TOP_CENTER" layoutX="20.0" layoutY="20.0" prefHeight="30.0" prefWidth="200.0" text="Viewing Page">
                                  <font>
                                     <Font size="18.0" />
                                  </font>
                               </Label>
+                              <MenuButton fx:id="selectTeamViewMatch0" layoutX="20.0" layoutY="209.0" mnemonicParsing="false" onAction="#selectTeamHandle" prefHeight="25.0" prefWidth="92.0" text="Select Team" textAlignment="CENTER" />
+                              <MenuButton fx:id="selectTeamViewMatch1" layoutX="128.0" layoutY="209.0" mnemonicParsing="false" onAction="#selectTeamHandle" prefHeight="25.0" prefWidth="92.0" text="Select Team" textAlignment="CENTER" />
                            </children></AnchorPane>
                   </content>
                 </Tab>
