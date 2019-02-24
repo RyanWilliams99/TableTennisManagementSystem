@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d7e22c1a-254a-40ed-98f9-7d1c5b516251" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Season.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Season.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Set.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Set.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FXMLDocumentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/Season.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/Set.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -39,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="207" column="9" lean-forward="true" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
+              <caret line="207" column="9" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
               <folding>
                 <element signature="e#370#371#0" expanded="true" />
                 <element signature="e#401#402#0" expanded="true" />
@@ -112,8 +107,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="513" column="58" selection-start-line="513" selection-start-column="58" selection-end-line="513" selection-end-column="58" />
+            <state relative-caret-position="721">
+              <caret line="894" column="41" selection-start-line="894" selection-start-column="41" selection-end-line="894" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3580#3581#0" expanded="true" />
@@ -346,7 +341,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551023475407" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551026520578" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -458,7 +453,7 @@
       <workItem from="1550828577303" duration="14786000" />
       <workItem from="1550920929939" duration="11921000" />
       <workItem from="1551001624309" duration="4324000" />
-      <workItem from="1551006509720" duration="8399000" />
+      <workItem from="1551006509720" duration="9362000" />
     </task>
     <servers />
   </component>
@@ -471,7 +466,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104453000" />
+    <option name="totallyTimeSpent" value="105416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -669,7 +664,7 @@
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="207" column="9" lean-forward="true" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
+          <caret line="207" column="9" selection-start-line="207" selection-start-column="9" selection-end-line="207" selection-end-column="9" />
           <folding>
             <element signature="e#370#371#0" expanded="true" />
             <element signature="e#401#402#0" expanded="true" />
@@ -685,8 +680,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="513" column="58" selection-start-line="513" selection-start-column="58" selection-end-line="513" selection-end-column="58" />
+        <state relative-caret-position="721">
+          <caret line="894" column="41" selection-start-line="894" selection-start-column="41" selection-end-line="894" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3580#3581#0" expanded="true" />

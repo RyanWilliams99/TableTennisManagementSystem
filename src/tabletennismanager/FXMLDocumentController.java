@@ -892,6 +892,7 @@ public class FXMLDocumentController {
                 Season.getFixtures().get(x).sets.get(3).addSetScoresAndPlayers(Integer.parseInt(set3game0h.getText()),Integer.parseInt(set3game0a.getText()), Integer.parseInt(set3game1h.getText()), Integer.parseInt(set3game1a.getText()), Integer.parseInt(set3game2h.getText()), Integer.parseInt(set3game2a.getText()));
                 Season.getFixtures().get(x).sets.get(4).addSetScoresAndPlayers(Integer.parseInt(set4game0h.getText()),Integer.parseInt(set4game0a.getText()), Integer.parseInt(set4game1h.getText()), Integer.parseInt(set4game1a.getText()), Integer.parseInt(set4game2h.getText()), Integer.parseInt(set4game2a.getText()));
                 Season.getFixtures().get(x).setMatchPlayed(true);
+                Season.calculateScores();
 
             }
         }
