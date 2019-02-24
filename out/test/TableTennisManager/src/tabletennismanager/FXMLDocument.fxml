@@ -609,6 +609,7 @@
                                     <Font size="24.0" />
                                  </font>
                               </Text>
+                              <Button fx:id="addTestData" layoutX="154.0" layoutY="26.0" mnemonicParsing="false" onAction="#addTestData" text="Add Test Data" />
                            </children></AnchorPane>
                      </content>
                   </Tab>

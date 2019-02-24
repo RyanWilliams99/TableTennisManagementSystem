@@ -186,6 +186,9 @@ public class FXMLDocumentController {
     private MenuButton selectTeamViewMatch1;
 
     @FXML
+    private Button addTestData;
+
+    @FXML
     public void initialize() {
 
         Season.addTestData();
@@ -199,6 +202,11 @@ public class FXMLDocumentController {
     {
         updateHomeTeamAwayTeamDropdown();
         updateSelectTeamDropdown();
+    }
+
+    @FXML
+    void addTestData(ActionEvent event) {
+        Season.addTestData();
     }
 
     public void updateSelectTeamDropdown()
@@ -302,9 +310,12 @@ public class FXMLDocumentController {
 
     @FXML
     void registerPlayerHandle(ActionEvent event) {
-        System.out.println("Register player");
-        System.out.println("Adding player " + playerNameTextField.getText() + " to team:" + selectTeam.getText());
-        if(!playerNameTextField.getText().isEmpty() && !selectTeam.getText().equals("Select Team"))
+        if (selectTeam.getText().equals("Select Team") || playerNameTextField.getText().isEmpty())
+        {
+            Alert noNameAlert = new Alert(Alert.AlertType.ERROR, "Please Enter a player name and select a team",  ButtonType.OK);
+            noNameAlert.showAndWait();
+        }
+        else
         {
             for(int x = 0; x < Season.getTeams().size(); x++)
             {
@@ -457,40 +468,23 @@ public class FXMLDocumentController {
         }
         else
         {
-            Season.calculateScores();
-            String game1 = Season.getFixtures().get(0).sets.get(0).getGames().get(0).getHomeScore() + ":" + Season.getFixtures().get(0).sets.get(0).getGames().get(0).getAwayScore();
-            System.out.println(game1);
-            //ystem.out.println(getAMatch());
-            viewingTable.getColumns().clear();
-
-
-            TableColumn<FixtureAndResult, String> homeTeam = new TableColumn<>("Home Team");
-            homeTeam.setCellValueFactory(new PropertyValueFactory<>("homeTeam"));
-
-            TableColumn<FixtureAndResult, String> awayTeam = new TableColumn<>("Away Team");
-            awayTeam.setCellValueFactory(new PropertyValueFactory<>("awayTeam"));
-
-            TableColumn<FixtureAndResult, String> player0 = new TableColumn<>("Home Player");
-            player0.setCellValueFactory(new PropertyValueFactory<>("homePlayer"));
-
-            TableColumn<FixtureAndResult, String> player1 = new TableColumn<>("Away Player");
-            player1.setCellValueFactory(new PropertyValueFactory<>("awayPlayer"));
-
-            TableColumn<FixtureAndResult, String> Game1 = new TableColumn<>("Game1");
-            Game1.setCellValueFactory(new PropertyValueFactory<>("Game1"));
-
-            TableColumn<FixtureAndResult, String> Game2 = new TableColumn<>("Game2");
-            Game2.setCellValueFactory(new PropertyValueFactory<>("Game2"));
-
-            TableColumn<FixtureAndResult, String> Game3 = new TableColumn<>("Game3");
-            Game3.setCellValueFactory(new PropertyValueFactory<>("Game3"));
-
-
-
-            viewingTable.setItems(getAMatch());
-            viewingTable.getColumns().addAll(homeTeam, awayTeam, player0, player1, Game1, Game2, Game3);
-
+            for (int y = 0; y < Season.getFixtures().size();y++)
+            {
+                if (Season.getFixtures().get(y).getTeamHome().getTeamName().equals(selectTeamViewMatch0.getText()) && Season.getFixtures().get(y).getTeamAway().getTeamName().equals(selectTeamViewMatch1.getText()))
+                {
+                    Alert viewMatch = new Alert(Alert.AlertType.INFORMATION, "Match: " +
+                            Season.getFixtures().get(y).getTeamHome().getTeamName() + " VS " +
+                            Season.getFixtures().get(y).getTeamAway().getTeamName() + "\nSet: " +
+                            Season.getFixtures().get(y).getTeamHome().getPlayers().get(0).getPlayerName() +
+                            " VS " + Season.getFixtures().get(y).getTeamAway().getPlayers().get(0).getPlayerName()
+                            + " " + Season.getFixtures().get(y).sets.get(0).games.get(0).getHomeScore()
+                            ,  ButtonType.OK);
+                    viewMatch.setHeaderText(null);
+                    viewMatch.showAndWait();
+                }
+            }
         }
+
     }
 
 

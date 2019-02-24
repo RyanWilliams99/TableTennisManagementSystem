@@ -208,7 +208,6 @@ public class Season {
         {
             if (fixtures.get(x).getTeamHome() == filton && fixtures.get(x).getTeamAway() == uwe)
             {
-                System.out.println("Filton vs uwe setting scores manually");
                 fixtures.get(x).sets.get(0).addSetScoresAndPlayers(11,2,3,11,11,5);
                 fixtures.get(x).sets.get(1).addSetScoresAndPlayers(1,11,5,11,11,6);
                 fixtures.get(x).sets.get(2).addSetScoresAndPlayers(11,9,11,1,11,1);
@@ -219,7 +218,6 @@ public class Season {
 
             if (fixtures.get(x).getTeamHome() == uwe && fixtures.get(x).getTeamAway() == page)
             {
-                System.out.println("Filton vs uwe setting scores manually");
                 fixtures.get(x).sets.get(0).addSetScoresAndPlayers(11,2,3,11,11,5);
                 fixtures.get(x).sets.get(1).addSetScoresAndPlayers(11,1,5,11,11,6);
                 fixtures.get(x).sets.get(2).addSetScoresAndPlayers(11,9,11,1,11,1);
