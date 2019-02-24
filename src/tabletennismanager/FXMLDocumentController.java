@@ -472,13 +472,57 @@ public class FXMLDocumentController {
             {
                 if (Season.getFixtures().get(y).getTeamHome().getTeamName().equals(selectTeamViewMatch0.getText()) && Season.getFixtures().get(y).getTeamAway().getTeamName().equals(selectTeamViewMatch1.getText()))
                 {
-                    Alert viewMatch = new Alert(Alert.AlertType.INFORMATION, "Match: " +
-                            Season.getFixtures().get(y).getTeamHome().getTeamName() + " VS " +
-                            Season.getFixtures().get(y).getTeamAway().getTeamName() + "\nSet: " +
-                            Season.getFixtures().get(y).getTeamHome().getPlayers().get(0).getPlayerName() +
-                            " VS " + Season.getFixtures().get(y).getTeamAway().getPlayers().get(0).getPlayerName()
+                    Alert viewMatch = new Alert(Alert.AlertType.INFORMATION,
+                            "Match: " + Season.getFixtures().get(y).getTeamHome().getTeamName()
+                            + " vs " + Season.getFixtures().get(y).getTeamAway().getTeamName()
+                            +"\nSet: "+ Season.getFixtures().get(y).getTeamHome().getPlayers().get(0).getPlayerName()
+                            +" vs "+ Season.getFixtures().get(y).getTeamAway().getPlayers().get(0).getPlayerName()
                             + " " + Season.getFixtures().get(y).sets.get(0).games.get(0).getHomeScore()
+                            + ":" + Season.getFixtures().get(y).sets.get(0).games.get(0).getAwayScore()
+                            + " " + Season.getFixtures().get(y).sets.get(0).games.get(1).getHomeScore()
+                            + ":" + Season.getFixtures().get(y).sets.get(0).games.get(1).getAwayScore()
+                            + " " + Season.getFixtures().get(y).sets.get(0).games.get(2).getHomeScore()
+                            + ":" + Season.getFixtures().get(y).sets.get(0).games.get(2).getAwayScore()
+
+                                    +"\nSet: "+ Season.getFixtures().get(y).getTeamHome().getPlayers().get(0).getPlayerName()
+                                    +" vs "+ Season.getFixtures().get(y).getTeamAway().getPlayers().get(1).getPlayerName()
+                                    + " " + Season.getFixtures().get(y).sets.get(1).games.get(0).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(1).games.get(0).getAwayScore()
+                                    + " " + Season.getFixtures().get(y).sets.get(1).games.get(1).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(1).games.get(1).getAwayScore()
+                                    + " " + Season.getFixtures().get(y).sets.get(1).games.get(2).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(1).games.get(2).getAwayScore()
+
+                                    +"\nSet: "+ Season.getFixtures().get(y).getTeamHome().getPlayers().get(1).getPlayerName()
+                                    +" vs "+ Season.getFixtures().get(y).getTeamAway().getPlayers().get(0).getPlayerName()
+                                    + " " + Season.getFixtures().get(y).sets.get(2).games.get(0).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(2).games.get(0).getAwayScore()
+                                    + " " + Season.getFixtures().get(y).sets.get(2).games.get(1).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(2).games.get(1).getAwayScore()
+                                    + " " + Season.getFixtures().get(y).sets.get(2).games.get(2).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(2).games.get(2).getAwayScore()
+
+                                    +"\nSet: "+ Season.getFixtures().get(y).getTeamHome().getPlayers().get(1).getPlayerName()
+                                    +" vs "+ Season.getFixtures().get(y).getTeamAway().getPlayers().get(1).getPlayerName()
+                                    + " " + Season.getFixtures().get(y).sets.get(3).games.get(0).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(3).games.get(0).getAwayScore()
+                                    + " " + Season.getFixtures().get(y).sets.get(3).games.get(1).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(3).games.get(1).getAwayScore()
+                                    + " " + Season.getFixtures().get(y).sets.get(3).games.get(2).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(3).games.get(2).getAwayScore()
+
+                                    +"\nSet: NULL vs NULL"
+                                    + " " + Season.getFixtures().get(y).sets.get(4).games.get(0).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(4).games.get(0).getAwayScore()
+                                    + " " + Season.getFixtures().get(y).sets.get(4).games.get(1).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(4).games.get(1).getAwayScore()
+                                    + " " + Season.getFixtures().get(y).sets.get(4).games.get(2).getHomeScore()
+                                    + ":" + Season.getFixtures().get(y).sets.get(4).games.get(2).getAwayScore()
+
+
                             ,  ButtonType.OK);
+                    viewMatch.setTitle("Match: " + Season.getFixtures().get(y).getTeamHome().getTeamName()
+                            + " vs " + Season.getFixtures().get(y).getTeamAway().getTeamName());
                     viewMatch.setHeaderText(null);
                     viewMatch.showAndWait();
                 }

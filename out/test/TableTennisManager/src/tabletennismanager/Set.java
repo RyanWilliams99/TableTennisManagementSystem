@@ -21,16 +21,12 @@ public class Set {
     }
 
     public void addSetScoresAndPlayers(int game0h, int game0a ,int game1h, int game1a, int game2h, int game2a) {
-
-//        this.setPlayerHome(player0);
-//        this.setPlayerHome(player1);
         games.get(0).setHomeScore(game0h);
         games.get(0).setAwayScore(game0a);
         games.get(1).setHomeScore(game1h);
         games.get(1).setAwayScore(game1a);
         games.get(2).setHomeScore(game2h);
         games.get(2).setAwayScore(game2a);
-
 
     }
 
