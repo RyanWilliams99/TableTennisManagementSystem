@@ -16,9 +16,8 @@ import java.util.ArrayList;
             this.teamHome = teamHome;
             this.teamAway = teamAway;
 
-            sets = new ArrayList<>(2);
-            //System.out.println("Creating five new set objects");
-            for(int x  = 0;x < 5; x++) //Generate 5 set objects
+            sets = new ArrayList<>(5);
+            for(int x  = 0; x < 5; x++) //Generate 5 set objects and add to set arraylist
             {
                 sets.add(new Set());
             }
@@ -29,12 +28,10 @@ import java.util.ArrayList;
             System.out.println("Calculating match scores for " + this.getTeamHome().getTeamName() + " VS " + this.getTeamAway().getTeamName());
             for (int x  = 0; x < 5; x++) //For every Set see who had most games
             {
-
                 sets.get(x).calculateSetScores();
                 System.out.println("About to compare home team SETS vs away team SETS " + sets.get(x).getScoreHome()  + " : " +  sets.get(x).getScoreAway());
-                if (sets.get(x).getScoreHome() > sets.get(x).getScoreAway())
+                if (sets.get(x).getScoreHome() > sets.get(x).getScoreAway()) //Sets each teams sets won to correct value
                 {
-
                     this.setScoreHome(this.getScoreHome() + 1);
                 }
                 else
@@ -46,7 +43,7 @@ import java.util.ArrayList;
             System.out.println("SO HOME SETS WON " + this.getScoreHome() + " AWAY SETS WON " + this.getScoreAway());
         }
 
-        public void resetScores()
+        public void resetScores() //Used so that the user cannot generate too many times
         {
             this.setScoreHome(0);
             this.setScoreAway(0);
@@ -57,10 +54,7 @@ import java.util.ArrayList;
             }
         }
 
-        public boolean isMatchPlayed() {
-
-            return matchPlayed;
-        }
+        public boolean isMatchPlayed() { return matchPlayed; }
 
         public void setMatchPlayed(boolean matchPlayed) {
             this.matchPlayed = matchPlayed;
