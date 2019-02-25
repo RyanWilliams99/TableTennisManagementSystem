@@ -46,6 +46,17 @@ import java.util.ArrayList;
             System.out.println("SO HOME SETS WON " + this.getScoreHome() + " AWAY SETS WON " + this.getScoreAway());
         }
 
+        public void resetScores()
+        {
+            this.setScoreHome(0);
+            this.setScoreAway(0);
+            for (int x = 0; x < 5; x++)
+            {
+                sets.get(x).setScoreHome(0);
+                sets.get(x).setScoreAway(0);
+            }
+        }
+
         public boolean isMatchPlayed() {
 
             return matchPlayed;

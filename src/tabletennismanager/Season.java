@@ -162,8 +162,11 @@ public class Season {
     {
         for (int x  = 0; x < fixtures.size(); x++)
         {
+            fixtures.get(x).resetScores();
             if(fixtures.get(x).isMatchPlayed())
+            {
                 fixtures.get(x).calculateMatchScores();
+            }
         }
     }
 

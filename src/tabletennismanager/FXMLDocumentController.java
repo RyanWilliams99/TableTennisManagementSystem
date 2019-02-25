@@ -7,199 +7,60 @@ import javafx.scene.control.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
-
-import java.util.ArrayList;
-
 
 public class FXMLDocumentController {
 
+    @FXML private TextField addTeamTextField;
+    @FXML private TextField playerNameTextField;
+    @FXML private MenuButton selectTeam;
+    @FXML private TableView<FixtureAndResult> viewingTable;
+    @FXML private MenuButton homeTeam;
+    @FXML private MenuButton awayTeam;
+    @FXML private MenuButton awayPlayer0;
+    @FXML private MenuButton awayPlayer1;
+    @FXML private MenuButton homePlayer1;
+    @FXML private MenuButton homePlayer0;
+    @FXML private MenuButton set0game0h;
+    @FXML private MenuButton set0game0a;
+    @FXML private MenuButton set0game1h;
+    @FXML private MenuButton set0game1a;
+    @FXML private MenuButton set0game2h;
+    @FXML private MenuButton set0game2a;
+    @FXML private MenuButton set1game0h;
+    @FXML private MenuButton set1game0a;
+    @FXML private MenuButton set1game1h;
+    @FXML private MenuButton set1game1a;
+    @FXML private MenuButton set1game2h;
+    @FXML private MenuButton set1game2a;
+    @FXML private MenuButton set2game0h;
+    @FXML private MenuButton set2game0a;
+    @FXML private MenuButton set2game1h;
+    @FXML private MenuButton set2game1a;
+    @FXML private MenuButton set2game2h;
+    @FXML private MenuButton set2game2a;
+    @FXML private MenuButton set3game0h;
+    @FXML private MenuButton set3game0a;
+    @FXML private MenuButton set3game1h;
+    @FXML private MenuButton set3game1a;
+    @FXML private MenuButton set3game2h;
+    @FXML private MenuButton set3game2a;
+    @FXML private MenuButton set4game0h;
+    @FXML private MenuButton set4game0a;
+    @FXML private MenuButton set4game1h;
+    @FXML private MenuButton set4game1a;
+    @FXML private MenuButton set4game2h;
+    @FXML private MenuButton set4game2a;
+    @FXML private MenuButton selectTeamViewMatch0;
+    @FXML private MenuButton selectTeamViewMatch1;
+    @FXML private MenuButton overall0;
+    @FXML private MenuButton overall1;
+
     Season Season = new Season();
 
-    @FXML
-    private TextField addTeamTextField;
-
-    @FXML
-    private Button addTeam;
-
-    @FXML
-    private TextField playerNameTextField;
-
-    @FXML
-    private MenuButton selectTeam;
-
-    @FXML
-    private Button registerPlayer;
-
-    @FXML
-    private Button generateFixtures;
-
-    @FXML
-    private Button generateTeamStats;
-
-    @FXML
-    private Button viewFixturesResults;
-
-    @FXML
-    private Button showStats;
-
-    @FXML
-    private Button showRankingTable;
-
-    @FXML
-    private Button viewMatchScores;
-
-    @FXML
-    private Button modifyScoresheet;
-
-    @FXML
-    private TableView<FixtureAndResult> viewingTable;
-
-    @FXML
-    private AnchorPane viewerPage;
-
-    @FXML
-    private AnchorPane scoresheet;
-
-    @FXML
-    private MenuButton homeTeam;
-
-    @FXML
-    private MenuButton awayTeam;
-
-    @FXML
-    private MenuButton awayPlayer0;
-
-    @FXML
-    private MenuButton awayPlayer1;
-
-    @FXML
-    private MenuButton homePlayer1;
-
-    @FXML
-    private MenuButton homePlayer0;
-
-    @FXML
-    private Button calculateAndSubmitScores;
-
-    @FXML
-    private MenuButton set0game0h;
-
-    @FXML
-    private MenuButton set0game0a;
-
-    @FXML
-    private MenuButton set0game1h;
-
-    @FXML
-    private MenuButton set0game1a;
-
-    @FXML
-    private MenuButton set0game2h;
-
-    @FXML
-    private MenuButton set0game2a;
-
-    @FXML
-    private MenuButton set1game0h;
-
-    @FXML
-    private MenuButton set1game0a;
-
-    @FXML
-    private MenuButton set1game1h;
-
-    @FXML
-    private MenuButton set1game1a;
-
-    @FXML
-    private MenuButton set1game2h;
-
-    @FXML
-    private MenuButton set1game2a;
-
-    @FXML
-    private MenuButton set2game0h;
-
-    @FXML
-    private MenuButton set2game0a;
-
-    @FXML
-    private MenuButton set2game1h;
-
-    @FXML
-    private MenuButton set2game1a;
-
-    @FXML
-    private MenuButton set2game2h;
-
-    @FXML
-    private MenuButton set2game2a;
-
-    @FXML
-    private MenuButton set3game0h;
-
-    @FXML
-    private MenuButton set3game0a;
-
-    @FXML
-    private MenuButton set3game1h;
-
-    @FXML
-    private MenuButton set3game1a;
-
-    @FXML
-    private MenuButton set3game2h;
-
-    @FXML
-    private MenuButton set3game2a;
-
-    @FXML
-    private MenuButton set4game0h;
-
-    @FXML
-    private MenuButton set4game0a;
-
-    @FXML
-    private MenuButton set4game1h;
-
-    @FXML
-    private MenuButton set4game1a;
-
-    @FXML
-    private MenuButton set4game2h;
-
-    @FXML
-    private MenuButton set4game2a;
-
-    @FXML
-    private Button updatePlayers;
-
-    @FXML
-    private MenuButton selectTeamViewMatch0;
-
-    @FXML
-    private MenuButton selectTeamViewMatch1;
-
-    @FXML
-    private Button addTestData;
-
-    @FXML
-    private AnchorPane mainAnchorPane;
-
-    @FXML
-    private MenuButton overall0;
-
-    @FXML
-    private MenuButton overall1;
-
-    @FXML
-    public void initialize() {
+    @FXML public void initialize() {
         Season.addTestData();
         updateHomeTeamAwayTeamDropdown();
         updateSelectTeamDropdown();
@@ -213,8 +74,7 @@ public class FXMLDocumentController {
         updateSelectTeamDropdown();
     }
 
-    @FXML
-    void addTestData(ActionEvent event) {
+    @FXML void addTestData(ActionEvent event) {
         Season.addTestData();
     }
 
@@ -268,8 +128,7 @@ public class FXMLDocumentController {
         }
     }
 
-    @FXML
-    void addTeamHandle(ActionEvent event) {
+    @FXML void addTeamHandle(ActionEvent event) {
 
         if (addTeamTextField.getText().isEmpty())
         {
@@ -287,14 +146,12 @@ public class FXMLDocumentController {
         }
     }
 
-    @FXML
-    void selectTeamHandle(ActionEvent event) {
+    @FXML void selectTeamHandle(ActionEvent event) {
         System.out.println("Select team pressed");
 
     }
 
-    @FXML
-    void generateFixturesHandle(ActionEvent event) {
+    @FXML void generateFixturesHandle(ActionEvent event) {
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to generate new fixtures, all past match data will be removed", ButtonType.YES, ButtonType.NO);
         alert.showAndWait();
 
@@ -305,20 +162,13 @@ public class FXMLDocumentController {
 
     }
 
-    @FXML
-    void generateTeamStatsHandle(ActionEvent event) {
+    @FXML void generateTeamStatsHandle(ActionEvent event) {
 
         Season.generateStats();
 
     }
 
-    @FXML
-    void modifyScoresheetHandle(ActionEvent event) {
-
-    }
-
-    @FXML
-    void registerPlayerHandle(ActionEvent event) {
+    @FXML void registerPlayerHandle(ActionEvent event) {
         if (selectTeam.getText().equals("Select Team") || playerNameTextField.getText().isEmpty())
         {
             Alert noNameAlert = new Alert(Alert.AlertType.ERROR, "Please Enter a player name and select a team",  ButtonType.OK);
@@ -338,10 +188,13 @@ public class FXMLDocumentController {
         updateUI();
     }
 
-    @FXML
-    void showRankingTableHandle(ActionEvent event) {
-
+    @FXML void showRankingTableHandle(ActionEvent event) {
         viewingTable.getColumns().clear();
+        Season.calculateScores();
+        Season.generateStats();
+
+        TableColumn<FixtureAndResult, Integer> position = new TableColumn<>("Position");
+        position.setCellValueFactory(new PropertyValueFactory<>("position"));
 
         TableColumn<FixtureAndResult, String> teamName = new TableColumn<>("Team Name");
         teamName.setCellValueFactory(new PropertyValueFactory<>("teamName"));
@@ -358,13 +211,13 @@ public class FXMLDocumentController {
 
 
         viewingTable.setItems(getStats());
-        viewingTable.getColumns().addAll(teamName, matchesPlayed, matchesWon);
+        viewingTable.getColumns().addAll(position, teamName, matchesPlayed, matchesWon);
         viewingTable.getSortOrder().add(matchesWon);
     }
 
-    @FXML
-    void showStatsHandle(ActionEvent event) {
+    @FXML void showStatsHandle(ActionEvent event) {
         viewingTable.getColumns().clear();
+        Season.calculateScores();
         Season.generateStats();
 
         TableColumn<FixtureAndResult, String> teamName = new TableColumn<>("Team Name");
@@ -383,31 +236,26 @@ public class FXMLDocumentController {
         viewingTable.getColumns().addAll(teamName, matchesPlayed, matchesWon, setsWon);
     }
 
-    @FXML
-    void viewFixturesResultsHandle(ActionEvent event) {
+    @FXML void viewFixturesResultsHandle(ActionEvent event) {
         Season.displayFixtures();
+        Season.calculateScores();
         viewingTable.getColumns().clear();
 
 
         TableColumn<FixtureAndResult, String> homeTeam = new TableColumn<>("Home Team");
-        //homeTeam.setMinWidth(100);
         homeTeam.setCellValueFactory(new PropertyValueFactory<>("homeTeam"));
 
         TableColumn<FixtureAndResult, String> awayTeam = new TableColumn<>("Away Team");
-        //awayTeam.setMinWidth(100);
         awayTeam.setCellValueFactory(new PropertyValueFactory<>("awayTeam"));
 
         TableColumn<FixtureAndResult, String> vs = new TableColumn<>("VS");
-        //vs.setMinWidth(25);
         vs.setCellValueFactory(new PropertyValueFactory<>("vs"));
 
 
         TableColumn<FixtureAndResult, Integer> homeTeamSets = new TableColumn<>("Home Team Sets");
-        //homeTeamSets.setMinWidth(100);
         homeTeamSets.setCellValueFactory(new PropertyValueFactory<>("homeTeamSets"));
 
         TableColumn<FixtureAndResult, Integer> awayTeamSets = new TableColumn<>("Away Team Sets");
-        //awayTeamSets.setMinWidth(100);
         awayTeamSets.setCellValueFactory(new PropertyValueFactory<>("awayTeamSets"));
 
         viewingTable.setItems(getFixtures());
@@ -429,7 +277,8 @@ public class FXMLDocumentController {
         ObservableList<FixtureAndResult> fixtureAndResults = FXCollections.observableArrayList();
         for (int x = 0; x < Season.getTeams().size(); x++)
         {
-            fixtureAndResults.add(new FixtureAndResult(Season.getTeams().get(x).getTeamName(), Season.getTeams().get(x).getMatchesPlayed(), Season.getTeams().get(x).getMatchesWon(),Season.getTeams().get(x).getMatchesLost(),Season.getTeams().get(x).getSetsPlayed(),Season.getTeams().get(x).getSetsWon(),Season.getTeams().get(x).getSetsLost(),Season.getTeams().get(x).getGamesPlayed(),Season.getTeams().get(x).getGamesWon(),Season.getTeams().get(x).getGamesLost()));
+            int y = x + 1;
+            fixtureAndResults.add(new FixtureAndResult(y,Season.getTeams().get(x).getTeamName(), Season.getTeams().get(x).getMatchesPlayed(), Season.getTeams().get(x).getMatchesWon(),Season.getTeams().get(x).getMatchesLost(),Season.getTeams().get(x).getSetsPlayed(),Season.getTeams().get(x).getSetsWon(),Season.getTeams().get(x).getSetsLost(),Season.getTeams().get(x).getGamesPlayed(),Season.getTeams().get(x).getGamesWon(),Season.getTeams().get(x).getGamesLost()));
         }
 
         return fixtureAndResults;
@@ -437,7 +286,6 @@ public class FXMLDocumentController {
 
     public ObservableList<FixtureAndResult> getAMatch(){
         ObservableList<FixtureAndResult> fixtureAndResults = FXCollections.observableArrayList();
-        //home team | away team | home player | away player | Game 1 | Game 2 | Game 3
         fixtureAndResults.clear();
         for (int x = 0; x < Season.getFixtures().size(); x++)
         {
@@ -460,16 +308,10 @@ public class FXMLDocumentController {
 
             }
         }
-
         return fixtureAndResults;
     }
 
-
-
-
-
-    @FXML
-    void viewMatchScoresHandle(ActionEvent event) {
+    @FXML void viewMatchScoresHandle(ActionEvent event) {
         if (selectTeamViewMatch0.getText().equals(selectTeamViewMatch1.getText()))
         {
             Alert alert = new Alert(Alert.AlertType.WARNING, "Please select two different teams",  ButtonType.OK);
@@ -537,10 +379,7 @@ public class FXMLDocumentController {
                 }
             }
         }
-
     }
-
-
 
     public void updateHomeTeamAwayTeamDropdown()
     {
@@ -576,9 +415,7 @@ public class FXMLDocumentController {
         }
     }
 
-
-    @FXML
-    void updatePlayersHandle(ActionEvent event) {
+    @FXML void updatePlayersHandle(ActionEvent event) {
         homePlayer0.getItems().clear();
         homePlayer1.getItems().clear();
         awayPlayer0.getItems().clear();
@@ -701,11 +538,6 @@ public class FXMLDocumentController {
                     set0game2a.setText(MenuItem.getText());
                 }}); }
 
-
-
-
-
-
         for (MenuItem item : set1game0h.getItems()) {
             MenuItem MenuItem = (MenuItem) item;
             MenuItem.setOnAction(new EventHandler<ActionEvent>() {
@@ -748,10 +580,6 @@ public class FXMLDocumentController {
                 public void handle(ActionEvent event) {
                     set1game2a.setText(MenuItem.getText());
                 }}); }
-
-
-
-
         for (MenuItem item : set2game0h.getItems()) {
             MenuItem MenuItem = (MenuItem) item;
             MenuItem.setOnAction(new EventHandler<ActionEvent>() {
@@ -795,8 +623,6 @@ public class FXMLDocumentController {
                     set2game2a.setText(MenuItem.getText());
                 }}); }
 
-
-
         for (MenuItem item : set3game0h.getItems()) {
             MenuItem MenuItem = (MenuItem) item;
             MenuItem.setOnAction(new EventHandler<ActionEvent>() {
@@ -839,9 +665,6 @@ public class FXMLDocumentController {
                 public void handle(ActionEvent event) {
                     set3game2a.setText(MenuItem.getText());
                 }}); }
-
-
-
 
         for (MenuItem item : set4game0h.getItems()) {
             MenuItem MenuItem = (MenuItem) item;
@@ -904,8 +727,7 @@ public class FXMLDocumentController {
 
     }
 
-    @FXML
-    void calculateAndSubmitScoresHandle(ActionEvent event) {
+    @FXML void calculateAndSubmitScoresHandle(ActionEvent event) {
 
         for (int x = 0; x < Season.getTeams().size(); x++)
         {
@@ -918,13 +740,7 @@ public class FXMLDocumentController {
                 Season.getFixtures().get(x).sets.get(4).addSetScoresAndPlayers(Integer.parseInt(set4game0h.getText()),Integer.parseInt(set4game0a.getText()), Integer.parseInt(set4game1h.getText()), Integer.parseInt(set4game1a.getText()), Integer.parseInt(set4game2h.getText()), Integer.parseInt(set4game2a.getText()));
                 Season.getFixtures().get(x).setMatchPlayed(true);
                 Season.calculateScores();
-
             }
         }
-    }
-
-    @FXML
-    void verifyAdmin(ActionEvent event) {
-        System.out.println("Test");
     }
 }

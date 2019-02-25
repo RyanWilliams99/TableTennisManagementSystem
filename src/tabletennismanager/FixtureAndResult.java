@@ -18,7 +18,7 @@ public class FixtureAndResult {
     private int gamesPlayed;
     private int gamesWon;
     private int gamesLost;
-
+    private int position;
 
     private String homePlayer;
     private String awayPlayer;
@@ -27,9 +27,16 @@ public class FixtureAndResult {
     private String Game3;
 
 
+    public int getPosition() {
+        return position;
+    }
 
+    public void setPosition(int position) {
+        this.position = position;
+    }
 
-    public FixtureAndResult(String teamName, int matchesPlayed, int matchesWon, int matchesLost, int setsPlayed, int setsWon, int setsLost, int gamesPlayed, int gamesWon, int gamesLost) {
+    public FixtureAndResult(int x, String teamName, int matchesPlayed, int matchesWon, int matchesLost, int setsPlayed, int setsWon, int setsLost, int gamesPlayed, int gamesWon, int gamesLost) {
+        this.position = x;
         this.teamName = teamName;
         this.matchesPlayed = matchesPlayed;
         this.matchesWon = matchesWon;

@@ -20,8 +20,10 @@
 - [ ] Produce 3 x sequence diagrams
 - [ ] Outline how we agile developed
 - [ ] Create test for each method!
-- [ ] GUI!
-    - [x] View Match
-    - [x] Generate stats 
-    - [x] View Leaderboard
-    - [ ] Fixture and result is table not a chart
+- [x] GUI!
+
+**Known Issues**
+Fixture and results are table not popup
+After adding a new scoresheet cannot display properly
+All games player etc set to 0 initially
+
