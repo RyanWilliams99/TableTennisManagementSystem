@@ -9,7 +9,7 @@
 - [x] generateFixtures
 - [x] generateStats
 - [x] displayTeamStats
-- [ ] displayLeaderBoard //view team ranking
+- [x] displayLeaderBoard //view team ranking
 - [x] displayAMatch
 - [x] displayFixtures
 - [ ] autoUpdate
@@ -24,4 +24,4 @@
     - [x] View Match
     - [x] Generate stats 
     - [x] View Leaderboard
-    
+    - [ ] Fixture and result is table not a chart

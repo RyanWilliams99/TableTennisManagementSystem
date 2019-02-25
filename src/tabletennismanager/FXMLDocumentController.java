@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.util.ArrayList;
 
@@ -189,8 +190,16 @@ public class FXMLDocumentController {
     private Button addTestData;
 
     @FXML
-    public void initialize() {
+    private AnchorPane mainAnchorPane;
 
+    @FXML
+    private MenuButton overall0;
+
+    @FXML
+    private MenuButton overall1;
+
+    @FXML
+    public void initialize() {
         Season.addTestData();
         updateHomeTeamAwayTeamDropdown();
         updateSelectTeamDropdown();
@@ -877,6 +886,22 @@ public class FXMLDocumentController {
                     set4game2a.setText(MenuItem.getText());
                 }}); }
 
+        for (MenuItem item : overall0.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    overall0.setText(MenuItem.getText());
+                }}); }
+
+        for (MenuItem item : overall1.getItems()) {
+            MenuItem MenuItem = (MenuItem) item;
+            MenuItem.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent event) {
+                    overall1.setText(MenuItem.getText());
+                }}); }
+
     }
 
     @FXML
@@ -896,5 +921,10 @@ public class FXMLDocumentController {
 
             }
         }
+    }
+
+    @FXML
+    void verifyAdmin(ActionEvent event) {
+        System.out.println("Test");
     }
 }

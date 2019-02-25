@@ -184,6 +184,8 @@ public class Season {
 
     public void addTestData()
     {
+        fixtures.clear();
+        teams.clear();
         Team uwe = new Team("uwe");
         Team page = new Team("page");
         Team filton = new Team("filton");

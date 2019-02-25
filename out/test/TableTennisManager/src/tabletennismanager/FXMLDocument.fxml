@@ -16,109 +16,109 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabletennismanager.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="mainAnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabletennismanager.FXMLDocumentController">
    <children>
       <VBox layoutX="2.0" layoutY="1.0" prefHeight="646.0" prefWidth="1068.0">
          <children>
             <TabPane prefHeight="647.0" prefWidth="906.0" tabClosingPolicy="UNAVAILABLE">
               <tabs>
-                <Tab text="Admin page">
-                  <content>
-                    <AnchorPane>
-                           <children>
-                              <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="290.0" prefWidth="1070.0">
-                                <items>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="42.0" prefWidth="797.0">
-                                       <children>
-                                          <Text layoutX="34.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter  a new team :" wrappingWidth="117.38671875" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="20.0" />
-                                          <TextField fx:id="addTeamTextField" layoutX="144.0" layoutY="16.0" promptText="Team name" AnchorPane.leftAnchor="144.0" AnchorPane.topAnchor="16.0" />
-                                          <Button fx:id="addTeam" layoutX="200.0" layoutY="58.0" mnemonicParsing="false" onAction="#addTeamHandle" prefHeight="23.0" prefWidth="93.0" text="Add Team" AnchorPane.topAnchor="58.0" />
-                                       </children>
-                                    </AnchorPane>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="232.0" prefWidth="797.0">
-                                       <children>
-                                          <TextField fx:id="playerNameTextField" layoutX="223.0" layoutY="16.0" promptText="Player Name" AnchorPane.topAnchor="16.0" />
-                                          <Text fontSmoothingType="LCD" layoutX="33.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the name of the new Player :" wrappingWidth="196.271484375" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="20.0" />
-                                          <MenuButton fx:id="selectTeam" layoutX="399.0" layoutY="16.0" mnemonicParsing="false" onAction="#selectTeamHandle" prefHeight="25.0" prefWidth="149.0" text="Select Team" textAlignment="CENTER" AnchorPane.topAnchor="16.0" />
-                                          <Button fx:id="registerPlayer" layoutX="579.0" layoutY="81.0" mnemonicParsing="false" onAction="#registerPlayerHandle" prefHeight="32.0" prefWidth="147.0" text="Register Player" textAlignment="CENTER" />
-                                       </children>
-                                    </AnchorPane>
-                                </items>
-                              </SplitPane>
-                              <SplitPane dividerPositions="0.5" layoutY="309.0" orientation="VERTICAL" prefHeight="314.0" prefWidth="1070.0">
-                                <items>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="108.0" prefWidth="1068.0">
-                                       <children>
-                                          <Text layoutX="22.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This will generate a match between all teams." wrappingWidth="263.4765625" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="15.0" />
-                                          <Text layoutX="22.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning: All pre-existing match information will be removed." AnchorPane.leftAnchor="14.0" />
-                                          <Button fx:id="generateFixtures" layoutX="580.0" layoutY="62.0" mnemonicParsing="false" onAction="#generateFixturesHandle" prefHeight="30.0" prefWidth="143.0" text="Generate Fixtures" />
-                                       </children>
-                                    </AnchorPane>
-                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="145.0" prefWidth="1067.0">
-                                       <children>
-                                          <Text layoutX="27.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The stats report will be generated automatically evey 90 seconds." wrappingWidth="354.193359375" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="15.0" />
-                                          <Text layoutX="14.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can also geranate it by clicking this button." />
-                                          <Button fx:id="generateTeamStats" layoutX="587.0" layoutY="62.0" mnemonicParsing="false" onAction="#generateTeamStatsHandle" prefHeight="30.0" prefWidth="131.0" text="Generate team stats" />
-                                       </children>
-                                    </AnchorPane>
-                                </items>
-                              </SplitPane>
-                           </children>
-                           <cursor>
-                              <Cursor fx:constant="CLOSED_HAND" />
-                           </cursor>
-                        </AnchorPane>
-                  </content>
-                </Tab>
-                <Tab text="viewer Page">
+                <Tab text="Team Ranking">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Button fx:id="viewFixturesResults" layoutX="20.0" layoutY="80.0" mnemonicParsing="false" onAction="#viewFixturesResultsHandle" prefWidth="200.0" text=" View fixture and result chart" textAlignment="CENTER" />
-                              <Button fx:id="showStats" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#showStatsHandle" prefWidth="200.0" text="Show all team stats" textAlignment="CENTER" />
-                              <Button fx:id="showRankingTable" layoutX="20.0" layoutY="160.0" mnemonicParsing="false" onAction="#showRankingTableHandle" prefWidth="200.0" text="Show Ranking Table" textAlignment="CENTER" AnchorPane.leftAnchor="20.0" />
-                              <Button fx:id="viewMatchScores" layoutX="20.0" layoutY="249.0" mnemonicParsing="false" onAction="#viewMatchScoresHandle" prefHeight="25.0" prefWidth="200.0" text="View Match" textAlignment="CENTER" />
-                              <TableView fx:id="viewingTable" layoutX="242.0" layoutY="80.0" prefHeight="503.0" prefWidth="800.0" />
-                              <Label alignment="TOP_CENTER" layoutX="20.0" layoutY="20.0" prefHeight="30.0" prefWidth="200.0" text="Viewing Page">
+                              <Button fx:id="viewFixturesResults" layoutX="20.0" layoutY="80.0" mnemonicParsing="false" onAction="#viewFixturesResultsHandle" prefWidth="200.0" text=" View fixture and result chart" textAlignment="CENTER">
                                  <font>
-                                    <Font size="18.0" />
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Button fx:id="showStats" layoutX="20.0" layoutY="120.0" mnemonicParsing="false" onAction="#showStatsHandle" prefWidth="200.0" text="Show all team stats" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Button fx:id="showRankingTable" layoutX="20.0" layoutY="160.0" mnemonicParsing="false" onAction="#showRankingTableHandle" prefWidth="200.0" text="Show Ranking Table" textAlignment="CENTER" AnchorPane.leftAnchor="20.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Button fx:id="viewMatchScores" layoutX="20.0" layoutY="320.0" mnemonicParsing="false" onAction="#viewMatchScoresHandle" prefHeight="25.0" prefWidth="200.0" text="View A Match" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <TableView fx:id="viewingTable" layoutX="234.0" layoutY="30.0" opacity="0.9" prefHeight="580.0" prefWidth="810.0" />
+                              <Label alignment="TOP_CENTER" layoutX="49.0" layoutY="20.0" prefHeight="35.0" prefWidth="153.0" text="Team Ranking">
+                                 <font>
+                                    <Font size="24.0" />
                                  </font>
                               </Label>
-                              <MenuButton fx:id="selectTeamViewMatch0" layoutX="20.0" layoutY="209.0" mnemonicParsing="false" onAction="#selectTeamHandle" prefHeight="25.0" prefWidth="92.0" text="Select Team" textAlignment="CENTER" />
-                              <MenuButton fx:id="selectTeamViewMatch1" layoutX="128.0" layoutY="209.0" mnemonicParsing="false" onAction="#selectTeamHandle" prefHeight="25.0" prefWidth="92.0" text="Select Team" textAlignment="CENTER" />
+                              <MenuButton fx:id="selectTeamViewMatch0" layoutX="20.0" layoutY="240.0" mnemonicParsing="false" onAction="#selectTeamHandle" prefHeight="25.0" prefWidth="199.0" text="Select Home Team" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></MenuButton>
+                              <MenuButton fx:id="selectTeamViewMatch1" layoutX="20.0" layoutY="280.0" mnemonicParsing="false" onAction="#selectTeamHandle" prefHeight="25.0" prefWidth="200.0" text="Select Away Team" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></MenuButton>
+                              <Separator layoutY="203.0" prefHeight="0.0" prefWidth="234.0" />
                            </children></AnchorPane>
                   </content>
                 </Tab>
-                  <Tab text="Scoresheet">
+                  <Tab text="Submit Scoresheet">
                      <content>
                         <AnchorPane fx:id="scoresheet" minHeight="0.0" minWidth="0.0" prefHeight="618.0" prefWidth="552.0">
                            <children>
-                              <Button fx:id="modifyScoresheet" layoutX="32.0" layoutY="26.0" mnemonicParsing="false" onAction="#modifyScoresheetHandle" text="Modify Sheet" />
-                              <Button fx:id="updatePlayers" layoutX="128.0" layoutY="202.0" mnemonicParsing="false" onAction="#updatePlayersHandle" prefHeight="25.0" prefWidth="113.0" text="Update Players" />
-                              <Text layoutX="32.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Team" />
-                              <MenuButton fx:id="homeTeam" layoutX="136.0" layoutY="98.0" mnemonicParsing="false" text="Home Team">
+                              <Button fx:id="updatePlayers" layoutX="130.0" layoutY="202.0" mnemonicParsing="false" onAction="#updatePlayersHandle" prefHeight="25.0" prefWidth="120.0" text="Update Players">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Text layoutX="31.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Team">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Text>
+                              <MenuButton fx:id="homeTeam" layoutX="130.0" layoutY="100.0" mnemonicParsing="false" prefWidth="120.0" text="Home Team">
                                 <items>
                                   <MenuItem mnemonicParsing="false" text="Action 1" />
                                   <MenuItem mnemonicParsing="false" text="Action 2" />
                                 </items>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
                               </MenuButton>
-                              <Text layoutX="34.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Away Team" />
-                              <MenuButton fx:id="awayTeam" layoutX="138.0" layoutY="147.0" mnemonicParsing="false" text="Away Team">
+                              <Text layoutX="33.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Away Team">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font></Text>
+                              <MenuButton fx:id="awayTeam" layoutX="130.0" layoutY="150.0" mnemonicParsing="false" prefWidth="120.0" text="Away Team">
                                  <items>
                                     <MenuItem mnemonicParsing="false" text="Action 1" />
                                     <MenuItem mnemonicParsing="false" text="Action 2" />
                                  </items>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
                               </MenuButton>
                               <Text fontSmoothingType="LCD" layoutX="511.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Single Sets" textAlignment="CENTER" textOrigin="CENTER">
                                  <font>
                                     <Font size="24.0" />
                                  </font>
                               </Text>
-                              <MenuButton fx:id="awayPlayer0" layoutX="641.0" layoutY="119.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Away Player" />
-                              <MenuButton fx:id="awayPlayer1" layoutX="781.0" layoutY="119.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Away Player" />
-                              <MenuButton fx:id="homePlayer1" layoutX="511.0" layoutY="284.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="120.0" text="Home Player" />
-                              <MenuButton fx:id="homePlayer0" layoutX="511.0" layoutY="179.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="120.0" text="Home Player" />
-                              <Button fx:id="calculateAndSubmitScores" layoutX="501.0" layoutY="563.0" mnemonicParsing="false" onAction="#calculateAndSubmitScoresHandle" prefHeight="25.0" prefWidth="542.0" text="Calculate and Submit Scores" />
+                              <MenuButton fx:id="awayPlayer0" layoutX="641.0" layoutY="119.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Away Player">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></MenuButton>
+                              <MenuButton fx:id="awayPlayer1" layoutX="781.0" layoutY="119.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="120.0" text="Away Player">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></MenuButton>
+                              <MenuButton fx:id="homePlayer1" layoutX="511.0" layoutY="284.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="120.0" text="Home Player">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></MenuButton>
+                              <MenuButton fx:id="homePlayer0" layoutX="511.0" layoutY="179.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="120.0" text="Home Player">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></MenuButton>
+                              <Button fx:id="calculateAndSubmitScores" layoutX="809.0" layoutY="540.0" mnemonicParsing="false" onAction="#calculateAndSubmitScoresHandle" prefHeight="30.0" prefWidth="196.0" text="Calculate and Submit Scores">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
                               <MenuButton fx:id="set0game0h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="179.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
                                     <MenuItem mnemonicParsing="false" text="0" />
@@ -609,10 +609,150 @@
                                     <Font size="24.0" />
                                  </font>
                               </Text>
-                              <Button fx:id="addTestData" layoutX="154.0" layoutY="26.0" mnemonicParsing="false" onAction="#addTestData" text="Add Test Data" />
+                              <Button fx:id="addTestData" layoutX="265.0" layoutY="556.0" mnemonicParsing="false" onAction="#addTestData" text="Add Test Data">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Button>
+                              <Label alignment="TOP_CENTER" layoutX="24.0" layoutY="21.0" prefHeight="35.0" prefWidth="202.0" text="Submit Scoresheet">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutY="74.0" prefHeight="1.0" prefWidth="1070.0" />
+                              <Separator layoutX="459.0" layoutY="75.0" orientation="VERTICAL" prefHeight="542.0" prefWidth="0.0" />
+                              <Text layoutX="45.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add 2 Test Matches ">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
+                              <Separator layoutY="521.0" prefHeight="0.0" prefWidth="460.0" />
+                              <MenuButton fx:id="overall0" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="430.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                 </items>
+                              </MenuButton>
+                              <MenuButton fx:id="overall1" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="430.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
+                                 <items>
+                                    <MenuItem mnemonicParsing="false" text="0" />
+                                    <MenuItem mnemonicParsing="false" text="1" />
+                                    <MenuItem mnemonicParsing="false" text="2" />
+                                    <MenuItem mnemonicParsing="false" text="3" />
+                                    <MenuItem mnemonicParsing="false" text="4" />
+                                    <MenuItem mnemonicParsing="false" text="5" />
+                                 </items>
+                              </MenuButton>
+                              <Text fontSmoothingType="LCD" layoutX="794.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Overall Score" textAlignment="CENTER" textOrigin="CENTER">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Text>
                            </children></AnchorPane>
                      </content>
                   </Tab>
+                <Tab text="System Admin">
+                  <content>
+                    <AnchorPane>
+                           <children>
+                              <SplitPane dividerPositions="0.44285714285714284" layoutX="10.0" layoutY="93.0" orientation="VERTICAL" prefHeight="212.0" prefWidth="1050.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="86.0" prefWidth="1048.0">
+                                       <children>
+                                          <Text layoutX="21.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter  a new team :" wrappingWidth="166.38671875" AnchorPane.leftAnchor="21.0" AnchorPane.topAnchor="39.734375">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <Button fx:id="addTeam" layoutX="414.0" layoutY="36.0" mnemonicParsing="false" onAction="#addTeamHandle" prefHeight="30.0" prefWidth="150.0" text="Add Team" textAlignment="CENTER" AnchorPane.topAnchor="36.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Button>
+                                          <TextField fx:id="addTeamTextField" layoutX="201.0" layoutY="36.0" prefHeight="30.0" prefWidth="177.0" promptText="Team name" AnchorPane.leftAnchor="201.0" AnchorPane.topAnchor="36.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="1000.0">
+                                       <children>
+                                          <TextField fx:id="playerNameTextField" layoutX="310.0" layoutY="19.0" prefHeight="30.0" prefWidth="149.0" promptText="Player Name" AnchorPane.topAnchor="19.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </TextField>
+                                          <Text fontSmoothingType="LCD" layoutX="33.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the name of the new Player :" wrappingWidth="280.271484375" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="20.0">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <MenuButton fx:id="selectTeam" layoutX="310.0" layoutY="64.0" mnemonicParsing="false" onAction="#selectTeamHandle" prefHeight="25.0" prefWidth="149.0" text="Select Team" textAlignment="CENTER" AnchorPane.topAnchor="64.0">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </MenuButton>
+                                          <Button fx:id="registerPlayer" layoutX="550.0" layoutY="62.0" mnemonicParsing="false" onAction="#registerPlayerHandle" prefHeight="30.0" prefWidth="150.0" text="Register Player" textAlignment="CENTER">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                              <SplitPane dividerPositions="0.5" layoutX="10.0" layoutY="310.0" orientation="VERTICAL" prefHeight="300.0" prefWidth="1050.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="1000.0">
+                                       <children>
+                                          <Text layoutX="22.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This will generate a match between all teams." wrappingWidth="420.4765625" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="15.0">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font></Text>
+                                          <Text layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Warning: All pre-existing match information will be removed." AnchorPane.leftAnchor="14.0">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font></Text>
+                                          <Button fx:id="generateFixtures" layoutX="550.0" layoutY="88.0" mnemonicParsing="false" onAction="#generateFixturesHandle" prefHeight="30.0" prefWidth="150.0" text="Generate Fixtures">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></Button>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="150.0" prefWidth="1000.0">
+                                       <children>
+                                          <Text layoutX="14.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The stats report will be generated automatically evey 90 seconds." wrappingWidth="539.193359375" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="13.576171875">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font></Text>
+                                          <Text layoutX="14.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You can also manually generate by clicking this button:">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font></Text>
+                                          <Button fx:id="generateTeamStats" layoutX="550.0" layoutY="74.0" mnemonicParsing="false" onAction="#generateTeamStatsHandle" prefHeight="30.0" prefWidth="150.0" text="Generate team stats">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font></Button>
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                              <Text layoutX="26.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="System Admin" wrappingWidth="176.38671875">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                           <cursor>
+                              <Cursor fx:constant="CLOSED_HAND" />
+                           </cursor>
+                        </AnchorPane>
+                  </content>
+                </Tab>
               </tabs>
             </TabPane>
          </children>
