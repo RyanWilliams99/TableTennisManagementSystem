@@ -7,7 +7,6 @@ public class FixtureAndResult {
     private int homeTeamSets;
     private int awayTeamSets;
 
-
     private String teamName;
     private int matchesPlayed;
     private int matchesWon;
@@ -20,20 +19,6 @@ public class FixtureAndResult {
     private int gamesLost;
     private int position;
 
-    private String homePlayer;
-    private String awayPlayer;
-    private String Game1;
-    private String Game2;
-    private String Game3;
-
-
-    public int getPosition() {
-        return position;
-    }
-
-    public void setPosition(int position) {
-        this.position = position;
-    }
 
     public FixtureAndResult(int x, String teamName, int matchesPlayed, int matchesWon, int matchesLost, int setsPlayed, int setsWon, int setsLost, int gamesPlayed, int gamesWon, int gamesLost) {
         this.position = x;
@@ -48,18 +33,6 @@ public class FixtureAndResult {
         this.gamesWon = gamesWon;
         this.gamesLost = gamesLost;
     }
-    //home team | away team | home player | away player | Game 1 | Game 2 | Game 3
-
-
-    public FixtureAndResult(String homeTeam, String awayTeam, String homePlayer, String awayPlayer, String game1, String game2, String game3) {
-        this.homeTeam = homeTeam;
-        this.awayTeam = awayTeam;
-        this.homePlayer = homePlayer;
-        this.awayPlayer = awayPlayer;
-        Game1 = game1;
-        Game2 = game2;
-        Game3 = game3;
-    }
 
     public FixtureAndResult(String homeTeam, String awayTeam, int homeTeamSets, int awayTeamSets) {
         this.homeTeam = homeTeam;
@@ -68,9 +41,13 @@ public class FixtureAndResult {
         this.awayTeamSets = awayTeamSets;
     }
 
-    public String getHomeTeam() {
-        return homeTeam;
+    public int getPosition() {
+        return position;
     }
+
+    public void setPosition(int position) { this.position = position; }
+
+    public String getHomeTeam() { return homeTeam; }
 
     public void setHomeTeam(String homeTeam) {
         this.homeTeam = homeTeam;

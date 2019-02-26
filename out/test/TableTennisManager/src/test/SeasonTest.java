@@ -1,4 +1,3 @@
-
 package test;
 
 import org.junit.After;
@@ -100,25 +99,6 @@ public class SeasonTest {
         // TODO review the generated test code and remove the default call to fail.
     }
 
-    /**
-     * Test of displayLeaderBoard method, of class Season.
-     */
-    @Test
-    public void testDisplayLeaderBoard() {
-        System.out.println("displayLeaderBoard");
-        Season instance = new Season();
-        instance.displayLeaderBoard();
-        // TODO review the generated test code and remove the default call to fail.
-
-    }
-
-    /**
-     * Test of displayAMatch method, of class Season.
-     */
-    @Test
-    public void testDisplayAMatch() {
-
-    }
 
     /**
      * Test of displayFixtures method, of class Season.
@@ -133,17 +113,6 @@ public class SeasonTest {
     }
 
     /**
-     * Test of autoUpdateThread method, of class Season.
-     */
-    @Test
-    public void testAutoUpdateThread() {
-        System.out.println("autoUpdateThread");
-        Season instance = new Season();
-        instance.autoUpdateThread();
-        // TODO review the generated test code and remove the default call to fail.
-    }
-
-    /**
      * Test of calculateScores method, of class Season.
      */
     @Test
@@ -153,7 +122,7 @@ public class SeasonTest {
         instance.addTestData();
         instance.generateFixtures();
         instance.calculateScores();
-        assertEquals(instance.getFixtures().get(0).sets.get(0).games.get(0).getHomeScore()  , 11);
+        assertEquals(instance.getFixtures().get(0).sets.get(0).games.get(1).getHomeScore(), 11);
         // TODO review the generated test code and remove the default call to fail.
 
     }

@@ -12,12 +12,12 @@ import java.util.ArrayList;
     public ArrayList<Set> sets;
 
 
-        public Match(Team teamHome, Team teamAway) { //When creating new match 2 Must pass two Team objects
+        public Match(Team teamHome, Team teamAway) { //When creating new match 2 MUST pass two Team objects
             this.teamHome = teamHome;
             this.teamAway = teamAway;
 
             sets = new ArrayList<>(5);
-            for(int x  = 0; x < 5; x++) //Generate 5 set objects and add to set arraylist
+            for(int x  = 0; x < 5; x++) //Generate 5 set objects and add to sets arraylist
             {
                 sets.add(new Set());
             }
@@ -30,7 +30,7 @@ import java.util.ArrayList;
             {
                 sets.get(x).calculateSetScores();
                 System.out.println("About to compare home team SETS vs away team SETS " + sets.get(x).getScoreHome()  + " : " +  sets.get(x).getScoreAway());
-                if (sets.get(x).getScoreHome() > sets.get(x).getScoreAway()) //Sets each teams sets won to correct value
+                if (sets.get(x).getScoreHome() > sets.get(x).getScoreAway()) //Who ever has more sets increment sets won
                 {
                     this.setScoreHome(this.getScoreHome() + 1);
                 }
@@ -40,10 +40,10 @@ import java.util.ArrayList;
                 }
 
             }
-            System.out.println("SO HOME SETS WON " + this.getScoreHome() + " AWAY SETS WON " + this.getScoreAway());
+            System.out.println("HOME SETS WON: " + this.getScoreHome() + " AWAY SETS WON: " + this.getScoreAway());
         }
 
-        public void resetScores() //Used so that the user cannot generate too many times
+        public void resetScores() //Used To reset values so they are not wrong if user presses more than once
         {
             this.setScoreHome(0);
             this.setScoreAway(0);
@@ -64,16 +64,8 @@ import java.util.ArrayList;
             return teamHome;
         }
 
-        public void setTeamHome(Team teamHome) {
-            this.teamHome = teamHome;
-        }
-
         public Team getTeamAway() {
             return teamAway;
-        }
-
-        public void setTeamAway(Team teamAway) {
-            this.teamAway = teamAway;
         }
 
         public int getScoreHome() {

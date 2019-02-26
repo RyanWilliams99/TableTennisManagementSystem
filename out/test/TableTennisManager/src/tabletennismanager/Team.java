@@ -23,7 +23,6 @@ import java.util.ArrayList;
         }
 
         public void addPlayer(Player player) {
-            //System.out.println("Adding Player " + player.getPlayerName() + " to Team " + this.getTeamName());
             players.add(player);
         }
 

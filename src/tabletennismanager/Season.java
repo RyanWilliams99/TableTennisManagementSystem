@@ -114,19 +114,6 @@ public class Season {
         }
     }
 
-    public void displayAMatch(Match passedMatch) {
-        System.out.println(passedMatch.getTeamHome().getTeamName() + " VS " + passedMatch.getTeamAway().getTeamName());
-        for (int x = 0; x < passedMatch.getTeamHome().getPlayers().size(); x++)
-        {
-            System.out.println("Home player " + x + passedMatch.getTeamHome().getPlayers().get(x));
-        }
-        for (int x = 0; x < passedMatch.getTeamAway().getPlayers().size(); x++)
-        {
-            System.out.println("Away Player " + x + passedMatch.getTeamAway().getPlayers().get(x));
-        }
-        System.out.println("Home: " + passedMatch.getTeamHome().getSetsWon() + " Away: " + passedMatch.getTeamAway().getSetsWon());
-    }
-
     public void displayFixtures() {
         System.out.println("\nFixtures");
         for(int x = 0; x < fixtures.size(); x++)
@@ -165,7 +152,6 @@ public class Season {
     public void autoUpdateStats()
     {
         Thread t1 = new Thread(new Runnable() {
-
             public void run()
             {
                 while(true)

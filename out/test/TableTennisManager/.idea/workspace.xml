@@ -2,9 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7e22c1a-254a-40ed-98f9-7d1c5b516251" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocument.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FXMLDocumentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FixtureAndResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/FixtureAndResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Season$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Season$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Season.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/tabletennismanager/Season.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TableTennisManager/test/SeasonTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TableTennisManager/test/SeasonTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FXMLDocument.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FXMLDocument.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FXMLDocumentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FixtureAndResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/FixtureAndResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/tabletennismanager/Season.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/TableTennisManager/src/test/SeasonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/TableTennisManager/src/test/SeasonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Season.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Season.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Set.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Set.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tabletennismanager/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tabletennismanager/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/SeasonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SeasonTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,12 +39,27 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
+        <entry file="file://$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
-              <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
+            <state relative-caret-position="220">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#307#308#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="721">
+              <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#18756#18757#0" expanded="true" />
+                <element signature="e#18836#18837#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,23 +68,85 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="190" column="4" lean-forward="true" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
-              <folding>
-                <element signature="e#6929#6930#0" expanded="true" />
-                <element signature="e#6987#6988#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2332">
+              <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/SeasonTest.java">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="88">
+                <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Set.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2926">
-              <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+            <state relative-caret-position="594">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Team.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#695#696#0" expanded="true" />
+                <element signature="e#1498#1499#0" expanded="true" />
+                <element signature="e#1537#1538#0" expanded="true" />
+                <element signature="e#1589#1590#0" expanded="true" />
+                <element signature="e#1637#1638#0" expanded="true" />
+                <element signature="e#1678#1679#0" expanded="true" />
+                <element signature="e#1722#1723#0" expanded="true" />
+                <element signature="e#1781#1782#0" expanded="true" />
+                <element signature="e#1839#1840#0" expanded="true" />
+                <element signature="e#1877#1878#0" expanded="true" />
+                <element signature="e#1918#1919#0" expanded="true" />
+                <element signature="e#1971#1972#0" expanded="true" />
+                <element signature="e#2023#2024#0" expanded="true" />
+                <element signature="e#2062#2063#0" expanded="true" />
+                <element signature="e#2104#2105#0" expanded="true" />
+                <element signature="e#2159#2160#0" expanded="true" />
+                <element signature="e#2213#2214#0" expanded="true" />
+                <element signature="e#2251#2252#0" expanded="true" />
+                <element signature="e#2292#2293#0" expanded="true" />
+                <element signature="e#2345#2346#0" expanded="true" />
+                <element signature="e#2397#2398#0" expanded="true" />
+                <element signature="e#2432#2433#0" expanded="true" />
+                <element signature="e#2470#2471#0" expanded="true" />
+                <element signature="e#2517#2518#0" expanded="true" />
+                <element signature="e#2563#2564#0" expanded="true" />
+                <element signature="e#2599#2600#0" expanded="true" />
+                <element signature="e#2638#2639#0" expanded="true" />
+                <element signature="e#2687#2688#0" expanded="true" />
+                <element signature="e#2735#2736#0" expanded="true" />
+                <element signature="e#2774#2775#0" expanded="true" />
+                <element signature="e#2816#2817#0" expanded="true" />
+                <element signature="e#2871#2872#0" expanded="true" />
+                <element signature="e#2925#2926#0" expanded="true" />
+                <element signature="e#2961#2962#0" expanded="true" />
+                <element signature="e#3000#3001#0" expanded="true" />
+                <element signature="e#3049#3050#0" expanded="true" />
+                <element signature="e#3097#3098#0" expanded="true" />
+                <element signature="e#3134#3135#0" expanded="true" />
+                <element signature="e#3174#3175#0" expanded="true" />
+                <element signature="e#3225#3226#0" expanded="true" />
+                <element signature="e#3275#3276#0" expanded="true" />
+                <element signature="e#3324#3325#0" expanded="true" />
+                <element signature="e#3362#3363#0" expanded="true" />
+                <element signature="e#3423#3424#0" expanded="true" />
+                <element signature="e#3469#3470#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,25 +155,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="682">
-              <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-              <folding>
-                <element signature="e#687#688#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="616">
-                <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="242">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -101,6 +181,7 @@
       <find>register</find>
       <find>viewMatct</find>
       <find>subm</find>
+      <find>setSelected</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,21 +190,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/tabletennismanager/Player.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/testScores" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/Game.java" />
         <option value="$PROJECT_DIR$/test/tabletennismanager/SeasonTest.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/SeasonTest.java" />
-        <option value="$PROJECT_DIR$/src/test/SeasonTest.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/ShowTeamStats.java" />
-        <option value="$PROJECT_DIR$/src/tabletennismanager/Team.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/FXMLDocument.fxml" />
-        <option value="$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java" />
-        <option value="$PROJECT_DIR$/src/tabletennismanager/Set.java" />
-        <option value="$PROJECT_DIR$/src/tabletennismanager/Match.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/TableTennisManager.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/Season.java" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java" />
+        <option value="$PROJECT_DIR$/src/test/SeasonTest.java" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/Match.java" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/Player.java" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/Set.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/tabletennismanager/Team.java" />
         <option value="$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java" />
       </list>
     </option>
@@ -181,11 +262,11 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551178397845" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551196613393" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/SceneBuilder/SceneBuilder.exe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -298,7 +379,7 @@
       <workItem from="1551095496746" duration="6273000" />
       <workItem from="1551109997703" duration="4165000" />
       <workItem from="1551172234605" duration="6167000" />
-      <workItem from="1551186578611" duration="633000" />
+      <workItem from="1551186578611" duration="6615000" />
     </task>
     <servers />
   </component>
@@ -318,15 +399,26 @@
     <history-entry file="SeasonTest - 2019.02.26 at 10h 35m 08s.xml">
       <configuration name="SeasonTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SeasonTest - 2019.02.26 at 15h 10m 12s.xml">
+      <configuration name="SeasonTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeasonTest - 2019.02.26 at 15h 10m 48s.xml">
+      <configuration name="SeasonTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeasonTest - 2019.02.26 at 15h 13m 23s.xml">
+      <configuration name="SeasonTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SeasonTest - 2019.02.26 at 15h 13m 31s.xml">
+      <configuration name="SeasonTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123249000" />
+    <option name="totallyTimeSpent" value="129231000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.120469086" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49945828" visible="true" weight="0.120469086" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -335,7 +427,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.5005417" side_tool="true" weight="0.16791044" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info anchor="bottom" x="469" y="351" width="597" height="121" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.43336946" />
+      <window_info anchor="bottom" x="2389" y="351" width="597" height="121" id="Run" maximized="true" order="2" type="WINDOWED" weight="0.43336946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.032502707" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,7 +436,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.43201134" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.4312026" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.16359697" />
       <window_info anchor="bottom" id="Statistic" order="13" sideWeight="0.49946696" weight="0.4951246" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -396,17 +488,6 @@
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/testScores" />
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/testScores.txt" />
     <entry file="file://$PROJECT_DIR$/testScores.txt" />
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding>
-            <element signature="e#141#142#0" expanded="true" />
-            <element signature="e#174#175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/tabletennismanager/SeasonTest.java" />
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/ShowTeamStats.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_201/javafx-src.zip!/javafx/event/EventHandler.java">
@@ -424,11 +505,79 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2332">
+          <caret line="114" column="5" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/SeasonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Match.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="704">
+          <caret line="32" column="120" selection-start-line="32" selection-start-column="120" selection-end-line="32" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#141#142#0" expanded="true" />
+            <element signature="e#174#175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="88">
+            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Set.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Team.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="154">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#695#696#0" expanded="true" />
             <element signature="e#1498#1499#0" expanded="true" />
             <element signature="e#1537#1538#0" expanded="true" />
             <element signature="e#1589#1590#0" expanded="true" />
@@ -477,24 +626,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Set.java">
+    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="37" column="104" selection-start-line="37" selection-start-column="104" selection-end-line="37" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Match.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="721">
+          <caret line="121" column="13" lean-forward="true" selection-start-line="121" selection-start-column="13" selection-end-line="121" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#18756#18757#0" expanded="true" />
+            <element signature="e#18836#18837#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -505,59 +645,6 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#307#308#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/SeasonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FixtureAndResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="682">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="e#687#688#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="616">
-            <caret line="28" column="37" lean-forward="true" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/Season.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="190" column="4" lean-forward="true" selection-start-line="190" selection-start-column="4" selection-end-line="190" selection-end-column="4" />
-          <folding>
-            <element signature="e#6929#6930#0" expanded="true" />
-            <element signature="e#6987#6988#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tabletennismanager/FXMLDocumentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="67" column="32" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

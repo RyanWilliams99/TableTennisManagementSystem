@@ -3,8 +3,7 @@ package tabletennismanager;
     public class Player {
 
     private String playerName;
-    
-    // Constructor
+
     public Player(String name){
         playerName = name;
     }

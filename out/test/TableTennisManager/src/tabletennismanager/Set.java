@@ -12,9 +12,9 @@ public class Set {
 
     public Set() { //Constructor Creates 3 new game objects and stores them in a arraylist called games
 
-       games = new ArrayList<>(3);
+       games = new ArrayList<>(3); //Declare array list
 
-        for(int x  = 0; x < 3; x++) //Generate 3 Game objects
+        for(int x  = 0; x < 3; x++) //Generate 3 Game objects and add to array list
         {
             games.add(new Game());
         }
@@ -35,7 +35,7 @@ public class Set {
         for (int x = 0; x < 3; x++)
         {
             System.out.println("About to compare home team vs away team score GAMES " + games.get(x).getHomeScore() + " : " + games.get(x).getAwayScore());
-            if(games.get(x).getHomeScore() > games.get(x).getAwayScore()) //See who had the most points
+            if(games.get(x).getHomeScore() > games.get(x).getAwayScore()) //See who won the more games in this set then increment values
             {
                 this.setScoreHome(this.getScoreHome() + 1);
             }
@@ -43,9 +43,7 @@ public class Set {
             {
                 this.setScoreAway(this.getScoreAway() + 1);
             }
-
         }
-
     }
 
     public Player getPlayerHome() {

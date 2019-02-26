@@ -58,7 +58,7 @@ public class FXMLDocumentController {
 
     Season Season = new Season();
 
-    @FXML public void initialize() {
+    @FXML public void initialize() { //Called as GUI starts
         Season.addTestData();
         updateHomeTeamAwayTeamDropdown();
         updateSelectTeamDropdown();
@@ -66,7 +66,7 @@ public class FXMLDocumentController {
         Season.autoUpdateStats();
     }
 
-    public void updateUI()
+    public void updateUI() //Used by multiple functions to "refresh gui"
     {
         updateHomeTeamAwayTeamDropdown();
         updateSelectTeamDropdown();
@@ -76,7 +76,7 @@ public class FXMLDocumentController {
         Season.addTestData();
     }
 
-    public void updateSelectTeamDropdown()
+    public void updateSelectTeamDropdown() //Dynamically changes what teams a user can select once they add a new team
     {
         selectTeam.getItems().clear();
         for (int x = 0; x < Season.getTeams().size(); x++)
@@ -88,7 +88,6 @@ public class FXMLDocumentController {
         for (int x = 0; x < Season.getTeams().size(); x++)
         {
             selectTeamViewMatch0.getItems().add(new MenuItem(Season.getTeams().get(x).getTeamName()));
-
         }
         setDropdownMenus(selectTeamViewMatch0);
 
@@ -96,13 +95,11 @@ public class FXMLDocumentController {
         for (int x = 0; x < Season.getTeams().size(); x++)
         {
             selectTeamViewMatch1.getItems().add(new MenuItem(Season.getTeams().get(x).getTeamName()));
-
         }
         setDropdownMenus(selectTeamViewMatch1);
     }
 
-    @FXML void addTeamHandle(ActionEvent event) {
-
+    @FXML void addTeamHandle(ActionEvent event) { //Makes a new team and passes to Season.addTeam
         if (addTeamTextField.getText().isEmpty())
         {
             Alert noNameAlert = new Alert(Alert.AlertType.ERROR, "Must enter Team name",  ButtonType.OK);
@@ -110,29 +107,27 @@ public class FXMLDocumentController {
         }
         else
         {
-            if (!addTeamTextField.getText().isEmpty() && !Season.teamAlreadyExists(addTeamTextField.getText()))
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to add a new team called: " + addTeamTextField.getText(), ButtonType.YES, ButtonType.NO);
+            alert.showAndWait();
+            if (alert.getResult() == ButtonType.YES)
             {
-                String temp = addTeamTextField.getText();
-                Season.addTeam(new Team(temp));
-                updateSelectTeamDropdown();
+                if (!addTeamTextField.getText().isEmpty() && !Season.teamAlreadyExists(addTeamTextField.getText()))
+                {
+                    String temp = addTeamTextField.getText();
+                    Season.addTeam(new Team(temp));
+                    updateSelectTeamDropdown();
+                }
             }
         }
     }
 
-    @FXML void selectTeamHandle(ActionEvent event) {
-        System.out.println("Select team pressed");
-
-    }
-
-    @FXML void generateFixturesHandle(ActionEvent event) {
+    @FXML void generateFixturesHandle(ActionEvent event) { //
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to generate new fixtures, all past match data will be removed", ButtonType.YES, ButtonType.NO);
         alert.showAndWait();
 
         if (alert.getResult() == ButtonType.YES) {
             Season.generateFixtures();
         }
-
-
     }
 
     @FXML void generateTeamStatsHandle(ActionEvent event) {
@@ -147,12 +142,16 @@ public class FXMLDocumentController {
         }
         else
         {
-            for(int x = 0; x < Season.getTeams().size(); x++)
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to a player: " + playerNameTextField.getText() + " to Team: " + selectTeam.getText(), ButtonType.YES, ButtonType.NO);
+            alert.showAndWait();
+            if (alert.getResult() == ButtonType.YES)
             {
-                if (Season.getTeams().get(x).getTeamName().equals(selectTeam.getText()))
+                for(int x = 0; x < Season.getTeams().size(); x++)
                 {
-                    System.out.println("Adding player");
-                    Season.getTeams().get(x).addPlayer(new Player(playerNameTextField.getText()));
+                    if (Season.getTeams().get(x).getTeamName().equals(selectTeam.getText()))
+                    {
+                        Season.getTeams().get(x).addPlayer(new Player(playerNameTextField.getText()));
+                    }
                 }
             }
         }
@@ -180,7 +179,6 @@ public class FXMLDocumentController {
 
         TableColumn<FixtureAndResult, String> matchesLost = new TableColumn<>("Lost");
         matchesLost.setCellValueFactory(new PropertyValueFactory<>("matchesLost"));
-
 
         viewingTable.setItems(getStats());
         viewingTable.getColumns().addAll(position, teamName, matchesPlayed, matchesWon);
@@ -256,34 +254,8 @@ public class FXMLDocumentController {
         return fixtureAndResults;
     }
 
-    public ObservableList<FixtureAndResult> getAMatch(){
-        ObservableList<FixtureAndResult> fixtureAndResults = FXCollections.observableArrayList();
-        fixtureAndResults.clear();
-        for (int x = 0; x < Season.getFixtures().size(); x++)
-        {
-            if (Season.getFixtures().get(x).getTeamHome().getTeamName().equals(selectTeamViewMatch0.getText()) && Season.getFixtures().get(x).getTeamAway().getTeamName().equals(selectTeamViewMatch1.getText()))
-            {
-                System.out.println("about to go into for loop for sets");
-                System.out.println(Season.getFixtures().get(x).getTeamHome().getPlayers().get(0).getPlayerName());
-                for(int y = 0; x < 5; x++)
-                {
-                    String homeTeam = Season.getFixtures().get(x).getTeamHome().getTeamName();
-                    String awayTeam = Season.getFixtures().get(x).getTeamAway().getTeamName();
-                    String player0 = Season.getFixtures().get(x).getTeamHome().getPlayers().get(0).getPlayerName();
-                    String player1 = Season.getFixtures().get(x).getTeamAway().getPlayers().get(0).getPlayerName();
-                    String game0 = Season.getFixtures().get(x).sets.get(y).getGames().get(0).getHomeScore() + ":" + Season.getFixtures().get(x).sets.get(y).getGames().get(0).getAwayScore();
-                    String game1 = Season.getFixtures().get(x).sets.get(y).getGames().get(1).getHomeScore() + ":" + Season.getFixtures().get(x).sets.get(y).getGames().get(1).getAwayScore();
-                    String game2 = Season.getFixtures().get(x).sets.get(y).getGames().get(2).getHomeScore() + ":" + Season.getFixtures().get(x).sets.get(y).getGames().get(2).getAwayScore();
-                    System.out.println("About to make a new fixresult with " + homeTeam + " " + awayTeam + " " +  player0  + " " +  player1  + " " + game0 + " " +  game1  + " " +  game2);
-                    fixtureAndResults.add(new FixtureAndResult(homeTeam, awayTeam, player0, player1, game0, game1, game2));
-                }
-
-            }
-        }
-        return fixtureAndResults;
-    }
-
     @FXML void viewMatchScoresHandle(ActionEvent event) {
+        boolean foundMatch = false;
         if (selectTeamViewMatch0.getText().equals(selectTeamViewMatch1.getText()))
         {
             Alert alert = new Alert(Alert.AlertType.WARNING, "Please select two different teams",  ButtonType.OK);
@@ -293,8 +265,9 @@ public class FXMLDocumentController {
         {
             for (int y = 0; y < Season.getFixtures().size();y++)
             {
-                if (Season.getFixtures().get(y).getTeamHome().getTeamName().equals(selectTeamViewMatch0.getText()) && Season.getFixtures().get(y).getTeamAway().getTeamName().equals(selectTeamViewMatch1.getText()))
+                if (Season.getFixtures().get(y).getTeamHome().getTeamName().equals(selectTeamViewMatch0.getText()) && Season.getFixtures().get(y).getTeamAway().getTeamName().equals(selectTeamViewMatch1.getText()) && Season.fixtures.get(y).isMatchPlayed())
                 {
+                    foundMatch = true;
                     Alert viewMatch = new Alert(Alert.AlertType.INFORMATION,
                             "Match: " + Season.getFixtures().get(y).getTeamHome().getTeamName()
                             + " vs " + Season.getFixtures().get(y).getTeamAway().getTeamName()
@@ -350,6 +323,11 @@ public class FXMLDocumentController {
                     viewMatch.showAndWait();
                 }
             }
+        }
+        if (!foundMatch)
+        {
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Match between selected teams is not played", ButtonType.OK);
+            alert.showAndWait();
         }
     }
 
@@ -455,18 +433,19 @@ public class FXMLDocumentController {
 
     //Takes Information from score sheet and updates the set data
     @FXML void calculateAndSubmitScoresHandle(ActionEvent event) {
-
-        for (int x = 0; x < Season.getFixtures().size(); x++)
-        {
-            if (homeTeam.getText().equals(Season.getFixtures().get(x).getTeamHome().getTeamName()) && awayTeam.getText().equals(Season.getFixtures().get(x).getTeamAway().getTeamName()))
-            {
-                Season.getFixtures().get(x).sets.get(0).addSetScoresAndPlayers(Integer.parseInt(set0game0h.getText()),Integer.parseInt(set0game0a.getText()), Integer.parseInt(set0game1h.getText()), Integer.parseInt(set0game1a.getText()), Integer.parseInt(set0game2h.getText()), Integer.parseInt(set0game2a.getText()));
-                Season.getFixtures().get(x).sets.get(1).addSetScoresAndPlayers(Integer.parseInt(set1game0h.getText()),Integer.parseInt(set1game0a.getText()), Integer.parseInt(set1game1h.getText()), Integer.parseInt(set1game1a.getText()), Integer.parseInt(set1game2h.getText()), Integer.parseInt(set1game2a.getText()));
-                Season.getFixtures().get(x).sets.get(2).addSetScoresAndPlayers(Integer.parseInt(set2game0h.getText()),Integer.parseInt(set2game0a.getText()), Integer.parseInt(set2game1h.getText()), Integer.parseInt(set2game1a.getText()), Integer.parseInt(set2game2h.getText()), Integer.parseInt(set2game2a.getText()));
-                Season.getFixtures().get(x).sets.get(3).addSetScoresAndPlayers(Integer.parseInt(set3game0h.getText()),Integer.parseInt(set3game0a.getText()), Integer.parseInt(set3game1h.getText()), Integer.parseInt(set3game1a.getText()), Integer.parseInt(set3game2h.getText()), Integer.parseInt(set3game2a.getText()));
-                Season.getFixtures().get(x).sets.get(4).addSetScoresAndPlayers(Integer.parseInt(set4game0h.getText()),Integer.parseInt(set4game0a.getText()), Integer.parseInt(set4game1h.getText()), Integer.parseInt(set4game1a.getText()), Integer.parseInt(set4game2h.getText()), Integer.parseInt(set4game2a.getText()));
-                Season.getFixtures().get(x).setMatchPlayed(true);
-                Season.calculateScores();
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are you sure you want to submit this scoresheet (You can edit it at any time)", ButtonType.YES, ButtonType.NO);
+        alert.showAndWait();
+        if (alert.getResult() == ButtonType.YES) {
+            for (int x = 0; x < Season.getFixtures().size(); x++) {
+                if (homeTeam.getText().equals(Season.getFixtures().get(x).getTeamHome().getTeamName()) && awayTeam.getText().equals(Season.getFixtures().get(x).getTeamAway().getTeamName())) {
+                    Season.getFixtures().get(x).sets.get(0).addSetScoresAndPlayers(Integer.parseInt(set0game0h.getText()), Integer.parseInt(set0game0a.getText()), Integer.parseInt(set0game1h.getText()), Integer.parseInt(set0game1a.getText()), Integer.parseInt(set0game2h.getText()), Integer.parseInt(set0game2a.getText()));
+                    Season.getFixtures().get(x).sets.get(1).addSetScoresAndPlayers(Integer.parseInt(set1game0h.getText()), Integer.parseInt(set1game0a.getText()), Integer.parseInt(set1game1h.getText()), Integer.parseInt(set1game1a.getText()), Integer.parseInt(set1game2h.getText()), Integer.parseInt(set1game2a.getText()));
+                    Season.getFixtures().get(x).sets.get(2).addSetScoresAndPlayers(Integer.parseInt(set2game0h.getText()), Integer.parseInt(set2game0a.getText()), Integer.parseInt(set2game1h.getText()), Integer.parseInt(set2game1a.getText()), Integer.parseInt(set2game2h.getText()), Integer.parseInt(set2game2a.getText()));
+                    Season.getFixtures().get(x).sets.get(3).addSetScoresAndPlayers(Integer.parseInt(set3game0h.getText()), Integer.parseInt(set3game0a.getText()), Integer.parseInt(set3game1h.getText()), Integer.parseInt(set3game1a.getText()), Integer.parseInt(set3game2h.getText()), Integer.parseInt(set3game2a.getText()));
+                    Season.getFixtures().get(x).sets.get(4).addSetScoresAndPlayers(Integer.parseInt(set4game0h.getText()), Integer.parseInt(set4game0a.getText()), Integer.parseInt(set4game1h.getText()), Integer.parseInt(set4game1a.getText()), Integer.parseInt(set4game2h.getText()), Integer.parseInt(set4game2a.getText()));
+                    Season.getFixtures().get(x).setMatchPlayed(true);
+                    Season.calculateScores();
+                }
             }
         }
     }
