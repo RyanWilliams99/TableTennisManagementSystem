@@ -65,6 +65,7 @@ public class FXMLDocumentController {
         updateHomeTeamAwayTeamDropdown();
         updateSelectTeamDropdown();
         setSelectedScore();
+        Season.startNewThread();
 
     }
 

@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.concurrent.TimeUnit;
 
 public class Season {
 
@@ -176,6 +177,30 @@ public class Season {
         }
         System.out.println("Return false team does not exuits");
         return false;
+    }
+
+    public void startNewThread()
+    {
+        Thread t1 = new Thread(new Runnable() {
+
+            public void run()
+            {
+                while(true)
+                {
+                    try
+                    {
+                        Thread.sleep(10000);
+                    }
+                    catch(InterruptedException ex)
+                    {
+                        Thread.currentThread().interrupt();
+                    }
+                    System.out.println("Generating stats");
+                    generateStats();
+                }
+
+            }});
+        t1.start();
     }
 
 

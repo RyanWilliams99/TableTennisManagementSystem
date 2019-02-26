@@ -23,9 +23,6 @@
 - [x] GUI!
 
 **TODO**
-Fixture and results are table not popup ???
-After adding a new score sheet does not display properly
-Auto update not done
 No comments in majority of code
 Validate calculate and submit scores 
 Confirmation message
