@@ -179,7 +179,7 @@ public class Season {
         return false;
     }
 
-    public void startNewThread()
+    public void autoUpdateStats()
     {
         Thread t1 = new Thread(new Runnable() {
 
@@ -187,18 +187,17 @@ public class Season {
             {
                 while(true)
                 {
+                    System.out.println("Generating stats");
+                    generateStats();
                     try
                     {
-                        Thread.sleep(10000);
+                        Thread.sleep(90000);
                     }
                     catch(InterruptedException ex)
                     {
                         Thread.currentThread().interrupt();
                     }
-                    System.out.println("Generating stats");
-                    generateStats();
                 }
-
             }});
         t1.start();
     }

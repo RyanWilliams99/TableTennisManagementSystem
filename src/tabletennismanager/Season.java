@@ -1,10 +1,7 @@
 package tabletennismanager;
 
-import java.io.*;
 import java.util.ArrayList;
-import java.util.Scanner;
-import java.util.Arrays;
-import java.util.concurrent.TimeUnit;
+
 
 public class Season {
 
@@ -116,14 +113,6 @@ public class Season {
             System.out.println("________________________________________________");
         }
     }
-    public void displayLeaderBoard() {
-        int tempHighest = 0;
-        for (int x = 0; x < teams.size(); x++)
-        {
-            //if(teams.get(x).getMatchesWon() > tempHighest)
-
-        }
-    }
 
     public void displayAMatch(Match passedMatch) {
         System.out.println(passedMatch.getTeamHome().getTeamName() + " VS " + passedMatch.getTeamAway().getTeamName());
@@ -136,10 +125,9 @@ public class Season {
             System.out.println("Away Player " + x + passedMatch.getTeamAway().getPlayers().get(x));
         }
         System.out.println("Home: " + passedMatch.getTeamHome().getSetsWon() + " Away: " + passedMatch.getTeamAway().getSetsWon());
-        // Display match score
     }
 
-    public void displayFixtures() { //Probably doesnt need to display teams and scores like initially thought
+    public void displayFixtures() {
         System.out.println("\nFixtures");
         for(int x = 0; x < fixtures.size(); x++)
         {
@@ -147,11 +135,6 @@ public class Season {
         }
         System.out.println("\n");
     }
-
-    public void autoUpdateThread() {
-        // Call generate fixtures every 100 seconds
-    }
-
 
     public void calculateScores()
     {
@@ -179,7 +162,7 @@ public class Season {
         return false;
     }
 
-    public void startNewThread()
+    public void autoUpdateStats()
     {
         Thread t1 = new Thread(new Runnable() {
 
@@ -201,7 +184,6 @@ public class Season {
             }});
         t1.start();
     }
-
 
     public void addTestData()
     {

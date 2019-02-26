@@ -16,15 +16,13 @@
 - [x] calculateMatchScores
 - [x] calculateSetScores
 - [x] calculateGameScores
-- [ ] Edit the use case diagram
-- [ ] Produce 3 x sequence diagrams
+- [x] Edit the use case diagram
+- [x] Produce 3 x sequence diagrams
 - [ ] Outline how we agile developed
 - [ ] Create test for each method!
 - [x] GUI!
 
 **TODO**
-After adding a new score sheet does not display properly
-Auto update not done
 No comments in majority of code
 Validate calculate and submit scores 
 Confirmation message

@@ -16,8 +16,8 @@
 - [x] calculateMatchScores
 - [x] calculateSetScores
 - [x] calculateGameScores
-- [ ] Edit the use case diagram
-- [ ] Produce 3 x sequence diagrams
+- [x] Edit the use case diagram
+- [x] Produce 3 x sequence diagrams
 - [ ] Outline how we agile developed
 - [ ] Create test for each method!
 - [x] GUI!
