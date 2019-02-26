@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="mainAnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabletennismanager.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="mainAnchorPane" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tabletennismanager.FXMLDocumentController">
    <children>
       <VBox layoutX="2.0" layoutY="1.0" prefHeight="646.0" prefWidth="1068.0">
          <children>
@@ -134,6 +134,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set0game0a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="179.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -150,6 +153,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set0game1h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="214.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
                                  <items>
@@ -166,6 +172,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set0game1a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -182,6 +191,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set0game2h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="249.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
                                  <items>
@@ -198,6 +210,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set0game2a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -214,6 +229,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set1game0h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="179.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -230,6 +248,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set1game0a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="179.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -246,6 +267,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set1game1h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="214.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
                                  <items>
@@ -262,6 +286,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set1game1a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="214.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -278,6 +305,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set1game2h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="249.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
                                  <items>
@@ -294,6 +324,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set1game2a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="249.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -310,6 +343,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <Separator layoutX="511.0" layoutY="279.0" prefWidth="390.0" />
                               <Separator layoutX="511.0" layoutY="174.0" prefWidth="390.0" />
@@ -329,6 +365,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set2game0a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -345,6 +384,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set2game1h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="319.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
                                  <items>
@@ -361,6 +403,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set2game1a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="319.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -377,6 +422,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set2game2h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="354.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
                                  <items>
@@ -393,6 +441,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set2game2a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -409,6 +460,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set3game0h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -425,6 +479,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set3game0a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -441,6 +498,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set3game1h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="319.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
                                  <items>
@@ -457,6 +517,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set3game1a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="319.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -473,6 +536,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set3game2h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="781.0" layoutY="354.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
                                  <items>
@@ -489,6 +555,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set3game2a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="846.0" layoutY="354.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -505,6 +574,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set4game0h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="395.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -521,6 +593,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set4game0a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="395.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -537,6 +612,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set4game1h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="430.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
                                  <items>
@@ -553,6 +631,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set4game1a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="430.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -569,6 +650,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set4game2h" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="641.0" layoutY="465.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="55.0" text="0">
                                  <items>
@@ -585,6 +669,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <MenuButton fx:id="set4game2a" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="706.0" layoutY="465.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="55.0" text="0">
                                  <items>
@@ -601,6 +688,9 @@
                                     <MenuItem mnemonicParsing="false" text="10" />
                                     <MenuItem mnemonicParsing="false" text="11" />
                                  </items>
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
                               </MenuButton>
                               <Separator layoutX="769.0" layoutY="119.0" orientation="VERTICAL" prefHeight="370.0" />
                               <Separator layoutX="634.0" layoutY="119.0" orientation="VERTICAL" prefHeight="370.0" />

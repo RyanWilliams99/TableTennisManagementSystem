@@ -163,9 +163,7 @@ public class FXMLDocumentController {
     }
 
     @FXML void generateTeamStatsHandle(ActionEvent event) {
-
         Season.generateStats();
-
     }
 
     @FXML void registerPlayerHandle(ActionEvent event) {
@@ -204,6 +202,7 @@ public class FXMLDocumentController {
 
         TableColumn<FixtureAndResult, String> matchesWon = new TableColumn<>("Won");
         matchesWon.setCellValueFactory(new PropertyValueFactory<>("matchesWon"));
+        matchesWon.setMinWidth(70);
         matchesWon.setSortType(TableColumn.SortType.DESCENDING);
 
         TableColumn<FixtureAndResult, String> matchesLost = new TableColumn<>("Lost");
@@ -493,6 +492,7 @@ public class FXMLDocumentController {
 
     }
 
+    //Getting the choice for combobox
     void setSelectedScore()
     {
         for (MenuItem item : set0game0h.getItems()) {
@@ -727,11 +727,12 @@ public class FXMLDocumentController {
 
     }
 
+    //Takes Information from scoresheet and updates the set data
     @FXML void calculateAndSubmitScoresHandle(ActionEvent event) {
 
-        for (int x = 0; x < Season.getTeams().size(); x++)
+        for (int x = 0; x < Season.getFixtures().size(); x++)
         {
-            if (homeTeam.getText().equals(Season.getTeams().get(x).getTeamName()))
+            if (homeTeam.getText().equals(Season.getFixtures().get(x).getTeamHome().getTeamName()) && awayTeam.getText().equals(Season.getFixtures().get(x).getTeamAway().getTeamName()))
             {
                 Season.getFixtures().get(x).sets.get(0).addSetScoresAndPlayers(Integer.parseInt(set0game0h.getText()),Integer.parseInt(set0game0a.getText()), Integer.parseInt(set0game1h.getText()), Integer.parseInt(set0game1a.getText()), Integer.parseInt(set0game2h.getText()), Integer.parseInt(set0game2a.getText()));
                 Season.getFixtures().get(x).sets.get(1).addSetScoresAndPlayers(Integer.parseInt(set1game0h.getText()),Integer.parseInt(set1game0a.getText()), Integer.parseInt(set1game1h.getText()), Integer.parseInt(set1game1a.getText()), Integer.parseInt(set1game2h.getText()), Integer.parseInt(set1game2a.getText()));

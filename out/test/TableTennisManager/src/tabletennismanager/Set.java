@@ -10,16 +10,16 @@ public class Set {
     private int scoreAway;
     public ArrayList<Game> games;
 
-    public Set() {
+    public Set() { //Constructor Creates 3 new game objects and stores them in a arraylist called games
 
-       games = new ArrayList<>(2);
+       games = new ArrayList<>(3);
 
         for(int x  = 0; x < 3; x++) //Generate 3 Game objects
         {
             games.add(new Game());
         }
     }
-
+    //Used to add all games scores at once
     public void addSetScoresAndPlayers(int game0h, int game0a ,int game1h, int game1a, int game2h, int game2a) {
         games.get(0).setHomeScore(game0h);
         games.get(0).setAwayScore(game0a);
@@ -31,22 +31,17 @@ public class Set {
     }
 
     public void calculateSetScores() {
-        System.out.println("Calculating who won this set between ");
-        //Should check to see if 3 game objects contain score yet or not
+        //For every game
         for (int x = 0; x < 3; x++)
         {
             System.out.println("About to compare home team vs away team score GAMES " + games.get(x).getHomeScore() + " : " + games.get(x).getAwayScore());
-            if(games.get(x).getHomeScore() > games.get(x).getAwayScore())
+            if(games.get(x).getHomeScore() > games.get(x).getAwayScore()) //See who had the most points
             {
-                //System.out.println("Before Home Score " + this.getScoreHome());
                 this.setScoreHome(this.getScoreHome() + 1);
-                //System.out.println("After Home Score " + this.getScoreHome());
             }
             else
             {
-                //System.out.println("Before Away Score " + this.getScoreAway());
                 this.setScoreAway(this.getScoreAway() + 1);
-                //System.out.println("After Away Score " + this.getScoreAway());
             }
 
         }
@@ -92,5 +87,4 @@ public class Set {
     public void setGames(ArrayList<Game> games) {
         this.games = games;
     }
-
 }

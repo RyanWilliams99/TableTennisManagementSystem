@@ -22,8 +22,8 @@
 - [ ] Create test for each method!
 - [x] GUI!
 
-**Known Issues**
-Fixture and results are table not popup
-After adding a new scoresheet cannot display properly
-All games player etc set to 0 initially
-
+**TODO**
+Fixture and results are table not popup ???
+After adding a new score sheet does not display properly
+Auto update not done
+No comments in majority of code

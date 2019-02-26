@@ -10,7 +10,6 @@ public class Season {
     public ArrayList<Match> fixtures;
     private ArrayList<Team> teams;
 
-
     public Season(){
         teams = new ArrayList<>(2);
         fixtures = new ArrayList<>(2);
@@ -19,6 +18,12 @@ public class Season {
     public ArrayList<Match> getFixtures() {
         return fixtures;
     }
+
+    public void addTeam(Team teamPassed) {
+        System.out.println("Adding Team " + teamPassed.getTeamName());
+        teams.add(teamPassed);
+    }
+
 
     public void setFixtures(ArrayList<Match> fixtures) {
         this.fixtures = fixtures;
@@ -32,11 +37,6 @@ public class Season {
         this.teams = teams;
     }
 
-    public void addTeam(Team teamPassed) {
-        System.out.println("Adding Team " + teamPassed.getTeamName());
-        teams.add(teamPassed);
-    }
-
     public void addMatch(Match match) {
 
         fixtures.add(match);
@@ -48,7 +48,6 @@ public class Season {
         {
             for(int y = x + 1; y < teams.size(); y++)
             {
-                //System.out.println("Generating fixtures for the added team");
                 fixtures.add(new Match(teams.get(x),teams.get(y)));
             }
         }
@@ -57,7 +56,6 @@ public class Season {
         {
             for(int y = x + 1; y < teams.size(); y++)
             {
-                //System.out.println("Generating fixtures for the added team");
                 fixtures.add(new Match(teams.get(y),teams.get(x)));
             }
         }
@@ -124,10 +122,6 @@ public class Season {
             //if(teams.get(x).getMatchesWon() > tempHighest)
 
         }
-
-
-        // Generate stats
-        // Display team stats in order of matches won
     }
 
     public void displayAMatch(Match passedMatch) {
