@@ -11,6 +11,13 @@ import java.util.ArrayList;
     private int scoreAway;
     public ArrayList<Set> sets;
 
+    public Match(){
+        sets = new ArrayList<>();
+        for(int x  = 0; x < 5; x++) //Generate 5 set objects and add to sets arraylist
+            {
+                sets.add(new Set());
+            }
+    }
 
         public Match(Team teamHome, Team teamAway) { //When creating new match 2 MUST pass two Team objects
             this.teamHome = teamHome;
@@ -25,7 +32,7 @@ import java.util.ArrayList;
 
 
         public void calculateMatchScores() {
-            System.out.println("Calculating match scores for " + this.getTeamHome().getTeamName() + " VS " + this.getTeamAway().getTeamName());
+            //System.out.println("Calculating match scores for " + this.getTeamHome().getTeamName() + " VS " + this.getTeamAway().getTeamName());
             for (int x  = 0; x < 5; x++) //For every Set see who had most games
             {
                 sets.get(x).calculateSetScores();
@@ -83,4 +90,14 @@ import java.util.ArrayList;
         public void setScoreAway(int scoreAway) {
             this.scoreAway = scoreAway;
         }
+
+    public ArrayList<Set> getSets() {
+        return sets;
+    }
+
+    public void setSets(ArrayList<Set> sets) {
+        this.sets = sets;
+    }
+        
+        
     }
